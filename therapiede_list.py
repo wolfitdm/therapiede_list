@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 import time
 import sys
 import os
@@ -19,7 +20,36 @@ def write_the_file(name="0", content=[]):
     with open(target, 'w') as f:
          for line in content:
              f.write(f"{line}\n")
+             
+def search_word_in_page(word, driver):
+    return word in driver.page_source
 
+def search_array_in_page(words, driver, must_found=1):
+    founded = 0
+    for word in words:
+        if search_word_in_page(word, driver):
+           founded = founded + 1
+    return founded >= must_found
+
+search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA"]  
+search_words_queer_must_found = 1
+def search_queer_words_on_thera_profil(url, driver):
+    main_window = driver.current_window_handle
+    main_window_one = driver.window_handles[0]
+    driver.execute_script("window.open()")
+    time.sleep(2)
+    new_tab = driver.window_handles[1]
+    driver.switch_to.window(new_tab)
+    driver.get(url)
+    time.sleep(2)
+    is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
+    time.sleep(3)
+    driver.close()
+    driver.switch_to.window(main_window_one)
+    if is_founded_queer:
+       print("founded")
+    return is_founded_queer
+    
 downloadDefaultDirectory = '.'
 headlessmode = False
 options = webdriver.ChromeOptions()
@@ -88,6 +118,7 @@ try:
     thera_links_loc = []
     for i in range(0, len(thera_links)):
         print("hallo " + str(i))
+        print(thera_links[i].get_attribute("href"))
         noname = driver.execute_script('return $(arguments[0]).hasClass("noname");',  thera_links[i])
         if noname:
            thera_link_get = driver.execute_script('return $(arguments[0]).data("href")',  thera_links[i])
@@ -122,6 +153,8 @@ try:
         for x in range(0, len(search_results)):
             sr = st + driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
             if sr in creamy_thera:
+               continue
+            if not search_queer_words_on_thera_profil(sr, driver):
                continue
             creamy_thera[sr] = True
             noo_search_results.append(sr)

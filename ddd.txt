@@ -1,0 +1,28 @@
+
+wolfitdm/therapiede_list
+
+Ich habe die License auf MIT gestellt, jeder der daran interessiert ist, anderen zu helfen kann auch ohne mein zutun, den Code verändern, verkaufen oder what auch ever.
+
+Denn ich habe mir andere Prioritäten gesetzt, die ich persönlich für sinnvoller erachte.
+
+Auch ist es ja jeden selbst überlassen, meine Software zu nutzen.
+
+Ganz wichtig, das ist python und die batch Dateien enthalten den pyinstaller.
+
+Somit ist das Programm Plattform UNABHÄNGIG und auch auf jeder Plattform kompilierbar. Besser noch , du kannst dir selbst aussuchen ob du es in kompilierter Form ausführen willst oder nicht. Also vollkommen unabhängig. Django kenne ich. Frisst soviel Resourcen, ist man schneller wenn sich ein pures JSON Framework baut. Ist man auch UNABHÄNGIGER von Bugs etc....
+
+Und es wird sogar noch ganz cooler, dank
+
+PyScript-Einführung: Python im Browser ausführen | Computerwoche
+
+Somit ist mein Tool vollkommen UNABHÄNGIG von allen. Ist doch super oder?
+
+Man kann das python Skript direkt im Browser ausführen, bedeutet kein Aufwand und Arbeit für mich, ach ich liebe es wenn ein Plan funktioniert ,ich liebe das einfach!
+
+Zusammengefasst bedeutet das, jeder der meine Software nutzt, kann sich SELBST BESTIMMT aussuchen wo er diese ausführen will. Tja ich habe das ja auch nicht zu entscheiden.
+
+Eine Webseite kann offline gehen, und ist nicht UNABHÄNGIG VON ALLEN nutzbar.
+
+Aber mal unabhängig davon, eigentlich ging es mir nur darum anderen meine Arbeit zur Verfügung zu stellen um es ihnen möglich zu machen, die beste Thera Trans Versorgung zu haben, da spielt doch der Rest eher weniger eine Rolle, im Gegenteil, diese ganzen Wünsche sind nice to haves, und würden mich hier nur aufhalten , ich finde es wichtig sich darauf zu konzentrieren, was allen hilft, und wie gesagt wer so verzweifelt ist wie ich, der nutzt auch ein externes Programm ganz ehrlich.
+
+Eigentlich habe ich hier für mich gelernt, das es ein Fehler war anderen helfen zu wollen, denn was hatte ich davon? Nur das ich mich noch mehr aufhalten habe lassen... Ich meine ich bin nicht euer Dienstmädchen, das hier eure Wünsche erfüllt, ich darf auch selbst darüber entscheiden , wie ich was tue und was nicht.

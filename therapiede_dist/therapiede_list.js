@@ -59,10 +59,31 @@ function fixUmlauts(value) {
     return value;
 }
 
-function createLoc(name) {
+function createLocEx(html) {
+	const para = document.createElement("p");
+    para.innerHTML = html;
+	return para;
+}
+
+
+function createLoc(name, search_radius, weiteres) {
 	const para = document.createElement("p");
     const name_lower = name.toLowerCase();
-	para.innerHTML = '<a data-href="https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&weiteres=Trans&ort=' + name + '" data-locx="'+name+'" class="thera_link noname" href="/psychotherapie/-verfahren-/online-therapie/-ort-/'+name_lower+'/">'+name+'</a>';
+	var new_string =  '<a data-href="https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37';
+	new_string += "&ort=";
+	new_string += name;
+	new_string += "&search_radius=";
+	new_string += search_radius+"";
+	new_string += "&weiteres=";
+	new_string += weiteres+"";
+	new_string += ' data-locx="';
+	new_string += name;
+	new_string += '"';
+	new_string += ' class="thera_link noname" href="/psychotherapie/-verfahren-/online-therapie/-ort-/';
+	new_string += name_lower; 
+	new_string += '/">';
+	new_string += name;
+	new_string += '</a>';
 	return para;
 }
 
@@ -199,8 +220,9 @@ new_locs["Siegen"] = true;
 new_locs["Kaiserslautern"] = true;
 new_locs["Cottbus"] = true;
 $(document).ready(function() {
-    let link_part1 = "https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&weiteres=Trans&ort=";
+    let link_part1 = "https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&ort=";
 	let link_part2 = "&search_radius=";
+	let link_part3 = "&weiteres=";
     let thera_links = [];
     waitForElement('.list-columns a[href="/psychotherapie/-verfahren-/online-therapie/-ort-/zwickau/"]', function(element) {
         console.log('Element exists:', element);
@@ -238,41 +260,93 @@ $(document).ready(function() {
 		   new_locs[loc] = false;
 		}
     }
-    let nl = Object.keys(new_locs).filter(k => new_locs[k]);
-	console.log(nl);
-	for (let i = 0; i < nl.length; i++) {
-		$(lca).append(createLoc(nl[i]));
-	}
-	$(".list-columns").toggleClass("thera_cool", true);
-    let links = document.querySelectorAll('.list-columns a[href*="/psychotherapie/-verfahren-/online-therapie/-ort-/"]');
 	let radius = {};
 	radius["Aichwald"] = 0;
 	radius["default"] = 0;
-    for (let i = 0; i < links.length; i++) {
+	//let search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA", ""]  
+    let search_words_queer = ["Trans*"];
+	let nl = Object.keys(new_locs).filter(k => new_locs[k]);
+	console.log(nl);
+	for (let i = 0; i < nl.length; i++) {
+		let loc = nl[i];
+		if (!(loc in radius)) {
+		    radius[loc] = radius["default"];
+		}
+		for (let j = 0; j < search_words_queer.length; j++) {
+			let cLoc = createLoc(loc, radius[loc], search_words_queer[j]);
+			$(lca).append(cLoc);
+		}
+	}
+    let links = document.querySelectorAll('.list-columns a[href*="/psychotherapie/-verfahren-/online-therapie/-ort-/"]');
+    let eles = [];
+	let idx_ = "";
+	for (let i = 0; i < links.length; i++) {
+		let par = $(links[i]).parent();
+		$(par).parent().toggleClass("thera_cool", true);
+		let idx = par.attr("id");
+		idx_ = idx;
+		let idxe = "#" + idx;
         let loc = links[i].innerHTML.trim();
         let thera_link = link_part1 + loc;
 		thera_link = thera_link + link_part2;
 		if (!(loc in radius)) {
 		    radius[loc] = radius["default"];
 		}
-	    thera_link = thera_link + str(radius[loc]);
+	    thera_link = thera_link + radius[loc];
 		console.log("thera_link:");
         console.log(thera_link);
-		$(links[i]).attr("href", thera_link).html(loc).toggleClass("thera_link", true).attr("data-locx", loc);
+		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
+		let clone = $(links[i]).clone();
+		for (let j = 0; j < search_words_queer.length; j++) {
+			let new_thera_link = thera_link + link_part3 + search_words_queer[j];
+			console.log(new_thera_link);
+			let lc = $(clone);
+			console.log("hhaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+			console.log(lc);
+			let new_loc = loc + "-" + j;
+			let el = lc.html(new_loc).attr("data-locx", new_loc).attr("href", new_thera_link);
+			let elOuter = el.prop('outerHTML');
+			console.log(elOuter);
+			eles.push(elOuter);
+		}
     }
+	for (let i = 0; i < eles.length; i++) {
+		$(lca).append(eles[i]);
+	}
 	links = document.querySelectorAll('.list-columns a.noname');
+	eles = [];
     for (let i = 0; i < links.length; i++) {
+		let par = $(links[i]).parent();
+		$(par).parent().toggleClass("thera_cool", true);
+		let idx = par.attr("id");
+		let idxe = "#" + idx;
         let loc = links[i].innerHTML.trim();
         let thera_link = link_part1 + loc;
-		thera_link = thera_link + link_part2;
+		thera_link = thera_link + link_part2
 		if (!(loc in radius)) {
 		    radius[loc] = radius["default"];
 		}
-	    thera_link = thera_link + str(radius[loc]);
+	    thera_link = thera_link + radius[loc];
 		console.log("thera_link:");
         console.log(thera_link);
-		$(links[i]).attr("href", thera_link).data("href", thera_link).html(loc).toggleClass("thera_link", true).attr("data-locx", loc);
+		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
+		let clone = $(links[i]).clone();
+		for (let j = 0; j < search_words_queer.length; j++) {
+			let new_thera_link = thera_link + link_part3 + search_words_queer[j];
+			console.log(new_thera_link);
+			let lc = $(clone);
+			console.log("hhaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+			console.log(lc);
+			let new_loc = loc + "-" + j;
+			let el = lc.html(new_loc).attr("data-locx", new_loc).attr("href", new_thera_link);
+			let elOuter = el.prop('outerHTML');
+			console.log(elOuter);
+			eles.push(elOuter);
+		}
     }
+	for (let i = 0; i < eles.length; i++) {
+		$(lca).append(eles[i]);
+	}
     // /\(\D+([0-9]+\sTreffer).+$/.exec(document.querySelector("h5.subheader").innerHTML);
     //#pagenav-top .prev
     //#pagenav-top .next;
