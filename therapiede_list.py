@@ -31,23 +31,56 @@ def search_array_in_page(words, driver, must_found=1):
            founded = founded + 1
     return founded >= must_found
 
-search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA"]  
+search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA", "Geschlechtsdysphorie"]  
 search_words_queer_must_found = 1
+no_trans_thera = []
+trans_thera_email = []
+no_trans_thera_all = []
+trans_thera_email_all = []
 def search_queer_words_on_thera_profil(url, driver):
     main_window = driver.current_window_handle
     main_window_one = driver.window_handles[0]
     driver.execute_script("window.open()")
-    time.sleep(2)
+    time.sleep(1)
     new_tab = driver.window_handles[1]
     driver.switch_to.window(new_tab)
+    time.sleep(1)
     driver.get(url)
+    element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#microsite .shadowbox.therapist-details')))
+    try:
+        contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
+        #with open('./contact_button.js', 'r') as contact_button_js:
+        #     driver.execute_script(contact_button_js)
+        driver.execute_script("function send_UnCryptMailto_with_data(contactEmail, contactEmailSubject, body) {}; function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix, contactEmailBody) {};")
+        contact_button.click()
+    except Exception as e: 
+        print(e)
+        print("exception")
+    len_email_address_value = 0
+    try:
+        email_address = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.contact-functions #email-address-container a')))
+        email_address_value = email_address.get_attribute("innerHTML")
+        len_email_address_value = len(email_adress_value)
+    except:
+        email_address = ""
+        email_address_value = ""
+        len_email_address_value = 0
     time.sleep(2)
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
-    time.sleep(3)
+    time.sleep(1)
     driver.close()
     driver.switch_to.window(main_window_one)
     if is_founded_queer:
        print("founded")
+       if len_email_address_value > 0:
+          trans_thera_email.append(email_address_value)
+          trans_thera_email_all.append(email_address_value)
+          print("trans_email: " + email_address_value)
+    else:
+       if len_email_address_value > 0:
+          no_trans_thera.append(email_address_value)
+          no_trans_thera_all.append(email_address_value)
+          print("no_trans_email: " + email_address_value)
     return is_founded_queer
     
 downloadDefaultDirectory = '.'
@@ -139,7 +172,6 @@ try:
         thera_link_get_loc = thera_links_loc[i]
         no = {}
         no_search_results = []
-        no_search_results_li = []
         print(thera_link_get)
         try:
             driver.get(thera_link_get)
@@ -149,21 +181,12 @@ try:
             continue
         search_results = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".search-results ul.search-results-list")))
         search_results = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel a");')
-        search_results_x = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel");')
         for x in range(0, len(search_results)):
             sr = st + driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
             if sr in creamy_thera:
                continue
             creamy_thera[sr] = True
-            noo_search_results.append(sr)
-            #no_search_results.append(sr)
-        for x in range(0, len(search_results_x)):
-            sr = search_results_x[x]
-            if sr in creamy_thera_li:
-               continue
-            creamy_thera_li[sr] = True
-            noo_search_results_li.append(sr)
-            #no_search_results_li.append(sr)
+            no_search_results.append(sr)
         pagenav_bottom = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagenav-bottom")))
         thera_link_first_href = driver.execute_script('return $("#pagenav-bottom li.active a").last().attr("href");')
         print(thera_link_first_href)
@@ -182,48 +205,49 @@ try:
             driver.execute_script('document.location.href=arguments[0]', next_page_link)
             time.sleep(2)
             new_search_results = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel a");')
-            new_search_results_x = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel");')
             for x in range(0, len(new_search_results)):
                 sr = st + driver.execute_script('return arguments[0].getAttribute("href");', new_search_results[x])
                 if sr in creamy_thera:
                    continue
                 creamy_thera[sr] = True
-                noo_search_results.append(sr)
-                #no_search_results.append(sr)
-                
-            for x in range(0, len(new_search_results_x)):
-                sr = new_search_results_x[x]
-                if sr in creamy_thera_li:
-                   continue
-                creamy_thera_li[sr] = True
-                noo_search_results_li.append(sr)
-                #no_search_results_li.append(sr)
+                no_search_results.append(sr)
             
-            #write_the_file(thera_link_get_loc, no_search_results)
-            #noo_search_results_loc[thera_link_get_loc] = no_search_results
-            #noo_search_results_li_loc[thera_link_get_loc] = no_search_results_li
+        noooo_search_results = []
+        no_trans_thera = []
+        trans_thera_email = []
+        for i in range(0, len(no_search_results)):
+            sr = no_search_results[i]
+            if not search_queer_words_on_thera_profil(sr, driver):
+               continue
+            noo_search_results.append(sr) 
+            noooo_search_results.append(sr)
+        no_search_results = noooo_search_results  
+        if len(no_search_results) > 0:
+           write_the_file(thera_link_get_loc, no_search_results)
+        if len(trans_thera_email) > 0:
+           write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email)
+        if len(trans_thera_email_all) > 0:
+           write_the_file(thera_link_get_loc + "_trans_thera_email_all", trans_thera_email_all)
+        if len(no_trans_thera_email) > 0:
+           write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email)
+        if len(no_trans_thera_email_all) > 0:
+           write_the_file(thera_link_get_loc + "_no_trans_thera_email_all", no_trans_thera_email_all)
         thera_links_neww.append(no)
-    noooo_search_results = []
-    for i in range(0, len(noo_search_results)):
-        sr = noo_search_results[i]
-        if not search_queer_words_on_thera_profil(sr, driver):
-           continue
-        noooo_search_results.append(sr)
-    write_the_file("all", noo_search_results)
-    write_the_file("all-ex", noooo_search_results)
+    if len(noo_search_results) > 0:
+       write_the_file("all", noo_search_results)
     current_i = 0
-    max_i = len(noooo_search_results) - 1
+    max_i = len(noo_search_results) - 1
     open_urls = int(input("Wieviele Urls oeffnen?"))
     while open_urls > 0 and current_i <= max_i:
         for i in range(current_i, current_i + open_urls):
             if i <= max_i:
-               driver.get(noooo_search_results[i])
+               driver.get(noo_search_results[i])
                body = driver.find_element_by_tag_name("body")
                body.send_keys(Keys.CONTROL + 't')
                input("Weiter?")
         current_i = current_i + open_urls
         open_urls = int(input("Wieviele Urls oeffnen?"))
-    print(noooo_search_results)   
+    print(noo_search_results)   
 except TimeoutException as e:
     print("Couldn't find: " + str("thera_cool"))
     pass

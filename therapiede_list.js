@@ -292,7 +292,7 @@ $(document).ready(function() {
 		if (!(loc in radius)) {
 		    radius[loc] = radius["default"];
 		}
-	    thera_link = thera_link + radius[loc];
+	    thera_link = thera_link + radius[loc] + "&weiteres=";
 		console.log("thera_link:");
         console.log(thera_link);
 		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
@@ -327,7 +327,7 @@ $(document).ready(function() {
 		if (!(loc in radius)) {
 		    radius[loc] = radius["default"];
 		}
-	    thera_link = thera_link + radius[loc];
+	    thera_link = thera_link + radius[loc] + "&weiteres=";
 		console.log("thera_link:");
         console.log(thera_link);
 		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
