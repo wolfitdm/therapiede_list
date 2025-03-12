@@ -154,18 +154,16 @@ try:
             sr = st + driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
             if sr in creamy_thera:
                continue
-            if not search_queer_words_on_thera_profil(sr, driver):
-               continue
             creamy_thera[sr] = True
             noo_search_results.append(sr)
-            no_search_results.append(sr)
+            #no_search_results.append(sr)
         for x in range(0, len(search_results_x)):
             sr = search_results_x[x]
             if sr in creamy_thera_li:
                continue
             creamy_thera_li[sr] = True
             noo_search_results_li.append(sr)
-            no_search_results_li.append(sr)
+            #no_search_results_li.append(sr)
         pagenav_bottom = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagenav-bottom")))
         thera_link_first_href = driver.execute_script('return $("#pagenav-bottom li.active a").last().attr("href");')
         print(thera_link_first_href)
@@ -191,7 +189,7 @@ try:
                    continue
                 creamy_thera[sr] = True
                 noo_search_results.append(sr)
-                no_search_results.append(sr)
+                #no_search_results.append(sr)
                 
             for x in range(0, len(new_search_results_x)):
                 sr = new_search_results_x[x]
@@ -199,26 +197,33 @@ try:
                    continue
                 creamy_thera_li[sr] = True
                 noo_search_results_li.append(sr)
-                no_search_results_li.append(sr)
+                #no_search_results_li.append(sr)
             
-            write_the_file(thera_link_get_loc, no_search_results)
-            noo_search_results_loc[thera_link_get_loc] = no_search_results
-            noo_search_results_li_loc[thera_link_get_loc] = no_search_results_li
+            #write_the_file(thera_link_get_loc, no_search_results)
+            #noo_search_results_loc[thera_link_get_loc] = no_search_results
+            #noo_search_results_li_loc[thera_link_get_loc] = no_search_results_li
         thera_links_neww.append(no)
+    noooo_search_results = []
+    for i in range(0, len(noo_search_results)):
+        sr = noo_search_results[i]
+        if not search_queer_words_on_thera_profil(sr, driver):
+           continue
+        noooo_search_results.append(sr)
     write_the_file("all", noo_search_results)
+    write_the_file("all-ex", noooo_search_results)
     current_i = 0
-    max_i = len(noo_search_results) - 1
+    max_i = len(noooo_search_results) - 1
     open_urls = int(input("Wieviele Urls oeffnen?"))
     while open_urls > 0 and current_i <= max_i:
         for i in range(current_i, current_i + open_urls):
             if i <= max_i:
-               driver.get(noo_search_results[i])
+               driver.get(noooo_search_results[i])
                body = driver.find_element_by_tag_name("body")
                body.send_keys(Keys.CONTROL + 't')
                input("Weiter?")
         current_i = current_i + open_urls
         open_urls = int(input("Wieviele Urls oeffnen?"))
-    print(noo_search_results)   
+    print(noooo_search_results)   
 except TimeoutException as e:
     print("Couldn't find: " + str("thera_cool"))
     pass

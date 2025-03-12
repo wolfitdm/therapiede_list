@@ -296,6 +296,7 @@ $(document).ready(function() {
 		console.log("thera_link:");
         console.log(thera_link);
 		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
+		continue;
 		let clone = $(links[i]).clone();
 		for (let j = 0; j < search_words_queer.length; j++) {
 			let new_thera_link = thera_link + link_part3 + search_words_queer[j];
@@ -330,6 +331,7 @@ $(document).ready(function() {
 		console.log("thera_link:");
         console.log(thera_link);
 		$(links[i]).html(loc).toggleClass("thera_link", true).attr("data-locx", loc).attr("href", thera_link);
+		continue;
 		let clone = $(links[i]).clone();
 		for (let j = 0; j < search_words_queer.length; j++) {
 			let new_thera_link = thera_link + link_part3 + search_words_queer[j];
