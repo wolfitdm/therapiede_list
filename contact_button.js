@@ -45,4 +45,9 @@ function send_UnCryptMailto_with_data(contactEmail, contactEmailSubject, body) {
 
 function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix, contactEmailBody) {
 
-};
+}
+
+$(document).ready(function() {
+	window.getDecryptedEmail = getDecryptedEmail;
+	window.send_UnCryptMailto_with_data = send_UnCryptMailto_with_data;
+});

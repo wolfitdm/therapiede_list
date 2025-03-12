@@ -49,22 +49,24 @@ def search_queer_words_on_thera_profil(url, driver):
     element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#microsite .shadowbox.therapist-details')))
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
-        #with open('./contact_button.js', 'r') as contact_button_js:
-        #     driver.execute_script(contact_button_js)
-        driver.execute_script("function send_UnCryptMailto_with_data(contactEmail, contactEmailSubject, body) {}; function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix, contactEmailBody) {};")
-        contact_button.click()
     except Exception as e: 
         print(e)
         print("exception")
-    len_email_address_value = 0
-    try:
-        email_address = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.contact-functions #email-address-container a')))
-        email_address_value = email_address.get_attribute("innerHTML")
-        len_email_address_value = len(email_adress_value)
-    except:
-        email_address = ""
-        email_address_value = ""
-        len_email_address_value = 0
+
+    with open('./jquery.js', 'r') as jquery_js: 
+        # 3) Read the jquery from a file
+        jquery = jquery_js.read() 
+        # 4) Load jquery lib
+        driver.execute_script(jquery)
+        
+    with open('./contact_button.js', 'r') as cb_js: 
+        # 3) Read the jquery from a file
+        cb = cb_js.read() 
+        # 4) Load jquery lib
+        driver.execute_script(cb)
+
+    email_address_value = driver.execute_script("return window.getDecryptedEmail();");
+    len_email_address_value = len(email_adress_value)
     time.sleep(2)
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
     time.sleep(1)
