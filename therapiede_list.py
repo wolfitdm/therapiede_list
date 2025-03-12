@@ -66,7 +66,7 @@ def search_queer_words_on_thera_profil(url, driver):
         driver.execute_script(cb)
 
     email_address_value = driver.execute_script("return window.getDecryptedEmail();");
-    len_email_address_value = len(email_adress_value)
+    len_email_address_value = len(email_address_value)
     time.sleep(2)
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
     time.sleep(1)
