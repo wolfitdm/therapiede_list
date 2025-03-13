@@ -1,3 +1,5 @@
+// https://github.com/WZBSocialScienceCenter/plz_geocoord/blob/master/plz_geocoord.csv
+//https://www.latlong.net/country/germany-83.html
 function decryptCharcode(n, start, end, offset) {
     n = n + offset;
     if (offset > 0 && n > end) {

@@ -64,7 +64,5 @@ function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix
 
 }
 
-$(document).ready(function() {
-	window.getDecryptedEmail = getDecryptedEmail;
-	window.send_UnCryptMailto_with_data = send_UnCryptMailto_with_data;
-});
+window.getDecryptedEmail = getDecryptedEmail;
+window.send_UnCryptMailto_with_data = send_UnCryptMailto_with_data;
