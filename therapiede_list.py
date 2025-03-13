@@ -34852,7 +34852,11 @@ try:
     creamy_thera = {}
     creamy_thera_li = {}
     all_lat_lon_keys = list(all_lat_lon.keys())
-    for i in range(0, len(all_lat_lon_keys)):
+    max_lat_len = 5
+    len_all_lat_lon_keys = len(all_lat_lon_keys)
+    if max_lat_len > len_all_lat_lon_keys:
+       max_lat_len = len_all_lat_lon_keys
+    for i in range(0, max_lat_len):
         all_lat_lon_key = all_lat_lon_keys[i]
         all_lat_lon_value = all_lat_lon[all_lat_lon_key]
         lat = all_lat_lon_value["lat"]
@@ -34861,7 +34865,6 @@ try:
         print(lng)
         thera_links_new.append(new_link)
         thera_links_loc.append(all_lat_lon_key)
-    sys.exit(0)
     for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
