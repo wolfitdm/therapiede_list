@@ -8,7 +8,21 @@ function decryptCharcode(n, start, end, offset) {
     return String.fromCharCode(n);
 }
 
+function getString(value) {
+	var encType = typeof(value);
+	switch(encType) {
+		case "number": 
+		case "undefined":
+		case "boolean":
+			return "";
+		case "string":
+		default:
+			return value;
+	}
+}
+
 function decryptString(enc, offset) {
+	enc = getString(enc);
     var dec = "";
     var len = enc.length;
     var i;
@@ -29,6 +43,9 @@ function decryptString(enc, offset) {
 
 function getDecryptedEmail() {
 	let contactButton = $('#contact-button, .contact-button');
+	if (contactButton.length <= 0) {
+		return "";
+	}
 	let contactUid = $(contactButton).data('contact-uid');
 	let contactEmail = $(contactButton).data('contact-email');
 	let contactEmailSubject = $(contactButton).data('contact-email-subject');

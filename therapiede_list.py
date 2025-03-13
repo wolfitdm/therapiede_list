@@ -33,9 +33,9 @@ def search_array_in_page(words, driver, must_found=1):
 
 search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA", "Geschlechtsdysphorie"]  
 search_words_queer_must_found = 1
-no_trans_thera = []
+no_trans_thera_email = []
 trans_thera_email = []
-no_trans_thera_all = []
+no_trans_thera_email_all = []
 trans_thera_email_all = []
 def search_queer_words_on_thera_profil(url, driver):
     main_window = driver.current_window_handle
@@ -47,11 +47,14 @@ def search_queer_words_on_thera_profil(url, driver):
     time.sleep(1)
     driver.get(url)
     element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#microsite .shadowbox.therapist-details')))
+    time.sleep(2)
+    is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
         print(e)
         print("exception")
+        return is_founded_queer
 
     with open('./jquery.js', 'r') as jquery_js: 
         # 3) Read the jquery from a file
@@ -67,8 +70,6 @@ def search_queer_words_on_thera_profil(url, driver):
 
     email_address_value = driver.execute_script("return window.getDecryptedEmail();");
     len_email_address_value = len(email_address_value)
-    time.sleep(2)
-    is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
     time.sleep(1)
     driver.close()
     driver.switch_to.window(main_window_one)
@@ -80,8 +81,8 @@ def search_queer_words_on_thera_profil(url, driver):
           print("trans_email: " + email_address_value)
     else:
        if len_email_address_value > 0:
-          no_trans_thera.append(email_address_value)
-          no_trans_thera_all.append(email_address_value)
+          no_trans_thera_email.append(email_address_value)
+          no_trans_thera_email_all.append(email_address_value)
           print("no_trans_email: " + email_address_value)
     return is_founded_queer
     
@@ -215,28 +216,30 @@ try:
                 no_search_results.append(sr)
             
         noooo_search_results = []
-        no_trans_thera = []
+        no_trans_thera_email = []
         trans_thera_email = []
         for i in range(0, len(no_search_results)):
             sr = no_search_results[i]
             if not search_queer_words_on_thera_profil(sr, driver):
+               if len(no_trans_thera_email) > 0:
+                  write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email)
+               if len(no_trans_thera_email_all) > 0:
+                  write_the_file("all_no_trans_thera_email_all", no_trans_thera_email_all)
                continue
             noo_search_results.append(sr) 
             noooo_search_results.append(sr)
+            if len(trans_thera_email) > 0:
+               write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email)
+            if len(trans_thera_email_all) > 0:
+               write_the_file("all_trans_thera_email_all", trans_thera_email_all)
         no_search_results = noooo_search_results  
         if len(no_search_results) > 0:
            write_the_file(thera_link_get_loc, no_search_results)
-        if len(trans_thera_email) > 0:
-           write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email)
-        if len(trans_thera_email_all) > 0:
-           write_the_file(thera_link_get_loc + "_trans_thera_email_all", trans_thera_email_all)
-        if len(no_trans_thera_email) > 0:
-           write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email)
-        if len(no_trans_thera_email_all) > 0:
-           write_the_file(thera_link_get_loc + "_no_trans_thera_email_all", no_trans_thera_email_all)
         thera_links_neww.append(no)
     if len(noo_search_results) > 0:
        write_the_file("all", noo_search_results)
+    if len(trans_thera_email_all) > 0:
+       write_the_file("all_trans_thera_email_all", trans_thera_email_all)
     current_i = 0
     max_i = len(noo_search_results) - 1
     open_urls = int(input("Wieviele Urls oeffnen?"))
