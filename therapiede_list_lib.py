@@ -34785,3 +34785,32 @@ def write_quermed_online_email_files():
     save_data(trans_quermed_all_online_emails, "trans_quermed_all_online_emails")
     write_the_file("trans_db_online_emails", trans_db_remote_both)
     save_data(trans_db_remote_both, "trans_db_remote_both")
+    
+def write_all_trans_online_theras(trans_profil_emails):
+    trans_quermed_all_online_emails = []
+    for i in range(i, len(quermed_gesetzlich_webcam)):
+        email = quermed_gesetzlich_webcam[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    for i in range(i, len(quermed_gesetzlich_privat_webcam)):
+        email = quermed_gesetzlich_privat_webcam[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    for i in range(i, len(quermed_privat_webcam)):
+        email = quermed_privat_webcam[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    for i in range(i, len(trans_recommmendens_webcam)):
+        email = trans_recommmendens_webcam[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    for i in range(i, len(trans_db_remote_both)):
+        email = trans_db_remote_both[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    for i in range(i, len(trans_profil_emails)):
+        email = trans_profil_emails[i]
+        if not email in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(email)
+    write_the_file("transdb_plus_quermed_plus_therapiede_all_online_emails",  trans_quermed_all_online_emails)
+    save_data(trans_quermed_all_online_emails, "transdb_plus_quermed_plus_therapiede_all_online_emails")

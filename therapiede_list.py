@@ -29,6 +29,7 @@ from therapiede_list_lib import get_all_lat_lon
 from therapiede_list_lib import get_all_lat_lon_mod
 from therapiede_list_lib import write_the_file
 from therapiede_list_lib import write_quermed_online_email_files
+from therapiede_list_lib import write_all_trans_online_theras
 
 def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
     distance = driver.execute_script("return window.coordinateDistance(arguments[0], arguments[1], arguments[2], arguments[3])", lat1, lon1, lat2, lon2)
@@ -235,7 +236,6 @@ with open('./therapiede_list.js', 'r') as therapiede_list_js:
 #lat=51.1638175&lon=10.447831111111112&search_radius=0
 #https://www.latlong.net/category/cities-83-15.html
 
-write_quermed_online_email_files()
 
 if is_data("trans_profil"):
    trans_profil = load_data("trans_profil")
@@ -254,7 +254,9 @@ for i in range(0, len(trans_profil_keys)):
     trans_profil_value = trans_profil[trans_profil_key]
     if not trans_profil_value in trans_profil_emails:
        trans_profil_emails.append(trans_profil_value)
-       write_the_file("trans_profil_emails", trans_profil_emails)
+
+write_quermed_online_email_files()
+write_all_trans_online_theras(trans_profil_emails)
        
 for i in range(0, len(no_trans_profil_keys)):
     no_trans_profil_key = no_trans_profil_keys[i]
