@@ -254,6 +254,7 @@ for i in range(0, len(trans_profil_keys)):
     trans_profil_value = trans_profil[trans_profil_key]
     if not trans_profil_value in trans_profil_emails:
        trans_profil_emails.append(trans_profil_value)
+       write_the_file("trans_profil_emails", trans_profil_emails)
 
 write_quermed_online_email_files()
 write_all_trans_online_theras(trans_profil_emails)
