@@ -240,7 +240,6 @@ try:
         thera_link_get_loc = driver.execute_script('return $(arguments[0]).data("locx")',  thera_links[i])
         thera_links_new.append(thera_link_get)
         thera_links_loc.append(thera_link_get_loc)
-         
     noo_search_results = []
     noo_search_results_loc = {}
     noo_search_results_li = []
@@ -273,6 +272,7 @@ try:
         
         distance = calcDistanceBetweenPoints(driver, flat, flng, lat, lng)
         allDistance += distance
+        allDistance = round(allDistance, 3)
         print("distance: " + str(distance))
         print("allDistance: " + str(allDistance))
         if allDistance > 70 or distance > 70:
@@ -289,7 +289,11 @@ try:
         #print(lng)
         #thera_links_new.append(new_link)
         #thera_links_loc.append(all_lat_lon_key)
-    for i in range(0, len(thera_links_new)):
+    if is_data("hel_search_results"):
+       hel_search_results = load_data("hel_search_results")
+    if is_data("hel_search_results_loc"):
+       hel_search_results_loc = load_data("hel_search_results_loc")
+    for i in range(len(hel_search_results), len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
         hel_search_results_loc[thera_link_get_loc] = []
@@ -316,6 +320,8 @@ try:
             hel_search_results_loc[thera_link_get_loc].append(sr)
             write_the_file("all", hel_search_results)   
             write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
+            save_data(hel_search_results, "hel_search_results")
+            save_data(hel_search_results_loc, "hel_search_results_loc")
         pagenav_bottom = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagenav-bottom")))
         thera_link_first_href = driver.execute_script('return $("#pagenav-bottom li.active a").last().attr("href");')
         print(thera_link_first_href)
@@ -344,6 +350,8 @@ try:
                 hel_search_results_loc[thera_link_get_loc].append(sr)
                 write_the_file("all", hel_search_results)   
                 write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
+                save_data(hel_search_results, "hel_search_results")
+                save_data(hel_search_results_loc, "hel_search_results_loc")
 
     write_the_file("all", hel_search_results)    
         #noooo_search_results = []
