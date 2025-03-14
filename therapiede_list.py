@@ -27,6 +27,10 @@ from therapiede_list_lib import is_data
 from therapiede_list_lib import load_data
 from therapiede_list_lib import get_all_lat_lon
 from therapiede_list_lib import get_all_lat_lon_mod
+from therapiede_list_lib import write_the_file
+from therapiede_list_lib import write_quermed_online_email_files
+
+write_quermed_online_email_files()
 
 def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
     distance = driver.execute_script("return window.coordinateDistance(arguments[0], arguments[1], arguments[2], arguments[3])", lat1, lon1, lat2, lon2)
@@ -115,6 +119,10 @@ def search_queer_words_on_thera_profil(url, driver):
 no_trans_profil = {}
 trans_profil = {}   
 def search_queer_words_on_thera_profil_ex(url, driver):
+    if url in trans_profil:
+       return True
+    if url in no_trans_profil:
+       return False
     driver.get(url)
     time.sleep(2)
     try:
@@ -289,17 +297,21 @@ try:
         #print(lng)
         #thera_links_new.append(new_link)
         #thera_links_loc.append(all_lat_lon_key)
-    if is_data("hel_search_results"):
-       hel_search_results = load_data("hel_search_results")
-    if is_data("hel_search_results_loc"):
-       hel_search_results_loc = load_data("hel_search_results_loc")
-    for i in range(len(hel_search_results), len(thera_links_new)):
+    nos = []
+    if is_data("trans_profil"):
+       trans_profil = load_data("trans_profil")
+    if is_data("no_trans_profil"):
+       no_trans_profil = load_data("no_trans_profil")
+    trans_thera_email_all = []
+    for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
         hel_search_results_loc[thera_link_get_loc] = []
         trans_thera_email_loc[thera_link_get_loc] = []
         no_trans_thera_email_loc[thera_link_get_loc] = []
         no = {}
+        no["search_results"] = []
+        no["search_results"+thera_link_get_loc] = []
         #no_search_results = []
         print(thera_link_get)
         try:
@@ -320,21 +332,20 @@ try:
             hel_search_results_loc[thera_link_get_loc].append(sr)
             write_the_file("all", hel_search_results)   
             write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
-            save_data(hel_search_results, "hel_search_results")
-            save_data(hel_search_results_loc, "hel_search_results_loc")
+            no["search_results"].append(sr)
         pagenav_bottom = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagenav-bottom")))
         thera_link_first_href = driver.execute_script('return $("#pagenav-bottom li.active a").last().attr("href");')
         print(thera_link_first_href)
-        no["fhref"] = thera_link_get
-        no["href"] = thera_link_first_href
+        no["thera_link_get"] = thera_link_get
+        no["thera_link_first_href"] = thera_link_first_href
         thera_link_first =  int(driver.execute_script('return $("#pagenav-bottom li.active a").last().html();'), 10)
-        no["first"] = thera_link_first
+        no["thera_link_first"] = thera_link_first
         thera_link_next = int(driver.execute_script('return $("#pagenav-bottom li.active + li a").last().html();'), 10)
+        no["thera_link_next"] = thera_link_next
         print(thera_link_next)
-        no["next"] = thera_link_next
         thera_link_last = int(driver.execute_script('return $("#pagenav-bottom li:not(.active):not(.next) a").last().html();'), 10)
+        no["thera_link_last"] = thera_link_last
         print(thera_link_last)
-        no["last"] = thera_link_last
         for j in range(thera_link_next, thera_link_last + 1):
             next_page_link = thera_link_first_href + "&page=" + str(j)
             driver.execute_script('document.location.href=arguments[0]', next_page_link)
@@ -348,11 +359,31 @@ try:
                 #no_search_results.append(sr)
                 hel_search_results.append(sr)
                 hel_search_results_loc[thera_link_get_loc].append(sr)
+                no["search_results"].append(sr)
                 write_the_file("all", hel_search_results)   
                 write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
-                save_data(hel_search_results, "hel_search_results")
-                save_data(hel_search_results_loc, "hel_search_results_loc")
-
+        
+        no_search_results = no["search_results"]
+        no["trans_thera_email_all"] = []
+        no["no_trans_thera_email_all"] = []
+        for k in range(0, len(no_search_results)):
+            url = no_search_results[k]
+            if search_queer_words_on_thera_profil_ex(url, driver):
+               email_address_value = trans_profil[url]
+               no["trans_thera_email_all"].append(email_address_value)
+               trans_thera_email_all.append(email_address_value)
+               write_the_file(thera_link_get_loc + "_trans_thera_email", no["trans_thera_email_all"])
+            else:
+               email_address_value = no_trans_profil[url]
+               no["no_trans_thera_email_all"].append(email_address_value)
+               trans_thera_email_all.append(email_address_value)
+               write_the_file(thera_link_get_loc + "_no_trans_thera_email", no["no_trans_thera_email_all"])
+            save_data(trans_profil, "trans_profil")
+            save_data(no_trans_profil, "no_trans_profil")
+        save_data(trans_profil, "trans_profil")
+        save_data(no_trans_profil, "no_trans_profil")
+    
+    write_the_file("trans_thera_email_all", trans_thera_email_all)   
     write_the_file("all", hel_search_results)    
         #noooo_search_results = []
         #no_trans_thera_email = []
@@ -384,33 +415,33 @@ try:
         hel_search_results_loc_temp = hel_search_results_loc[thera_link_get_loc]
         write_the_file(thera_link_get_loc, hel_search_results_loc_temp)
         
-        for j in range(0, len(hel_search_results_loc_temp)):
-            url = hel_search_results_loc_temp[j]
-            if search_queer_words_on_thera_profil_ex(url, driver):
-               email_address_value = trans_profil[url]
-               trans_thera_email_loc[thera_link_get_loc].append(email_address_value)
-               trans_thera_email_all.append(email_address_value)
-               write_the_file("trans_thera_email_all", trans_thera_email_all)
-               write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email_loc[thera_link_get_loc])
-            else:
-               email_address_value = no_trans_profil[url]
-               no_trans_thera_email_loc[thera_link_get_loc].append(email_address_value)
-               no_trans_thera_email_all.append(email_address_value)
-               write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
-               write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email_loc[thera_link_get_loc])
-           
-        if len(trans_thera_email_loc[thera_link_get_loc]) > 0:
-           write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email_loc[thera_link_get_loc])
-           has_trans_all = True
-           
-        if len(no_trans_thera_email_loc[thera_link_get_loc]) > 0:
-           write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email_loc[thera_link_get_loc])
-           has_no_trans_all = True
+        #for j in range(0, len(hel_search_results_loc_temp)):
+        #    url = hel_search_results_loc_temp[j]
+        #    if search_queer_words_on_thera_profil_ex(url, driver):
+        #       email_address_value = trans_profil[url]
+        #       trans_thera_email_loc[thera_link_get_loc].append(email_address_value)
+        #       trans_thera_email_all.append(email_address_value)
+        #       write_the_file("trans_thera_email_all", trans_thera_email_all)
+        #       write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email_loc[thera_link_get_loc])
+        #    else:
+        #       email_address_value = no_trans_profil[url]
+        #       no_trans_thera_email_loc[thera_link_get_loc].append(email_address_value)
+        #       no_trans_thera_email_all.append(email_address_value)
+        #       write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
+        #       write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email_loc[thera_link_get_loc])
+        #   
+        #if len(trans_thera_email_loc[thera_link_get_loc]) > 0:
+        #   write_the_file(thera_link_get_loc + "_trans_thera_email", trans_thera_email_loc[thera_link_get_loc])
+        #   has_trans_all = True
+        #   
+        #if len(no_trans_thera_email_loc[thera_link_get_loc]) > 0:
+        #   write_the_file(thera_link_get_loc + "_no_trans_thera_email", no_trans_thera_email_loc[thera_link_get_loc])
+        #   has_no_trans_all = True
 
-    if has_trans_all:
-       write_the_file("trans_thera_email_all", trans_thera_email_all)
-    if has_no_trans_all:
-       write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
+    #if has_trans_all:
+    #  write_the_file("trans_thera_email_all", trans_thera_email_all)
+    #if has_no_trans_all:
+    #   write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
     #if len(noo_search_results) > 0:
     #   write_the_file("all", noo_search_results)
     #if len(trans_thera_email_all) > 0:

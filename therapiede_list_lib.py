@@ -34677,3 +34677,96 @@ def get_all_lat_lon_mod():
            all_lat_lon_mod[all_lat_lon_key]["lng"] = lng
        save_data(all_lat_lon_mod, "all_lat_lon_mod")
     return load_data("all_lat_lon_mod")
+
+quermed_gesetzlich_webcam = [
+    "admin@psychotherapie-sievert.de",
+    "sattler@therapiepraxis-walldorf.de",
+    "praxis-neise@posteo.de",
+    "praxis@wiebke-siuts.de",
+]
+
+quermed_gesetzlich_maybe_webcam = [
+    "suehlmann@psychotherapie-jasperallee.de",
+    "info@npz-hamburg.de",
+]
+
+quermed_gesetzlich_privat_webcam = [
+    "praxis@fischundscherler.de",
+    "h.thorst@gmx.de",
+    "baumann@vt-praxis-giessen.de",
+    "maren_strobel@web.de",
+    "praxis-kriegseis@web.de",
+    "praxis@ivkoppenfels.de",
+    "post@christina-sieber.de",
+    "kontakt@praxis-jgradel.de",
+    "info@psychotherapeut-direkt.de",
+    "info@praxis-am-goethepark.de",
+    "praxis-schmitz@posteo.de",
+    "anfrage@cwik-psychotherapie.de",
+    "kontakt@praxis-hofter.de",
+    "hh.korn@gmail.com",
+    "info@psychotherapie-janknecht.de",
+]
+
+quermed_gesetzlich_privat_maybe_webcam = [
+    "praxis-koehler@posteo.de",
+    "Psychotherapie@praxis-heitfeld.de",
+    "praxis@neurolif.de",
+    "praxis@psychotherapie-goncarov.de",
+    "info@kayakorte.de",
+    "praxis@psychotherapie-ritz.de",
+    "Anmeldung@Praxis-Dr-Skaletz.de",
+    "jurilj@psychotherapie-jurilj.de",
+    "sml@psychotherapie-mz.de",
+    "honisch@praxisgemeinschaft-oberwiehre.de",
+]
+
+quermed_privat_webcam = [
+    "psychotherapiepraxis.alt@gmail.com",
+    "systemische@therapie-gottlieb.de",
+    "mail@psychotherapie-brauer.de",
+    "therapieanfrage-psychotherapie-engel@gmx.de",
+    "info@sano-hamburg.de",
+    "psychotherapie.rohls@gmail.com",
+    "psychotherapie.svea@protonmail.com",
+    "reichrath@stuffandstory.de",
+    "mail@privatpraxis-kreutz.de",
+]
+
+quermed_privat_maybe_webcam = [
+    "psychotherapie-outzen@posteo.de",
+    "info@360grad-psychotherapie.de",
+    "info@drcnauck.de",
+    "praxis@andreashammer.com",
+    "kontakt@cvandenhout.de",
+    "habekost@psychotherapie-talstrasse.de",
+]
+
+trans_recommmendens_webcam = [
+    "info@psychotherapie-rosbach.de",
+    "liebsch@psychotherapie-rosbach.de",
+]
+
+def write_the_file(name="0", content=[]):
+    target = os.path.join("thera_lists", name+"_theras_online.txt")
+    with open(target, 'w') as f:
+         for line in content:
+             f.write(f"{line}\n")
+
+def write_quermed_online_email_files():
+    write_the_file("quermed_gesetzlich_webcam", quermed_gesetzlich_webcam)
+    write_the_file("quermed_gesetzlich_maybe_webcam", quermed_gesetzlich_maybe_webcam)
+    write_the_file("quermed_gesetzlich_privat_webcam",  quermed_gesetzlich_privat_webcam)
+    write_the_file("quermed_gesetzlich_privat_maybe_webcam", quermed_gesetzlich_privat_maybe_webcam)
+    write_the_file("quermed_privat_webcam", quermed_privat_webcam)
+    write_the_file("quermed_privat_maybe_webcam", quermed_privat_maybe_webcam)
+    write_the_file("trans_recommmendens_webcam", trans_recommmendens_webcam)
+    trans_quermed_all_online_emails = []
+    for i in range(i, len(quermed_gesetzlich_webcam)):
+        trans_quermed_all_online_emails.append(quermed_gesetzlich_webcam[i])
+    for i in range(i, len(quermed_gesetzlich_privat_webcam)):
+        trans_quermed_all_online_emails.append(quermed_gesetzlich_privat_webcam[i])
+    for i in range(i, len(quermed_privat_webcam)):
+        trans_quermed_all_online_emails.append(quermed_privat_webcam[i])
+    write_the_file("trans_quermed_all_online_emails", trans_quermed_all_online_emails)
+    
