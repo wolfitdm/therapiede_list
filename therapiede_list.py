@@ -30,6 +30,7 @@ from therapiede_list_lib import get_all_lat_lon_mod
 from therapiede_list_lib import write_the_file
 from therapiede_list_lib import write_quermed_online_email_files
 from therapiede_list_lib import write_all_trans_online_theras
+from therapiede_list_lib import write_trans_db_files
 
 def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
     distance = driver.execute_script("return window.coordinateDistance(arguments[0], arguments[1], arguments[2], arguments[3])", lat1, lon1, lat2, lon2)
@@ -117,6 +118,9 @@ def search_queer_words_on_thera_profil(url, driver):
 
 no_trans_profil = {}
 trans_profil = {}   
+ret_write_trans_db_files = write_trans_db_files()
+trans_profil = ret_write_trans_db_files["trans_profil"]
+no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
 def search_queer_words_on_thera_profil_ex(url, driver):
     if url in trans_profil:
        return True
@@ -173,7 +177,7 @@ def search_queer_words_on_thera_profil_ex(url, driver):
           save_data(no_trans_profil, "no_trans_profil")
           print("no_trans_email: " + email_address_value)
     return is_founded_queer
-    
+
 downloadDefaultDirectory = '.'
 headlessmode = False
 options = webdriver.ChromeOptions()
@@ -235,42 +239,6 @@ with open('./therapiede_list.js', 'r') as therapiede_list_js:
     # 5) Execute your command 
 #lat=51.1638175&lon=10.447831111111112&search_radius=0
 #https://www.latlong.net/category/cities-83-15.html
-
-
-if is_data("trans_profil"):
-   trans_profil = load_data("trans_profil")
-   
-if is_data("no_trans_profil"):
-   no_trans_profil = load_data("no_trans_profil")
-
-trans_profil_keys = list(trans_profil.keys())
-no_trans_profil_keys = list(no_trans_profil.keys())
-
-trans_profil_emails = []
-no_trans_profil_emails = []
-
-for i in range(0, len(trans_profil_keys)):
-    trans_profil_key = trans_profil_keys[i]
-    trans_profil_value = trans_profil[trans_profil_key]
-    if not trans_profil_value in trans_profil_emails:
-       trans_profil_emails.append(trans_profil_value)
-       write_the_file("trans_profil_emails", trans_profil_emails)
-
-write_quermed_online_email_files()
-write_all_trans_online_theras(trans_profil_emails)
-       
-for i in range(0, len(no_trans_profil_keys)):
-    no_trans_profil_key = no_trans_profil_keys[i]
-    no_trans_profil_value = no_trans_profil[trans_profil_key]
-    if not no_trans_profil_value in no_trans_profil_emails:
-       no_trans_profil_emails.append(no_trans_profil_value)
-       write_the_file("no_trans_profil_emails", no_trans_profil_emails)
-       
-if len(trans_profil_emails) > 0:
-   write_the_file("trans_profil_emails", trans_profil_emails)
-       
-if len(no_trans_profil_emails) > 0:
-   write_the_file("no_trans_profil_emails", no_trans_profil_emails)
        
 try:
     thera_cool = WebDriverWait(driver, 70).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".list-columns.thera_cool")))

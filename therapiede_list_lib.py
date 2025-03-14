@@ -34720,7 +34720,7 @@ quermed_gesetzlich_privat_maybe_webcam = [
     "sml@psychotherapie-mz.de",
     "honisch@praxisgemeinschaft-oberwiehre.de",
 ]
-save_data(quermed_gesetzlich_privat_maybe_webcam, quermed_gesetzlich_privat_maybe_webcam)
+save_data(quermed_gesetzlich_privat_maybe_webcam, "quermed_gesetzlich_privat_maybe_webcam")
 quermed_privat_webcam = [
     "psychotherapiepraxis.alt@gmail.com",
     "systemische@therapie-gottlieb.de",
@@ -34741,12 +34741,13 @@ quermed_privat_maybe_webcam = [
     "kontakt@cvandenhout.de",
     "habekost@psychotherapie-talstrasse.de",
 ]
-save_data(quermed_privat_maybe_webcam, "quermed_gesetzlich_privat_maybe_webcam")
+save_data(quermed_privat_maybe_webcam, "quermed_privat_maybe_webcam")
 trans_recommmendens_webcam = [
     "info@psychotherapie-rosbach.de",
     "liebsch@psychotherapie-rosbach.de",
     "wolfgangbaer@email.de",
 ]
+save_data(trans_recommmendens_webcam, "trans_recommmendens_webcam")
 trans_db_link = "https://transdb.de/search?type=therapist&offers=indication&attributes=remote"
 trans_db_remote_both = [
     "praxis@rimele.de",
@@ -34760,7 +34761,7 @@ trans_db_remote_both = [
     "matthias.bosbach@gmx.de",
     "m.rossmoeller@gmail.com",
 ]
-save_data(trans_recommmendens_webcam, "trans_recommmendens_webcam")
+save_data(trans_db_remote_both, "trans_db_remote_both")
 def write_the_file(name="0", content=[]):
     target = os.path.join("thera_lists", name+"_theras_online.txt")
     with open(target, 'w') as f:
@@ -34776,11 +34777,11 @@ def write_quermed_online_email_files():
     write_the_file("quermed_privat_maybe_webcam", quermed_privat_maybe_webcam)
     write_the_file("trans_recommmendens_webcam", trans_recommmendens_webcam)
     trans_quermed_all_online_emails = []
-    for i in range(i, len(quermed_gesetzlich_webcam)):
+    for i in range(0, len(quermed_gesetzlich_webcam)):
         trans_quermed_all_online_emails.append(quermed_gesetzlich_webcam[i])
-    for i in range(i, len(quermed_gesetzlich_privat_webcam)):
+    for i in range(0, len(quermed_gesetzlich_privat_webcam)):
         trans_quermed_all_online_emails.append(quermed_gesetzlich_privat_webcam[i])
-    for i in range(i, len(quermed_privat_webcam)):
+    for i in range(0, len(quermed_privat_webcam)):
         trans_quermed_all_online_emails.append(quermed_privat_webcam[i])
     write_the_file("trans_quermed_all_online_emails", trans_quermed_all_online_emails)
     save_data(trans_quermed_all_online_emails, "trans_quermed_all_online_emails")
@@ -34789,29 +34790,79 @@ def write_quermed_online_email_files():
     
 def write_all_trans_online_theras(trans_profil_emails):
     trans_quermed_all_online_emails = []
-    for i in range(i, len(quermed_gesetzlich_webcam)):
+    for i in range(0, len(quermed_gesetzlich_webcam)):
         email = quermed_gesetzlich_webcam[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(i, len(quermed_gesetzlich_privat_webcam)):
+    for i in range(0, len(quermed_gesetzlich_privat_webcam)):
         email = quermed_gesetzlich_privat_webcam[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(i, len(quermed_privat_webcam)):
+    for i in range(0, len(quermed_privat_webcam)):
         email = quermed_privat_webcam[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(i, len(trans_recommmendens_webcam)):
+    for i in range(0, len(trans_recommmendens_webcam)):
         email = trans_recommmendens_webcam[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(i, len(trans_db_remote_both)):
+    for i in range(0, len(trans_db_remote_both)):
         email = trans_db_remote_both[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(i, len(trans_profil_emails)):
+    for i in range(0, len(trans_profil_emails)):
         email = trans_profil_emails[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
     write_the_file("transdb_plus_quermed_plus_therapiede_all_online_emails",  trans_quermed_all_online_emails)
     save_data(trans_quermed_all_online_emails, "transdb_plus_quermed_plus_therapiede_all_online_emails")
+    
+    
+def write_trans_db_files():
+    ret = {}
+    ret["trans_profil"] = {}
+    ret["no_trans_profil"] = {}
+    ret["trans_profil_emails"] = {}
+    ret["no_trans_profil_emails"] = {}
+   
+    if is_data("trans_profil"):
+       trans_profil = load_data("trans_profil")
+   
+    if is_data("no_trans_profil"):
+       no_trans_profil = load_data("no_trans_profil")
+
+    trans_profil_keys = list(trans_profil.keys())
+    no_trans_profil_keys = list(no_trans_profil.keys())
+
+    trans_profil_emails = []
+    no_trans_profil_emails = []
+
+    for i in range(0, len(trans_profil_keys)):
+        trans_profil_key = trans_profil_keys[i]
+        trans_profil_value = trans_profil[trans_profil_key]
+        if not trans_profil_value in trans_profil_emails:
+           trans_profil_emails.append(trans_profil_value)
+           write_the_file("trans_profil_emails", trans_profil_emails)
+
+    write_quermed_online_email_files()
+    write_all_trans_online_theras(trans_profil_emails)
+       
+    for i in range(0, len(no_trans_profil_keys)):
+        no_trans_profil_key = no_trans_profil_keys[i]
+        no_trans_profil_value = no_trans_profil[no_trans_profil_key]
+        if not no_trans_profil_value in no_trans_profil_emails:
+           no_trans_profil_emails.append(no_trans_profil_value)
+           write_the_file("no_trans_profil_emails", no_trans_profil_emails)
+       
+    if len(trans_profil_emails) > 0:
+       write_the_file("trans_profil_emails", trans_profil_emails)
+       
+    if len(no_trans_profil_emails) > 0:
+       write_the_file("no_trans_profil_emails", no_trans_profil_emails)
+      
+    ret["trans_profil"] = trans_profil
+    ret["no_trans_profil"] = no_trans_profil
+    ret["trans_profil_emails"] = trans_profil_emails
+    ret["no_trans_profil_emails"] = no_trans_profil_emails
+   
+    return ret
