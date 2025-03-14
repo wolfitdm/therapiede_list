@@ -34746,6 +34746,19 @@ trans_recommmendens_webcam = [
     "info@psychotherapie-rosbach.de",
     "liebsch@psychotherapie-rosbach.de",
 ]
+trans_db_link = "https://transdb.de/search?type=therapist&offers=indication&attributes=remote"
+trans_db_remote_both = [
+    "praxis@rimele.de",
+    "kontakt@psychotherapie-dombrowe.de",
+    "Praxis-Bormann-Guenther@gmx.de",
+    "Info@gaialee.com",
+    "info@imke-rausch.de",
+    "a.behret@web.de",
+    "info@therapiepraxis-walldorf.de",
+    "info@psychotherapie-janknecht.de",
+    "matthias.bosbach@gmx.de",
+    "m.rossmoeller@gmail.com",
+]
 save_data(trans_recommmendens_webcam, "trans_recommmendens_webcam")
 def write_the_file(name="0", content=[]):
     target = os.path.join("thera_lists", name+"_theras_online.txt")
@@ -34770,4 +34783,5 @@ def write_quermed_online_email_files():
         trans_quermed_all_online_emails.append(quermed_privat_webcam[i])
     write_the_file("trans_quermed_all_online_emails", trans_quermed_all_online_emails)
     save_data(trans_quermed_all_online_emails, "trans_quermed_all_online_emails")
-    
+    write_the_file("trans_db_online_emails", trans_db_remote_both)
+    save_data(trans_db_remote_both, "trans_db_remote_both")
