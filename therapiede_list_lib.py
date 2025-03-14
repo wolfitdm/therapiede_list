@@ -34745,6 +34745,7 @@ save_data(quermed_privat_maybe_webcam, "quermed_gesetzlich_privat_maybe_webcam")
 trans_recommmendens_webcam = [
     "info@psychotherapie-rosbach.de",
     "liebsch@psychotherapie-rosbach.de",
+    "wolfgangbaer@email.de",
 ]
 trans_db_link = "https://transdb.de/search?type=therapist&offers=indication&attributes=remote"
 trans_db_remote_both = [
