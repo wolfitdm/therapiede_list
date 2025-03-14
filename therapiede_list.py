@@ -15,6 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.print_page_options import PrintOptions
 import base64
+import math
 
 all_lat_lon = {
   "10115": {
@@ -33210,6 +33211,10 @@ all_lat_lon = {
     "lng": 13.0685643
   }
 }
+
+def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
+    return driver.execute_script("return window.coordinateDistance(arguments[0], arguments[1], arguments[2], arguments[3])", lat1, lon1, lat2, lon2)
+
 cities = [
   {
     "city": "Berlin", 
@@ -34804,7 +34809,7 @@ closeDriver = False
 driver.get("https://www.therapie.de/psychotherapie/-verfahren-/online-therapie/-ort-/alle-orte/")
 
 try:
-    zwickau = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.list-columns a[href="/psychotherapie/-verfahren-/online-therapie/-ort-/zwickau/"]')))
+    zwickau = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.list-columns a[href="/psychotherapie/-verfahren-/online-therapie/-ort-/zwickau/"]')))
 except TimeoutException as e:
     print("Couldn't find: " + str("zwickau"))
     pass
@@ -34824,8 +34829,8 @@ with open('./therapiede_list.js', 'r') as therapiede_list_js:
 #lat=51.1638175&lon=10.447831111111112&search_radius=0
 #https://www.latlong.net/category/cities-83-15.html
 try:
-    thera_cool = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".list-columns.thera_cool")))
-    thera_links = thera_cool.find_elements(By.CSS_SELECTOR, ".list-columns a.thera_link")
+    thera_cool = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".list-columns.thera_cool")))
+    thera_links = driver.execute_script('return document.querySelectorAll(".list-columns.thera_cool a.thera_link");')
     thera_links_new = []
     thera_links_neww = []
     thera_links_loc = []
@@ -34840,6 +34845,7 @@ try:
         thera_link_get_loc = driver.execute_script('return $(arguments[0]).data("locx")',  thera_links[i])
         thera_links_new.append(thera_link_get)
         thera_links_loc.append(thera_link_get_loc)
+         
     noo_search_results = []
     noo_search_results_loc = {}
     noo_search_results_li = []
@@ -34852,19 +34858,48 @@ try:
     creamy_thera = {}
     creamy_thera_li = {}
     all_lat_lon_keys = list(all_lat_lon.keys())
-    max_lat_len = 5
     len_all_lat_lon_keys = len(all_lat_lon_keys)
-    if max_lat_len > len_all_lat_lon_keys:
-       max_lat_len = len_all_lat_lon_keys
-    for i in range(0, max_lat_len):
+    print("len_lat " + str(len_all_lat_lon_keys))
+    for i in range(0, len_all_lat_lon_keys):
         all_lat_lon_key = all_lat_lon_keys[i]
         all_lat_lon_value = all_lat_lon[all_lat_lon_key]
         lat = all_lat_lon_value["lat"]
         lng = all_lat_lon_value["lng"]
-        new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,lat,lng)
-        print(lng)
-        thera_links_new.append(new_link)
-        thera_links_loc.append(all_lat_lon_key)
+        lat = driver.execute_script('return (Math.round((arguments[0] + Number.EPSILON) * 1000) / 1000)', lat)
+        lng = driver.execute_script('return (Math.round((arguments[0] + Number.EPSILON) * 1000) / 1000)', lng)
+        all_lat_lon_value["lat"] = lat
+        all_lat_lon_value["lng"] = lng
+        all_lat_lon[all_lat_lon_key] = all_lat_lon_value
+    allDistance = 0
+    flat = 0
+    flng = 0
+    for i in range(0, len_all_lat_lon_keys):    
+        all_lat_lon_key = all_lat_lon_keys[i]
+        all_lat_lon_value = all_lat_lon[all_lat_lon_key]
+        lat = all_lat_lon_value["lat"]
+        lng = all_lat_lon_value["lng"]
+        if flat == 0:
+           flat = lat 
+           flng = lng
+           continue
+        
+        distance = calcDistanceBetweenPoints(driver, flat, flng, lat, lng)
+        allDistance += distance
+        print("distance: " + str(distance))
+        print("allDistance: " + str(allDistance))
+        if allDistance > 70 or distance > 70:
+           new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,flat,flng)
+           thera_links_new.append(new_link)
+           thera_links_loc.append(all_lat_lon_key)
+           allDistance = 0
+           distance = 0
+           flat = 0
+           flng = 0
+                 
+        #new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,lat,lng)
+        #print(lng)
+        #thera_links_new.append(new_link)
+        #thera_links_loc.append(all_lat_lon_key)
     for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]

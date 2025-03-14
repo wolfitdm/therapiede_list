@@ -49,8 +49,34 @@ function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix
 
 }
 
+const coordinateDistance = (lat1, lon1, lat2, lon2) => {
+  // Convert degrees to radians
+  const radLat1 = lat1 * Math.PI / 180;
+  const radLon1 = lon1 * Math.PI / 180;
+  const radLat2 = lat2 * Math.PI / 180;
+  const radLon2 = lon2 * Math.PI / 180;
+
+  // Radius of the Earth in meters
+  const R = 6_371_000; // m
+
+  // Differences in coordinates
+  const dLat = radLat2 - radLat1;
+  const dLon = radLon2 - radLon1;
+
+  // Haversine formula
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(radLat1) * Math.cos(radLat2) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c;
+
+  return distance.toFixed(2) / 1000; // Return distance rounded to 2 decimal places
+};
+
 window.getDecryptedEmail = getDecryptedEmail;
 window.send_UnCryptMailto_with_data = send_UnCryptMailto_with_data;
+window.coordinateDistance = coordinateDistance;
 
 function getContentUrl(nurl, callback) {
 	let hrefs = [];
@@ -331,10 +357,12 @@ $(document).ready(function() {
 			$(lca).append(cLoc);
 		}
 	}
+	$(".list-columns").toggleClass("thera_cool", true);
     let links = document.querySelectorAll('.list-columns a[href*="/psychotherapie/-verfahren-/online-therapie/-ort-/"]');
     let eles = [];
 	let idx_ = "";
 	for (let i = 0; i < links.length; i++) {
+		$(links[i]).toggleClass("thera_link", true);
 		let par = $(links[i]).parent();
 		$(par).parent().toggleClass("thera_cool", true);
 		let idx = par.attr("id");
