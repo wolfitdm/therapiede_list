@@ -34817,8 +34817,8 @@ def email_daten_json():
     email_daten = {}
     if not os.path.isfile("email_daten.json"):
        email_daten = {
-           "email": "nachtwoelfin2022@gmail.com",
-           "password": "avqf oihj cqes vdil",
+           "email": "example@gmail.com",
+           "password": "app_password_created_with_2_factor_step_verification",
            "subject":  "Einzeltherapie / Gruppentherapie Transitionsbegleitung",
            "body": "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz fuer die Transitionsbegleitung. Viele Liebe Gruesse Luna",
        }
@@ -34857,9 +34857,14 @@ def send_email(smtpserver, recipients):
     cache_key = login_smtp + msg['To'] + subject + body
     if cache_key in receiver_email_cache:
        return 
-    receiver_email_cache[cache_key] = True
-    save_data(receiver_email_cache, "receiver_email_cache")
-    smtpserver.sendmail(login_smtp, recipients, msg.as_string())
+    message_sent = True
+    try:
+        smtpserver.sendmail(login_smtp, recipients, msg.as_string())
+    except:
+        message_sent = False
+    if message_sent:
+       receiver_email_cache[cache_key] = True
+       save_data(receiver_email_cache, "receiver_email_cache")
     print("Message sent!")
 
 def send_emails_ex(smtpserver, trans_quermed_all_online_emails):
