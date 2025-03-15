@@ -34803,9 +34803,6 @@ def smtp_login(login, password):
     smtpserver.login(login, password)
     return smtpserver
  
-receiver_email_cache = {}
-if is_data("receiver_email_cache"):
-   receiver_email_cache = load_data("receiver_email_cache")
 def smtp_server_get():
     smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
     smtpserver.connect("smtp.gmail.com", 587)
@@ -34837,6 +34834,7 @@ login_smtp = email_data["email"]
 password_smtp = email_data["password"]
 email_subject = email_data["subject"]
 email_body = email_data["body"]
+
 def smtp_server_login(smtpserver):
     smtpserver.login(login_smtp, password_smtp)
 
@@ -34846,6 +34844,9 @@ def smtp_server_complete():
     smtp_server_login(smtpserver)
     return smtpserver
 
+receiver_email_cache = {}
+if is_data("receiver_email_cache"):
+   receiver_email_cache = load_data("receiver_email_cache")
 def send_email(smtpserver, recipients):
     subject = email_subject
     body = email_body
@@ -34923,12 +34924,13 @@ def write_all_trans_online_theras(send_emails=False):
            write_the_file("trans_profil_emails", trans_profil_emails)
     write_the_file("transdb_plus_quermed_plus_therapiede_all_online_emails",  trans_quermed_all_online_emails)
     save_data(trans_quermed_all_online_emails, "transdb_plus_quermed_plus_therapiede_all_online_emails")
-    for i in range(0, len(no_trans_profil_keys)):
-        trans_profil_key = no_trans_profil_keys[i]
-        trans_profil_value = no_trans_profil[trans_profil_key]
-        if not trans_profil_value in trans_quermed_all_online_emails:
-           trans_quermed_all_online_emails.append(trans_profil_value)
     if send_emails:
+       for i in range(0, len(no_trans_profil_keys)):
+           trans_profil_key = no_trans_profil_keys[i]
+           trans_profil_value = no_trans_profil[trans_profil_key]
+           if not trans_profil_value in trans_quermed_all_online_emails:
+              trans_quermed_all_online_emails.append(trans_profil_value)
+       save_data(trans_quermed_all_online_emails, "all_online_theras_trans_first")
        smtpserver = smtp_server_complete()
        send_emails_ex(smtpserver, trans_quermed_all_online_emails)          
 def write_trans_db_files(send_emails=False):
