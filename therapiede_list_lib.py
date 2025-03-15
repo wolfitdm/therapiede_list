@@ -34815,8 +34815,25 @@ def smtp_server_tls(smtpserver):
     smtpserver.starttls()
     smtpserver.ehlo()
 
-login_smtp = "nachtwoelfin2022@gmail.com"
-password_smtp = "avqf oihj cqes vdil"
+def email_daten_json():
+    email_daten = {}
+    if not os.path.isfile("email_daten.json"):
+       email_daten = {
+           "email": "nachtwoelfin2022@gmail.com",
+           "password": "avqf oihj cqes vdil",
+           "subject":  "Einzeltherapie / Gruppentherapie Transitionsbegleitung"
+           "body": "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz für die Transitionsbegleitung. Viele Liebe Gruesse Luna",
+       }
+    else:
+       with open("email_daten.json") as f:
+            email_daten = json.load(f)
+    return email_daten
+
+email_data = email_daten_json()
+login_smtp = email_data["email"]
+password_smtp = email_data["password"]
+email_subject = email_data["subject"]
+email_body = email_data["body"]
 def smtp_server_login(smtpserver):
     smtpserver.login(login_smtp, password_smtp)
 
@@ -34827,15 +34844,16 @@ def smtp_server_complete():
     return smtpserver
 
 def send_email(smtpserver, recipients):
-    subject = "Einzeltherapie / Gruppentherapie Transitionsbegleitung"
-    body = "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz für die Transitionsbegleitung. Viele Liebe Gruesse Luna"
+    subject = email_subject
+    body = email_body
     msg = MIMEText(body)
     msg['Subject'] = subject
     msg['From'] = login_smtp
     msg['To'] = ', '.join(recipients)
-    if msg['To'] in receiver_email_cache:
+    cache_key = login_smtp + msg['To'] + subject + body
+    if cache_key in receiver_email_cache:
        return 
-    receiver_email_cache[msg['To']] = True
+    receiver_email_cache[cache_key] = True
     save_data(receiver_email_cache, "receiver_email_cache")
     smtpserver.sendmail(login_smtp, recipients, msg.as_string())
     print("Message sent!")
