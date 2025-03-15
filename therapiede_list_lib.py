@@ -3,6 +3,7 @@ import os
 import errno
 import os.path
 import smtplib
+import json
 
 from email.mime.text import MIMEText
 
@@ -34821,9 +34822,11 @@ def email_daten_json():
        email_daten = {
            "email": "nachtwoelfin2022@gmail.com",
            "password": "avqf oihj cqes vdil",
-           "subject":  "Einzeltherapie / Gruppentherapie Transitionsbegleitung"
-           "body": "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz für die Transitionsbegleitung. Viele Liebe Gruesse Luna",
+           "subject":  "Einzeltherapie / Gruppentherapie Transitionsbegleitung",
+           "body": "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz fuer die Transitionsbegleitung. Viele Liebe Gruesse Luna",
        }
+       with open('email_daten.json', 'w') as f:
+            json.dump(email_daten, f, sort_keys = False, indent = 4)
     else:
        with open("email_daten.json") as f:
             email_daten = json.load(f)
