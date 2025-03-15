@@ -87,6 +87,7 @@ https://www.therapie.de/profil/patricia.bust/
 https://www.therapie.de/profil/mscdaniel.bounine/
 https://www.therapie.de/profil/antje.kaiser/
 https://www.therapie.de/profil/daniel.zeiss/
+https://www.therapie.de/profil/zastera/
 https://www.therapie.de/profil/hiepko/
 https://www.therapie.de/profil/konietzko/
 https://www.therapie.de/profil/namvar/
@@ -102,4 +103,3 @@ https://www.therapie.de/profil/untiedt/
 https://www.therapie.de/profil/kotzerke/
 https://www.therapie.de/profil/frank.koehler/
 https://www.therapie.de/profil/matthias.graetz/
-https://www.therapie.de/profil/tracht/

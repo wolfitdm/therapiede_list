@@ -30,6 +30,7 @@ from therapiede_list_lib import get_all_lat_lon_mod
 from therapiede_list_lib import write_the_file
 from therapiede_list_lib import write_quermed_online_email_files
 from therapiede_list_lib import write_all_trans_online_theras
+from therapiede_list_lib import write_trans_db_files
 
 def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
     distance = driver.execute_script("return window.coordinateDistance(arguments[0], arguments[1], arguments[2], arguments[3])", lat1, lon1, lat2, lon2)
@@ -117,6 +118,9 @@ def search_queer_words_on_thera_profil(url, driver):
 
 no_trans_profil = {}
 trans_profil = {}   
+ret_write_trans_db_files = write_trans_db_files()
+trans_profil = ret_write_trans_db_files["trans_profil"]
+no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
 def search_queer_words_on_thera_profil_ex(url, driver):
     if url in trans_profil:
        return True
@@ -173,7 +177,7 @@ def search_queer_words_on_thera_profil_ex(url, driver):
           save_data(no_trans_profil, "no_trans_profil")
           print("no_trans_email: " + email_address_value)
     return is_founded_queer
-    
+
 downloadDefaultDirectory = '.'
 headlessmode = False
 options = webdriver.ChromeOptions()
@@ -235,42 +239,6 @@ with open('./therapiede_list.js', 'r') as therapiede_list_js:
     # 5) Execute your command 
 #lat=51.1638175&lon=10.447831111111112&search_radius=0
 #https://www.latlong.net/category/cities-83-15.html
-
-
-if is_data("trans_profil"):
-   trans_profil = load_data("trans_profil")
-   
-if is_data("no_trans_profil"):
-   no_trans_profil = load_data("no_trans_profil")
-
-trans_profil_keys = list(trans_profil.keys())
-no_trans_profil_keys = list(no_trans_profil.keys())
-
-trans_profil_emails = []
-no_trans_profil_emails = []
-
-for i in range(0, len(trans_profil_keys)):
-    trans_profil_key = trans_profil_keys[i]
-    trans_profil_value = trans_profil[trans_profil_key]
-    if not trans_profil_value in trans_profil_emails:
-       trans_profil_emails.append(trans_profil_value)
-       write_the_file("trans_profil_emails", trans_profil_emails)
-
-write_quermed_online_email_files()
-write_all_trans_online_theras(trans_profil_emails)
-       
-for i in range(0, len(no_trans_profil_keys)):
-    no_trans_profil_key = no_trans_profil_keys[i]
-    no_trans_profil_value = no_trans_profil[trans_profil_key]
-    if not no_trans_profil_value in no_trans_profil_emails:
-       no_trans_profil_emails.append(no_trans_profil_value)
-       write_the_file("no_trans_profil_emails", no_trans_profil_emails)
-       
-if len(trans_profil_emails) > 0:
-   write_the_file("trans_profil_emails", trans_profil_emails)
-       
-if len(no_trans_profil_emails) > 0:
-   write_the_file("no_trans_profil_emails", no_trans_profil_emails)
        
 try:
     thera_cool = WebDriverWait(driver, 70).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".list-columns.thera_cool")))
@@ -278,6 +246,9 @@ try:
     thera_links_new = []
     thera_links_neww = []
     thera_links_loc = []
+    thera_links_neww = {}
+    if is_data("thera_links_neww"):
+       thera_links_neww = load_data("thera_links_neww")
     for i in range(0, len(thera_links)):
         print("hallo " + str(i))
         print(thera_links[i].get_attribute("href"))
@@ -289,6 +260,10 @@ try:
         thera_link_get_loc = driver.execute_script('return $(arguments[0]).data("locx")',  thera_links[i])
         thera_links_new.append(thera_link_get)
         thera_links_loc.append(thera_link_get_loc)
+        if not thera_link_get in thera_links_neww:
+           thera_links_neww[thera_link_get] = {}
+           thera_links_neww[thera_link_get]["search_results"] = []
+           thera_links_neww[thera_link_get]["completed"] = False
     noo_search_results = []
     noo_search_results_loc = {}
     noo_search_results_li = []
@@ -333,6 +308,10 @@ try:
            new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,flat,flng)
            thera_links_new.append(new_link)
            thera_links_loc.append(all_lat_lon_key)
+           if not new_link in thera_links_neww:
+              thera_links_neww[new_link] = {}
+              thera_links_neww[new_link]["search_results"] = []
+              thera_links_neww[new_link]["completed"] = False
            allDistance = 0
            distance = 0
            flat = 0
@@ -349,6 +328,7 @@ try:
     if is_data("no_trans_profil"):
        no_trans_profil = load_data("no_trans_profil")
     trans_thera_email_all = []
+    
     for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
@@ -358,6 +338,19 @@ try:
         no = {}
         no["search_results"] = []
         no["search_results"+thera_link_get_loc] = []
+        
+        if thera_links_neww[thera_link_get]["completed"]:
+           t_search_results = thera_links_neww[thera_link_get]["search_results"]
+           for j in range(0, len(t_search_results)):
+               hel_search_results_loc[thera_link_get_loc].append(t_search_results[j])
+               hel_search_results.append(t_search_results[j])
+               write_the_file("all", hel_search_results)   
+               write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
+               no["search_results"].append(t_search_results[j])
+               if not t_search_results[j] in creamy_thera:
+                  creamy_thera[t_search_results[j]] = True
+                  save_data(creamy_thera, "creamy_thera")
+           continue
         #no_search_results = []
         print(thera_link_get)
         try:
@@ -372,6 +365,7 @@ try:
             sr = st + driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
             if sr in creamy_thera:
                continue
+            thera_links_neww[thera_link_get]["search_results"].append(st)
             creamy_thera[sr] = True
             save_data(creamy_thera, "creamy_thera")
             #no_search_results.append(sr)
@@ -402,6 +396,7 @@ try:
                 sr = st + driver.execute_script('return arguments[0].getAttribute("href");', new_search_results[x])
                 if sr in creamy_thera:
                    continue
+                thera_links_neww[thera_link_get]["search_results"].append(st)
                 creamy_thera[sr] = True
                 save_data(creamy_thera, "creamy_thera")
                 #no_search_results.append(sr)
@@ -411,6 +406,8 @@ try:
                 write_the_file("all", hel_search_results)   
                 write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
         
+        thera_links_neww[thera_link_get]["completed"] = True
+        save_data(thera_links_neww, "thera_links_neww")
         no_search_results = no["search_results"]
         no["trans_thera_email_all"] = []
         no["no_trans_thera_email_all"] = []
