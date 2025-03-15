@@ -2,7 +2,10 @@ import pickle
 import os
 import errno
 import os.path
+import smtplib
 
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 def get_target(file):
     target_dir = "save"
@@ -34731,6 +34734,7 @@ quermed_privat_webcam = [
     "psychotherapie.svea@protonmail.com",
     "reichrath@stuffandstory.de",
     "mail@privatpraxis-kreutz.de",
+    "m.rossmoeller@gmail.com",
 ]
 save_data(quermed_privat_webcam, "quermed_privat_webcam")
 quermed_privat_maybe_webcam = [
@@ -34768,6 +34772,7 @@ def write_the_file(name="0", content=[]):
          for line in content:
              f.write(f"{line}\n")
 
+
 def write_quermed_online_email_files():
     write_the_file("quermed_gesetzlich_webcam", quermed_gesetzlich_webcam)
     write_the_file("quermed_gesetzlich_maybe_webcam", quermed_gesetzlich_maybe_webcam)
@@ -34787,9 +34792,40 @@ def write_quermed_online_email_files():
     save_data(trans_quermed_all_online_emails, "trans_quermed_all_online_emails")
     write_the_file("trans_db_online_emails", trans_db_remote_both)
     save_data(trans_db_remote_both, "trans_db_remote_both")
+
+def smtp_login(login, password):
+    smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+    smtpserver.ehlo()
+    smtpserver.starttls()
+    smtpserver.ehlo()
+    smtpserver.login(login, password)
+    return smtpserver
+ 
+receiver_email_cache = []
+if is_data("receiver_email_cache"):
+   receiver_email_cache = load_data("receiver_email_cache")
+   
+def send_email(recipients):
+    sender = "sabrinajulialuna@gmail.com"
+    password = "gtzj nbgb cqhz czxh"
+    try:
+        smtpserver = smtp_login(sender, password)
+    except Exception as e:
+        print(e)
+        return
+    subject = "Einzeltherapie / Gruppentherapie Transitionsbegleitung"
+    body = "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz für die Transitionsbegleitung. Viele Liebe Gruesse Luna"
+    msg = MIMEText(body)
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = ', '.join(recipients)
+    smtpserver.sendmail(sender, recipients, msg.as_string())
+   
+    print("Message sent!")
     
-def write_all_trans_online_theras(trans_profil_emails):
+def write_all_trans_online_theras(send_emails=False):
     trans_quermed_all_online_emails = []
+    trans_profil_emails = []
     for i in range(0, len(quermed_gesetzlich_webcam)):
         email = quermed_gesetzlich_webcam[i]
         if not email in trans_quermed_all_online_emails:
@@ -34806,19 +34842,49 @@ def write_all_trans_online_theras(trans_profil_emails):
         email = trans_recommmendens_webcam[i]
         if not email in trans_quermed_all_online_emails:
            trans_quermed_all_online_emails.append(email)
-    for i in range(0, len(trans_db_remote_both)):
-        email = trans_db_remote_both[i]
-        if not email in trans_quermed_all_online_emails:
-           trans_quermed_all_online_emails.append(email)
-    for i in range(0, len(trans_profil_emails)):
-        email = trans_profil_emails[i]
-        if not email in trans_quermed_all_online_emails:
-           trans_quermed_all_online_emails.append(email)
+ 
+    if is_data("trans_profil"):
+        trans_profil = load_data("trans_profil")
+   
+    if is_data("no_trans_profil"):
+        no_trans_profil = load_data("no_trans_profil")
+
+    trans_profil_keys = list(trans_profil.keys())
+    no_trans_profil_keys = list(no_trans_profil.keys())
+
+    trans_profil_emails = []
+    no_trans_profil_emails = []
+
+    for i in range(0, len(trans_profil_keys)):
+        trans_profil_key = trans_profil_keys[i]
+        trans_profil_value = trans_profil[trans_profil_key]
+        if not trans_profil_value in trans_profil_emails:
+           trans_profil_emails.append(trans_profil_value)
+           trans_quermed_all_online_emails.append(trans_profil_value)
+           write_the_file("trans_profil_emails", trans_profil_emails)
     write_the_file("transdb_plus_quermed_plus_therapiede_all_online_emails",  trans_quermed_all_online_emails)
     save_data(trans_quermed_all_online_emails, "transdb_plus_quermed_plus_therapiede_all_online_emails")
-    
-    
-def write_trans_db_files():
+    for i in range(0, len(no_trans_profil_keys)):
+        trans_profil_key = no_trans_profil_keys[i]
+        trans_profil_value = no_trans_profil[trans_profil_key]
+        if not trans_profil_value in trans_quermed_all_online_emails:
+           trans_quermed_all_online_emails.append(trans_profil_value)
+    if send_emails:
+       for i in range(0, len(trans_quermed_all_online_emails)):
+           recipients = []
+           ist = 50
+           
+           if i + ist < len(trans_quermed_all_online_emails):
+              for j in range(i, ist):
+                  recipients.append(trans_quermed_all_online_emails[j])
+              ist = len(trans_quermed_all_online_emails) - i
+           else:
+              send_email([trans_quermed_all_online_emails[i]])
+           try:        
+              send_email(recipients)
+           except Exception as e:
+              print(e)             
+def write_trans_db_files(send_emails=False):
     ret = {}
     ret["trans_profil"] = {}
     ret["no_trans_profil"] = {}
@@ -34843,15 +34909,17 @@ def write_trans_db_files():
         if not trans_profil_value in trans_profil_emails:
            trans_profil_emails.append(trans_profil_value)
            write_the_file("trans_profil_emails", trans_profil_emails)
+           print(trans_profil_value)
 
     write_quermed_online_email_files()
-    write_all_trans_online_theras(trans_profil_emails)
+    write_all_trans_online_theras(trans_profil_emails, True)
        
     for i in range(0, len(no_trans_profil_keys)):
         no_trans_profil_key = no_trans_profil_keys[i]
         no_trans_profil_value = no_trans_profil[no_trans_profil_key]
         if not no_trans_profil_value in no_trans_profil_emails:
            no_trans_profil_emails.append(no_trans_profil_value)
+           print(no_trans_profil_value)
            write_the_file("no_trans_profil_emails", no_trans_profil_emails)
        
     if len(trans_profil_emails) > 0:
@@ -34859,10 +34927,34 @@ def write_trans_db_files():
        
     if len(no_trans_profil_emails) > 0:
        write_the_file("no_trans_profil_emails", no_trans_profil_emails)
-      
+   
     ret["trans_profil"] = trans_profil
     ret["no_trans_profil"] = no_trans_profil
     ret["trans_profil_emails"] = trans_profil_emails
     ret["no_trans_profil_emails"] = no_trans_profil_emails
-   
+
+    if send_emails:
+       for i in range(0, len(trans_profil_emails)):
+           recipients = []
+           max_rec = 10
+           if i + max_rec >= len(trans_profil_emails):
+              max_rec = len(trans_profil_emails) - i
+           for j in range(i, i + max_rec):
+               recipients.append(trans_profil_emails[j])
+           try:
+              send_email(recipients)
+           except Exception as e:
+              print(e)
+              
+       for i in range(0, len(no_trans_profil_emails)):
+           recipients = []
+           max_rec = 10
+           if i + max_rec >= len(no_trans_profil_emails):
+              max_rec = len(no_trans_profil_emails) - i
+           for j in range(i, i + max_rec):
+               recipients.append(no_trans_profil_emails[j])
+           try:
+              send_email(recipients)
+           except Exception as e:
+              print(e)
     return ret
