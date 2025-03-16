@@ -328,7 +328,8 @@ try:
     if is_data("no_trans_profil"):
        no_trans_profil = load_data("no_trans_profil")
     trans_thera_email_all = []
-    
+    trans_thera_email_all_psychologe = []
+    no_trans_thera_email_all_psychologe = []
     for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
@@ -411,24 +412,40 @@ try:
         no_search_results = no["search_results"]
         no["trans_thera_email_all"] = []
         no["no_trans_thera_email_all"] = []
+        no["trans_thera_email_all_psychologe"] = []
+        no["no_trans_thera_email_all_psychologe"] = []
+        search_word_in_page
         for k in range(0, len(no_search_results)):
             url = no_search_results[k]
             if search_queer_words_on_thera_profil_ex(url, driver):
                email_address_value = trans_profil[url]
                no["trans_thera_email_all"].append(email_address_value)
+               if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+                  trans_thera_email_all_psychologe.append(email_address_value)
+                  no["trans_thera_email_all_psychologe"].append(email_address_value)
                trans_thera_email_all.append(email_address_value)
                write_the_file(thera_link_get_loc + "_trans_thera_email", no["trans_thera_email_all"])
+               write_the_file(thera_link_get_loc + "_trans_thera_email_psychologe", no["trans_thera_email_all_psychologe"])
             else:
                email_address_value = no_trans_profil[url]
                no["no_trans_thera_email_all"].append(email_address_value)
-               trans_thera_email_all.append(email_address_value)
+               no_trans_thera_email_all.append(email_address_value)
+               if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+                  no_trans_thera_email_all_psychologe.append(email_address_value)
+                  no["no_trans_thera_email_all_psychologe"].append(email_address_value)
                write_the_file(thera_link_get_loc + "_no_trans_thera_email", no["no_trans_thera_email_all"])
+               write_the_file(thera_link_get_loc + "_no_trans_thera_email_psychologe", no["no_trans_thera_email_all_psychologe"])
             save_data(trans_profil, "trans_profil")
             save_data(no_trans_profil, "no_trans_profil")
+            save_data(trans_thera_email_all_psychologe, "trans_thera_email_all_psychologe")
+            save_data(no_trans_thera_email_all_psychologe, "no_trans_thera_email_all_psychologe")
         save_data(trans_profil, "trans_profil")
         save_data(no_trans_profil, "no_trans_profil")
     
-    write_the_file("trans_thera_email_all", trans_thera_email_all)   
+    write_the_file("trans_thera_email_all", trans_thera_email_all)
+    write_the_file("trans_thera_email_all_psychologe", trans_thera_email_all_psychologe)
+    write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
+    write_the_file("no_trans_thera_email_all_psychologe", no_trans_thera_email_all_psychologe)   
     write_the_file("all", hel_search_results)    
         #noooo_search_results = []
         #no_trans_thera_email = []

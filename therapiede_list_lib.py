@@ -34966,7 +34966,7 @@ def write_trans_db_files(send_emails=False):
            print(trans_profil_value)
 
     write_quermed_online_email_files()
-    write_all_trans_online_theras(trans_profil_emails, True)
+    write_all_trans_online_theras(send_emails)
        
     for i in range(0, len(no_trans_profil_keys)):
         no_trans_profil_key = no_trans_profil_keys[i]
