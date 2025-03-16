@@ -77,6 +77,11 @@ def search_queer_words_on_thera_profil(url, driver):
         driver.switch_to.window(main_window_one)
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
+    if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+       if is_founded_queer:
+          trans_profil_psychologe[url] = True
+       else:
+          no_trans_profil_psychologe[url] = True
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
@@ -117,7 +122,9 @@ def search_queer_words_on_thera_profil(url, driver):
     return is_founded_queer
 
 no_trans_profil = {}
-trans_profil = {}   
+trans_profil = {}
+trans_profil_psychologe = {}
+no_trans_profil_psychologe = {}
 ret_write_trans_db_files = write_trans_db_files()
 trans_profil = ret_write_trans_db_files["trans_profil"]
 no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
@@ -125,6 +132,10 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     if url in trans_profil:
        return True
     if url in no_trans_profil:
+       return False
+    if url in trans_profil_psychologe:
+       return True
+    if url in no_trans_profil_psychologe:
        return False
     driver.get(url)
     time.sleep(2)
@@ -143,6 +154,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     else:
        no_trans_profil[url] = ""
        save_data(no_trans_profil, "no_trans_profil")
+    if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+       if is_founded_queer:
+          trans_profil_psychologe[url] = True
+       else:
+          no_trans_profil_psychologe[url] = True
+       save_data(trans_profil_psychologe, "trans_profil_psychologe")
+       save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
@@ -177,6 +195,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
           save_data(no_trans_profil, "no_trans_profil")
           print("no_trans_email: " + email_address_value)
     return is_founded_queer
+
+def is_psychologe(url):
+    if url in trans_profil_psychologe:
+       return True
+       
+    if url in no_trans_profil_psychologe:
+       return True
 
 downloadDefaultDirectory = '.'
 headlessmode = False
@@ -420,7 +445,7 @@ try:
             if search_queer_words_on_thera_profil_ex(url, driver):
                email_address_value = trans_profil[url]
                no["trans_thera_email_all"].append(email_address_value)
-               if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+               if is_psychologe(url):
                   trans_thera_email_all_psychologe.append(email_address_value)
                   no["trans_thera_email_all_psychologe"].append(email_address_value)
                trans_thera_email_all.append(email_address_value)
@@ -430,7 +455,7 @@ try:
                email_address_value = no_trans_profil[url]
                no["no_trans_thera_email_all"].append(email_address_value)
                no_trans_thera_email_all.append(email_address_value)
-               if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+               if is_psychologe(url):
                   no_trans_thera_email_all_psychologe.append(email_address_value)
                   no["no_trans_thera_email_all_psychologe"].append(email_address_value)
                write_the_file(thera_link_get_loc + "_no_trans_thera_email", no["no_trans_thera_email_all"])
