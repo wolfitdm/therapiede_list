@@ -251,6 +251,7 @@ def search_queer_words_on_thera_profil_ex(url, driver):
               no_trans_and_sexual_thera_psychologe[url] = email_address_value
               save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
         psychologe_check[url] = email_address_value
+        save_data(psychologe_check, "psychologe_check")
 
 def is_psychologe(url):
     if url in trans_profil_psychologe:
