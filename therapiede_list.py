@@ -124,13 +124,16 @@ def search_queer_words_on_thera_profil(url, driver):
 no_trans_profil = {}
 trans_profil = {}
 trans_profil_psychologe = {}
+trans_profil_gruppe = {}
 no_trans_profil_psychologe = {}
+no_trans_profil_gruppe = {}
 psychologe_check = {}
 ret_write_trans_db_files = write_trans_db_files()
 trans_profil = ret_write_trans_db_files["trans_profil"]
 no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
 no_trans_and_sexual_thera = {}
 no_trans_and_sexual_thera_psychologe = {}
+no_trans_and_sexual_thera_gruppe = {}
 if is_data("psychologe_check"):
    psychologe_check = load_data("psychologe_check")
 if is_data("trans_profil_psychologe"):
@@ -141,6 +144,14 @@ if is_data("no_trans_and_sexual_thera"):
    trans_profil_psychologe = load_data("trans_profil_psychologe")
 if is_data("no_trans_profil_psychologe"):
    no_trans_profil_psychologe = load_data("no_trans_profil_psychologe")
+if is_data("trans_profil_gruppe"):
+   trans_profil_gruppe = load_data("trans_profil_gruppe")
+if is_data("no_trans_profil_gruppe"):
+   no_trans_profil_gruppe = load_data("no_trans_profil_gruppe")
+if is_data("no_trans_and_sexual_thera"):
+   trans_profil_gruppe = load_data("trans_profil_gruppe")
+if is_data("no_trans_profil_gruppe"):
+   no_trans_profil_gruppe = load_data("no_trans_profil_gruppe")
 def search_queer_words_on_thera_profil_ex(url, driver):
     if url in trans_profil:
        if url in psychologe_check:
