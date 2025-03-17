@@ -34947,10 +34947,12 @@ def write_trans_db_files(send_emails=False):
    
     if is_data("trans_profil"):
        trans_profil = load_data("trans_profil")
-   
+    else:
+       return ret
     if is_data("no_trans_profil"):
        no_trans_profil = load_data("no_trans_profil")
-
+    else:
+       return ret
     trans_profil_keys = list(trans_profil.keys())
     no_trans_profil_keys = list(no_trans_profil.keys())
 

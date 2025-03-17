@@ -77,7 +77,7 @@ def search_queer_words_on_thera_profil(url, driver):
         driver.switch_to.window(main_window_one)
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
-    if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+    if search_word_in_page("Psychologische/r Psychotherapeut/in", driver):
        if is_founded_queer:
           trans_profil_psychologe[url] = True
        else:
@@ -125,18 +125,29 @@ no_trans_profil = {}
 trans_profil = {}
 trans_profil_psychologe = {}
 no_trans_profil_psychologe = {}
+psychologe_check = {}
 ret_write_trans_db_files = write_trans_db_files()
 trans_profil = ret_write_trans_db_files["trans_profil"]
 no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
+no_trans_and_sexual_thera = {}
+no_trans_and_sexual_thera_psychologe = {}
+if is_data("psychologe_check"):
+   psychologe_check = load_data("psychologe_check")
+if is_data("trans_profil_psychologe"):
+   trans_profil_psychologe = load_data("trans_profil_psychologe")
+if is_data("no_trans_profil_psychologe"):
+   no_trans_profil_psychologe = load_data("no_trans_profil_psychologe")
+if is_data("no_trans_and_sexual_thera"):
+   trans_profil_psychologe = load_data("trans_profil_psychologe")
+if is_data("no_trans_profil_psychologe"):
+   no_trans_profil_psychologe = load_data("no_trans_profil_psychologe")
 def search_queer_words_on_thera_profil_ex(url, driver):
     if url in trans_profil:
-       return True
+       if url in psychologe_check:
+          return True
     if url in no_trans_profil:
-       return False
-    if url in trans_profil_psychologe:
-       return True
-    if url in no_trans_profil_psychologe:
-       return False
+       if url in psychologe_check:
+          return False
     driver.get(url)
     time.sleep(2)
     try:
@@ -144,23 +155,57 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     except Exception as e:
         print(e)
         print("exception")
-        no_trans_profil[url] = ""
-        save_data(no_trans_profil, "no_trans_profil")
+        is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver)
+        is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
+        if is_that_sexual:
+           print("Sex Therapeut")
+        if is_that_psychologe:
+           print("Psycho Therapeut >.< -> Der dein Verstand der Norm angleicht!!!!")
+        if is_that_sexual:
+            no_trans_profil[url] = ""
+            save_data(no_trans_profil, "no_trans_profil")
+            if is_that_psychologe:
+               no_trans_profil_psychologe[url] = True
+               save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
+        else:
+            no_trans_and_sexual_thera[url] = ""
+            save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
+            if is_that_psychologe:
+               no_trans_and_sexual_thera_psychologe[url] = True
+               save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
+        psychologe_check[url] = True
+        save_data("psychologe_check", psychologe_check)
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
+    has_trans_profil_email = url in trans_profil
+    has_no_trans_profil_email = url in no_trans_profil
     if is_founded_queer:
-       trans_profil[url] = ""
-       save_data(trans_profil, "trans_profil")
+       if not url in trans_profil:
+          trans_profil[url] = ""
+          save_data(trans_profil, "trans_profil")
     else:
-       no_trans_profil[url] = ""
-       save_data(no_trans_profil, "no_trans_profil")
-    if search_word_in_page(driver, "Psychologische/r Psychotherapeut/in"):
+       if not url in no_trans_profil:
+          no_trans_profil[url] = ""
+          save_data(no_trans_profil, "no_trans_profil")
+    if search_word_in_page("Psychologische/r Psychotherapeut/in", driver):
        if is_founded_queer:
           trans_profil_psychologe[url] = True
        else:
           no_trans_profil_psychologe[url] = True
        save_data(trans_profil_psychologe, "trans_profil_psychologe")
        save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
+       psychologe_check[url] = True
+       save_data(psychologe_check, "psychologe_check")
+    else:
+       psychologe_check[url] = True
+       save_data(psychologe_check, "psychologe_check")
+
+    if has_trans_profil_email:
+       return trans_profil[url]
+ 
+    if has_no_trans_profil_email:
+       return no_trans_profil[url]
+ 
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
@@ -330,7 +375,7 @@ try:
         print("distance: " + str(distance))
         print("allDistance: " + str(allDistance))
         if allDistance > 70 or distance > 70:
-           new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,flat,flng)
+           new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=0&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,flat,flng)
            thera_links_new.append(new_link)
            thera_links_loc.append(all_lat_lon_key)
            if not new_link in thera_links_neww:
@@ -343,7 +388,7 @@ try:
            flng = 0
            distanceSet = False
                  
-        #new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,lat,lng)
+        #new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=0&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,lat,lng)
         #print(lng)
         #thera_links_new.append(new_link)
         #thera_links_loc.append(all_lat_lon_key)
@@ -365,18 +410,18 @@ try:
         no["search_results"] = []
         no["search_results"+thera_link_get_loc] = []
         
-        if thera_links_neww[thera_link_get]["completed"]:
-           t_search_results = thera_links_neww[thera_link_get]["search_results"]
-           for j in range(0, len(t_search_results)):
-               hel_search_results_loc[thera_link_get_loc].append(t_search_results[j])
-               hel_search_results.append(t_search_results[j])
-               write_the_file("all", hel_search_results)   
-               write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
-               no["search_results"].append(t_search_results[j])
-               if not t_search_results[j] in creamy_thera:
-                  creamy_thera[t_search_results[j]] = True
-                  save_data(creamy_thera, "creamy_thera")
-           continue
+       # if thera_links_neww[thera_link_get]["completed"]:
+        #   t_search_results = thera_links_neww[thera_link_get]["search_results"]
+         #  for j in range(0, len(t_search_results)):
+          #     hel_search_results_loc[thera_link_get_loc].append(t_search_results[j])
+           #    hel_search_results.append(t_search_results[j])
+            #   write_the_file("all", hel_search_results)   
+             #  write_the_file(thera_link_get_loc, hel_search_results_loc[thera_link_get_loc])
+              # no["search_results"].append(t_search_results[j])
+               #if not t_search_results[j] in creamy_thera:
+                #  creamy_thera[t_search_results[j]] = True
+                 # save_data(creamy_thera, "creamy_thera")
+        #   continue
         #no_search_results = []
         print(thera_link_get)
         try:
@@ -439,7 +484,6 @@ try:
         no["no_trans_thera_email_all"] = []
         no["trans_thera_email_all_psychologe"] = []
         no["no_trans_thera_email_all_psychologe"] = []
-        search_word_in_page
         for k in range(0, len(no_search_results)):
             url = no_search_results[k]
             if search_queer_words_on_thera_profil_ex(url, driver):

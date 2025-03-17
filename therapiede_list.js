@@ -149,7 +149,7 @@ function createLocEx(html) {
 function createLoc(name, search_radius, weiteres) {
 	const para = document.createElement("p");
     const name_lower = name.toLowerCase();
-	var new_string =  '<a data-href="https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37';
+	var new_string =  '<a data-href="https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=0&verfahren=37';
 	new_string += "&ort=";
 	new_string += name;
 	new_string += "&search_radius=";
@@ -300,7 +300,7 @@ new_locs["Siegen"] = true;
 new_locs["Kaiserslautern"] = true;
 new_locs["Cottbus"] = true;
 $(document).ready(function() {
-    let link_part1 = "https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=12&verfahren=37&ort=";
+    let link_part1 = "https://www.therapie.de/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=0&verfahren=37&ort=";
 	let link_part2 = "&search_radius=";
 	let link_part3 = "&weiteres=";
     let thera_links = [];
