@@ -153,12 +153,18 @@ if is_data("no_trans_and_sexual_thera"):
 if is_data("no_trans_profil_gruppe"):
    no_trans_profil_gruppe = load_data("no_trans_profil_gruppe")
 def search_queer_words_on_thera_profil_ex(url, driver):
-    if url in trans_profil:
-       if url in psychologe_check:
-          return True
-    if url in no_trans_profil:
-       if url in psychologe_check:
-          return False
+    if url in psychologe_check:
+       psycho_type = type(psychologe_check[url])
+       if psycho_type == type(True):
+          psychologe_check[url] = ""
+          save_data(psychologe_check, "psychologe_check")
+       
+       if len(psychologe_check[url]) > 0:
+          istrans = is_trans(url)
+          istranstype = type(istrans) == type(True)
+          if istranstype:
+             return istrans          
+          
     driver.get(url)
     time.sleep(2)
     try:
@@ -195,12 +201,12 @@ def search_queer_words_on_thera_profil_ex(url, driver):
                no_trans_and_sexual_thera_gruppe[url] = ""
                save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
                
-        psychologe_check[url] = True
-        save_data("psychologe_check", psychologe_check)
+        psychologe_check[url] = ""
+        save_data(psychologe_check, "psychologe_check")
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
-    has_trans_profil_email = url in psychologe_check
-    has_no_trans_profil_email = url in psychologe_check
+    has_trans_profil_email = url in psychologe_check and url in trans_profil
+    has_no_trans_profil_email = url in psychologe_check and url in no_trans_thera_email
     is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver)
     is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
     is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
@@ -220,7 +226,6 @@ def search_queer_words_on_thera_profil_ex(url, driver):
           if is_that_gruppe:
              trans_profil_gruppe[url] = ""
              save_data(trans_profil_gruppe, "trans_profil_gruppe")
-       #psychologe_check[url] = True
     elif not url in psychologe_check:
         if is_that_sexual:
            no_trans_profil[url] = ""
@@ -240,7 +245,8 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_and_sexual_thera_gruppe[url] = ""
               save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
-        #psychologe_check[url] = True
+    psychologe_check[url] = ""
+    save_data(psychologe_check, "psychologe_check")
 
     if has_trans_profil_email:
        return trans_profil[url]
@@ -298,8 +304,16 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_and_sexual_thera_gruppe[url] = email_address_value
               save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
-        psychologe_check[url] = email_address_value
-        save_data(psychologe_check, "psychologe_check")
+    psychologe_check[url] = email_address_value
+    save_data(psychologe_check, "psychologe_check")
+
+def is_trans(url):
+    if url in trans_profil or url in trans_profil_gruppe or url in trans_profil_psychologe:
+       return True
+    elif url in no_trans_profil or url in no_trans_profil_gruppe or url in no_trans_and_sexual_thera_psychologe or url in no_trans_and_sexual_thera:
+       return False
+    else:
+       return None
 
 def is_psychologe(url):
     if url in trans_profil_psychologe:
@@ -390,9 +404,19 @@ try:
     thera_links_neww = []
     thera_links_loc = []
     thera_links_neww = {}
+    thera_links_new_y = {}
     if is_data("thera_links_neww"):
        thera_links_neww = load_data("thera_links_neww")
-    for i in range(0, len(thera_links)):
+    if is_data("thera_links_new_y"):
+       thera_links_new_y = load_data("thera_links_new_y")
+    if not "thera_links_new" in thera_links_new_y:
+       thera_links_new_y["thera_links_new"] = []
+    if not "thera_links_loc" in thera_links_new_y:
+       thera_links_new_y["thera_links_loc"] = []
+    if not "all_lat_lon_keys" in thera_links_new_y:
+       thera_links_new_y["all_lat_lon_keys"] = []
+    save_data(thera_links_new_y, "thera_links_new_y")
+    for i in range(len(thera_links_new_y["thera_links_new"]), len(thera_links)):
         print("hallo " + str(i))
         print(thera_links[i].get_attribute("href"))
         noname = driver.execute_script('return $(arguments[0]).hasClass("noname");',  thera_links[i])
@@ -407,6 +431,9 @@ try:
            thera_links_neww[thera_link_get] = {}
            thera_links_neww[thera_link_get]["search_results"] = []
            thera_links_neww[thera_link_get]["completed"] = False
+    thera_links_new_y["thera_links_new"] = thera_links_new
+    thera_links_new_y["thera_links_loc"] = thera_links_loc
+    save_data(thera_links_new_y, "thera_links_new_y")
     noo_search_results = []
     noo_search_results_loc = {}
     noo_search_results_li = []
@@ -426,12 +453,13 @@ try:
     loc_all_lat_lon = get_all_lat_lon_mod()
     all_lat_lon_keys = list(loc_all_lat_lon.keys())
     len_all_lat_lon_keys = len(loc_all_lat_lon)
+    len_all_lat_lon_keys_y = len(thera_links_new_y["all_lat_lon_keys"])
     print("len_lat " + str(len_all_lat_lon_keys))
     allDistance = 0
     flat = 0
     flng = 0
     distanceSet = False
-    for i in range(0, len_all_lat_lon_keys):    
+    for i in range(len_all_lat_lon_keys_y, len_all_lat_lon_keys):    
         all_lat_lon_key = all_lat_lon_keys[i]
         all_lat_lon_value = loc_all_lat_lon[all_lat_lon_key]
         lat = round(all_lat_lon_value["lat"], 3)
@@ -451,6 +479,7 @@ try:
            new_link = "{0}/therapeutensuche/ergebnisse/?arbeitsschwerpunkt=0&verfahren=37&search_radius=0&lat={1}&lon={2}".format(st,flat,flng)
            thera_links_new.append(new_link)
            thera_links_loc.append(all_lat_lon_key)
+           thera_links_new_y["all_lat_lon_keys"].append(all_lat_lon_key)
            if not new_link in thera_links_neww:
               thera_links_neww[new_link] = {}
               thera_links_neww[new_link]["search_results"] = []
@@ -465,6 +494,9 @@ try:
         #print(lng)
         #thera_links_new.append(new_link)
         #thera_links_loc.append(all_lat_lon_key)
+    thera_links_new_y["thera_links_new"] = thera_links_new
+    thera_links_new_y["thera_links_loc"] = thera_links_loc
+    save_data(thera_links_new_y, "thera_links_new_y")
     nos = []
     if is_data("trans_profil"):
        trans_profil = load_data("trans_profil")

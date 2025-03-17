@@ -34939,58 +34939,79 @@ def write_all_trans_online_theras(send_emails=False):
        smtpserver = smtp_server_complete()
        send_emails_ex(smtpserver, trans_quermed_all_online_emails)          
 def write_trans_db_files(send_emails=False):
+    send_emails = False
     ret = {}
     ret["trans_profil"] = {}
     ret["no_trans_profil"] = {}
+    ret["trans_profil_gruppe"] = {}
+    ret["trans_profil_psychologe"] = {}
+    ret["no_trans_profil"] = {}
+    ret["no_trans_profil_gruppe"] = {}
+    ret["no_trans_profil_psychologe"] = {}
     ret["trans_profil_emails"] = {}
     ret["no_trans_profil_emails"] = {}
-   
-    if is_data("trans_profil"):
-       trans_profil = load_data("trans_profil")
-    else:
-       return ret
-    if is_data("no_trans_profil"):
-       no_trans_profil = load_data("no_trans_profil")
-    else:
-       return ret
-    trans_profil_keys = list(trans_profil.keys())
-    no_trans_profil_keys = list(no_trans_profil.keys())
+    ret["trans_profil_gruppe_emails"] = {}
+    ret["no_trans_profil_gruppe_emails"] = {}   
+    ret["trans_profil_psychologe_emails"] = {}
+    ret["no_trans_profil_psychologe_emails"] = {}
+    ret["trans_and_sexual_thera"] = {}
+    ret["trans_and_sexual_thera_gruppe"] = {}
+    ret["trans_and_sexual_thera_psychologe"] = {}
+    ret["no_trans_and_sexual_thera"] = {}
+    ret["no_trans_and_sexual_thera_gruppe"] = {}
+    ret["no_trans_and_sexual_thera_psychologe"] = {}
+    ret["trans_profil_emails"] = {}
+    ret["no_trans_profil_emails"] = {}
+    ret["trans_profil_gruppe_emails"] = {}
+    ret["no_trans_profil_gruppe_emails"] = {}   
+    ret["trans_profil_psychologe_emails"] = {}
+    ret["no_trans_profil_psychologe_emails"] = {}
+    ret["trans_profil_emails"] = {}
+    ret["no_trans_profil_emails"] = {}
+    ret["trans_profil_gruppe_emails"] = {}
+    ret["no_trans_profil_gruppe_emails"] = {}   
+    ret["trans_profil_psychologe_emails"] = {}
+    ret["no_trans_profil_psychologe_emails"] = {}  
+    ret["no_trans_and_sexual_thera_emails"] = {}
+    ret["no_trans_and_sexual_thera_gruppe_emails"] = {}
+    ret["no_trans_and_sexual_thera_psychologe_emails"] = {}
 
-    trans_profil_emails = []
-    no_trans_profil_emails = []
-
-    for i in range(0, len(trans_profil_keys)):
-        trans_profil_key = trans_profil_keys[i]
-        trans_profil_value = trans_profil[trans_profil_key]
-        if not trans_profil_value in trans_profil_emails:
-           trans_profil_emails.append(trans_profil_value)
-           write_the_file("trans_profil_emails", trans_profil_emails)
-           print(trans_profil_value)
-
+    ret_keys = list(ret.keys())
+    ret_keys_len = len(ret_keys)
+    for i in range(0, ret_keys_len):
+        ret_key = ret_keys[i]
+        if is_data(ret_key):
+           ret[ret_key] = load_data(ret_key)
+        
+        if ret_key in [
+                        "trans_profil",  "no_trans_profil", 
+                        "trans_profil_gruppe",  "no_trans_profil_gruppe",
+                        "trans_profil_psychologe", "no_trans_profil_psychologe",
+                        "no_trans_and_sexual_thera", "no_trans_and_sexual_thera_gruppe", 
+                        "no_trans_and_sexual_thera_psychologe"
+                      ]:        
+           entry = ret[ret_key]
+           entry_keys = list(entry.keys())
+        
+           emails_key = ret_key + "_emails"
+           if not "emails" in ret[emails_key]:
+              ret[emails_key]["emails"] = []
+           emails = ret[emails_key]["emails"]
+           for j in range(0, len(entry_keys)):
+               url = entry_keys[j]
+               email = entry[url]
+               ret[emails_key]["emails"].append(email)
+               emails = ret[emails_key]["emails"]
+               write_the_file(emails_key, ret[emails_key]["emails"])
+               print(email)
+               save_data(ret, "ret_save")
+               
+           if send_emails:
+              send_emails_ex(smtpserver, emails)
+        else:
+          continue
+          
     write_quermed_online_email_files()
     write_all_trans_online_theras(send_emails)
-       
-    for i in range(0, len(no_trans_profil_keys)):
-        no_trans_profil_key = no_trans_profil_keys[i]
-        no_trans_profil_value = no_trans_profil[no_trans_profil_key]
-        if not no_trans_profil_value in no_trans_profil_emails:
-           no_trans_profil_emails.append(no_trans_profil_value)
-           print(no_trans_profil_value)
-           write_the_file("no_trans_profil_emails", no_trans_profil_emails)
-       
-    if len(trans_profil_emails) > 0:
-       write_the_file("trans_profil_emails", trans_profil_emails)
-       
-    if len(no_trans_profil_emails) > 0:
-       write_the_file("no_trans_profil_emails", no_trans_profil_emails)
-   
-    ret["trans_profil"] = trans_profil
-    ret["no_trans_profil"] = no_trans_profil
-    ret["trans_profil_emails"] = trans_profil_emails
-    ret["no_trans_profil_emails"] = no_trans_profil_emails
 
-    if send_emails:
-       smtpserver = smtp_server_complete()
-       send_emails_ex(smtpserver, trans_profil_emails)   
-       send_emails_ex(smtpserver, no_trans_profil_emails)
     return ret
