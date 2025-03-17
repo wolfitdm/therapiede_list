@@ -165,13 +165,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
             no_trans_profil[url] = ""
             save_data(no_trans_profil, "no_trans_profil")
             if is_that_psychologe:
-               no_trans_profil_psychologe[url] = True
+               no_trans_profil_psychologe[url] = ""
                save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
         else:
             no_trans_and_sexual_thera[url] = ""
             save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
             if is_that_psychologe:
-               no_trans_and_sexual_thera_psychologe[url] = True
+               no_trans_and_sexual_thera_psychologe[url] = ""
                save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
         psychologe_check[url] = True
         save_data("psychologe_check", psychologe_check)
@@ -187,22 +187,21 @@ def search_queer_words_on_thera_profil_ex(url, driver):
        print("Psycho Therapeut >.< -> Der dein Verstand der Norm angleicht!!!!")
     if is_founded_queer:
        if not url in psychologe_check:
-          trans_profil[url] = email_address_value
+          trans_profil[url] = ""
           save_data(trans_profil, "trans_profil")
-    else if not url in psychologe_check:
+    elif not url in psychologe_check:
         if is_that_sexual:
-           no_trans_profil[url] = email_address_value
+           no_trans_profil[url] = ""
            save_data(no_trans_profil, "no_trans_profil")
            if is_that_psychologe:
-              no_trans_profil_psychologe[url] = True
+              no_trans_profil_psychologe[url] = ""
               save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
         else:
-           no_trans_and_sexual_thera[url] = email_address_value
+           no_trans_and_sexual_thera[url] = ""
            save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
            if is_that_psychologe:
-              no_trans_and_sexual_thera_psychologe[url] = True
+              no_trans_and_sexual_thera_psychologe[url] = ""
               save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
-        psychologe_check[url] = True
 
     if has_trans_profil_email:
        return trans_profil[url]
@@ -233,17 +232,25 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     len_email_address_value = len(email_address_value)
     time.sleep(1)
     if is_founded_queer:
-       print("founded")
-       if len_email_address_value > 0:
-          trans_profil[url] = email_address_value
-          save_data(trans_profil, "trans_profil")
-          print("trans_email: " + email_address_value)
+        trans_profil[url] = email_address_value
+        save_data(trans_profil, "trans_profil")
+        if is_that_psychologe:
+           trans_profil_psychologe[url] = email_address_value
+           save_data(trans_profil_psychologe, "trans_profil_psychologe")
     else:
-       if len_email_address_value > 0:
-          no_trans_profil[url] = email_address_value
-          save_data(no_trans_profil, "no_trans_profil")
-          print("no_trans_email: " + email_address_value)
-    return is_founded_queer
+        if is_that_sexual:
+           no_trans_profil[url] = email_address_value
+           save_data(no_trans_profil, "no_trans_profil")
+           if is_that_psychologe:
+              no_trans_profil_psychologe[url] = email_address_value
+              save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
+        else:
+           no_trans_and_sexual_thera[url] = email_address_value
+           save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
+           if is_that_psychologe:
+              no_trans_and_sexual_thera_psychologe[url] = email_address_value
+              save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
+        psychologe_check[url] = email_address_value
 
 def is_psychologe(url):
     if url in trans_profil_psychologe:
