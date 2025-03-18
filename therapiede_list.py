@@ -175,6 +175,13 @@ def set_thera_data_value(url, name, value):
     create_thera_data_attr(url, name, "")
     thera_data[url][name] = value
     save_data(thera_data, "thera_data")
+def get_thera_data_value(url, name, default_value=""):
+    if url in thera_data and name in thera_data[url]:
+       return thera_data[url][name]
+    else:
+       create_thera_data_attr(url, name, default_value)
+       return default_value
+    
 def init_thera(url):
     create_thera_data_attrs(url, "", ["jobtitle", "name", "email"])
     create_thera_data_attrs(url, False, [
