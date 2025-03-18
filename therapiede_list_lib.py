@@ -34766,6 +34766,10 @@ trans_db_remote_both = [
     "m.rossmoeller@gmail.com",
 ]
 save_data(trans_db_remote_both, "trans_db_remote_both")
+transmannev = [
+    "s.zettl@t-online.de",
+]
+save_data(transmannev, "transmannev")
 def write_the_file(name="0", content=[]):
     target = os.path.join("thera_lists", name+"_theras_online.txt")
     with open(target, 'w') as f:
@@ -34909,11 +34913,13 @@ def write_all_trans_online_theras(send_emails=False):
            trans_quermed_all_online_emails.append(email)
  
     if is_data("trans_profil"):
-        trans_profil = load_data("trans_profil")
-   
+       trans_profil = load_data("trans_profil")
+    else:
+       trans_profil = {}
     if is_data("no_trans_profil"):
-        no_trans_profil = load_data("no_trans_profil")
-
+       no_trans_profil = load_data("no_trans_profil")
+    else:
+       no_trans_profil = {}
     trans_profil_keys = list(trans_profil.keys())
     no_trans_profil_keys = list(no_trans_profil.keys())
 
@@ -34945,27 +34951,35 @@ def write_trans_db_files(send_emails=False):
     ret["no_trans_profil"] = {}
     ret["trans_profil_gruppe"] = {}
     ret["trans_profil_psychologe"] = {}
+    ret["trans_profil_both"] = {}
     ret["no_trans_profil"] = {}
     ret["no_trans_profil_gruppe"] = {}
     ret["no_trans_profil_psychologe"] = {}
+    ret["no_trans_profil_both"] = {}
     ret["trans_profil_emails"] = {}
     ret["no_trans_profil_emails"] = {}
     ret["trans_profil_gruppe_emails"] = {}
     ret["no_trans_profil_gruppe_emails"] = {}   
     ret["trans_profil_psychologe_emails"] = {}
     ret["no_trans_profil_psychologe_emails"] = {}
+    ret["trans_profil_both_emails"] = {}
+    ret["no_trans_profil_both_emails"] = {}
     ret["trans_and_sexual_thera"] = {}
     ret["trans_and_sexual_thera_gruppe"] = {}
     ret["trans_and_sexual_thera_psychologe"] = {}
+    ret["trans_and_sexual_thera_both"] = {}
     ret["no_trans_and_sexual_thera"] = {}
     ret["no_trans_and_sexual_thera_gruppe"] = {}
     ret["no_trans_and_sexual_thera_psychologe"] = {}
+    ret["no_trans_and_sexual_thera_both"] = {}
     ret["trans_profil_emails"] = {}
     ret["no_trans_profil_emails"] = {}
     ret["trans_profil_gruppe_emails"] = {}
     ret["no_trans_profil_gruppe_emails"] = {}   
     ret["trans_profil_psychologe_emails"] = {}
     ret["no_trans_profil_psychologe_emails"] = {}
+    ret["trans_profil_both_emails"] = {}
+    ret["no_trans_profil_both_emails"] = {}
     ret["trans_profil_emails"] = {}
     ret["no_trans_profil_emails"] = {}
     ret["trans_profil_gruppe_emails"] = {}
@@ -34975,6 +34989,7 @@ def write_trans_db_files(send_emails=False):
     ret["no_trans_and_sexual_thera_emails"] = {}
     ret["no_trans_and_sexual_thera_gruppe_emails"] = {}
     ret["no_trans_and_sexual_thera_psychologe_emails"] = {}
+    ret["no_trans_and_sexual_thera_both_emails"] = {}
 
     ret_keys = list(ret.keys())
     ret_keys_len = len(ret_keys)
@@ -34987,8 +35002,9 @@ def write_trans_db_files(send_emails=False):
                         "trans_profil",  "no_trans_profil", 
                         "trans_profil_gruppe",  "no_trans_profil_gruppe",
                         "trans_profil_psychologe", "no_trans_profil_psychologe",
+                        "trans_profil_both", "no_trans_profil_both",
                         "no_trans_and_sexual_thera", "no_trans_and_sexual_thera_gruppe", 
-                        "no_trans_and_sexual_thera_psychologe"
+                        "no_trans_and_sexual_thera_psychologe", "no_trans_and_sexual_thera_both"
                       ]:        
            entry = ret[ret_key]
            entry_keys = list(entry.keys())

@@ -52,7 +52,7 @@ def search_array_in_page(words, driver, must_found=1):
            founded = founded + 1
     return founded >= must_found
 
-search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA", "Geschlechtsdysphorie"]  
+search_words_queer = ["Transition", "Transitionsbegleitung", "transident", "lesbisch", "schwul", "bisexuell", "pansexuell", "intersexuell", "polyamor", "queer", "nonbinär", "trans*", "Trans*", "VLSP", "LGBTQ", "LGBTQ+", "LGBTQIA", "Geschlechtsdysphorie", "inter*", "Transidentität", "vlsp.de", "Verband für lesbische", "nonbinary", "gay", "lesbian", "bisexual", "pansexual", "transidenter"]  
 search_words_queer_must_found = 1
 no_trans_thera_email = []
 trans_thera_email = []
@@ -77,7 +77,7 @@ def search_queer_words_on_thera_profil(url, driver):
         driver.switch_to.window(main_window_one)
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
-    if search_word_in_page("Psychologische/r Psychotherapeut/in", driver):
+    if search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver) or search_word_in_page("Master in Psychologie", driver):
        if is_founded_queer:
           trans_profil_psychologe[url] = True
        else:
@@ -125,56 +125,95 @@ no_trans_profil = {}
 trans_profil = {}
 trans_profil_psychologe = {}
 trans_profil_gruppe = {}
+trans_profil_both = {}
 no_trans_profil_psychologe = {}
 no_trans_profil_gruppe = {}
+no_trans_profil_both = {}
+trans_and_sexual_thera = {}
+trans_and_sexual_thera_gruppe = {}
+trans_and_sexual_thera_psychologe = {}
+trans_and_sexual_thera_both = {}
+no_trans_and_sexual_thera = {}
+no_trans_and_sexual_thera_gruppe = {}
+no_trans_and_sexual_thera_psychologe = {}
+no_trans_and_sexual_thera_both = {}
 psychologe_check = {}
+email_check = {}
 ret_write_trans_db_files = write_trans_db_files()
 trans_profil = ret_write_trans_db_files["trans_profil"]
 no_trans_profil = ret_write_trans_db_files["no_trans_profil"]
-no_trans_and_sexual_thera = {}
-no_trans_and_sexual_thera_psychologe = {}
-no_trans_and_sexual_thera_gruppe = {}
+trans_profil_gruppe = ret_write_trans_db_files["trans_profil_gruppe"]
+trans_profil_psychologe = ret_write_trans_db_files["trans_profil_psychologe"]
+trans_profil_both = ret_write_trans_db_files["trans_profil_both"]
+no_trans_profil_gruppe = ret_write_trans_db_files["no_trans_profil_gruppe"]
+no_trans_profil_psychologe = ret_write_trans_db_files["no_trans_profil_psychologe"]
+no_trans_profil_both = ret_write_trans_db_files["no_trans_profil_both"]
+trans_and_sexual_thera = ret_write_trans_db_files["trans_and_sexual_thera"]
+trans_and_sexual_thera_gruppe = ret_write_trans_db_files["trans_and_sexual_thera_gruppe"]
+trans_and_sexual_thera_psychologe = ret_write_trans_db_files["trans_and_sexual_thera_psychologe"]
+trans_and_sexual_thera_both = ret_write_trans_db_files["trans_and_sexual_thera_both"]
+no_trans_and_sexual_thera = ret_write_trans_db_files["no_trans_and_sexual_thera"]
+no_trans_and_sexual_thera_gruppe = ret_write_trans_db_files["no_trans_and_sexual_thera_gruppe"]
+no_trans_and_sexual_thera_psychologe = ret_write_trans_db_files["no_trans_and_sexual_thera_psychologe"]
+no_trans_and_sexual_thera_both = ret_write_trans_db_files["no_trans_and_sexual_thera_both"]
+thera_data = {}
 if is_data("psychologe_check"):
    psychologe_check = load_data("psychologe_check")
-if is_data("trans_profil_psychologe"):
-   trans_profil_psychologe = load_data("trans_profil_psychologe")
-if is_data("no_trans_profil_psychologe"):
-   no_trans_profil_psychologe = load_data("no_trans_profil_psychologe")
-if is_data("no_trans_and_sexual_thera"):
-   trans_profil_psychologe = load_data("trans_profil_psychologe")
-if is_data("no_trans_profil_psychologe"):
-   no_trans_profil_psychologe = load_data("no_trans_profil_psychologe")
-if is_data("trans_profil_gruppe"):
-   trans_profil_gruppe = load_data("trans_profil_gruppe")
-if is_data("no_trans_profil_gruppe"):
-   no_trans_profil_gruppe = load_data("no_trans_profil_gruppe")
-if is_data("no_trans_and_sexual_thera"):
-   trans_profil_gruppe = load_data("trans_profil_gruppe")
-if is_data("no_trans_profil_gruppe"):
-   no_trans_profil_gruppe = load_data("no_trans_profil_gruppe")
+def create_thera_data_attr(url, name, value):
+    if not url in thera_data:
+       thera_data[url] = {}
+    if not name in thera_data[url]:
+       thera_data[url][name] = value
+    save_data(thera_data, "thera_data")
+def create_thera_data_attrs(url, value, names):
+    for i in range(0, len(names)):
+        create_thera_data_attr(url, names[i], value)
+def set_thera_data_value(url, name, value):
+    create_thera_data_attr(url, name, "")
+    thera_data[url][name] = value
+    save_data(thera_data, "thera_data")
 def search_queer_words_on_thera_profil_ex(url, driver):
+    create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "psychologe_check", "queer_check", "email_check", "has_email"])
+    create_thera_data_attrs(url, False, ["trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe"])
     if url in psychologe_check:
        psycho_type = type(psychologe_check[url])
        if psycho_type == type(True):
           psychologe_check[url] = ""
           save_data(psychologe_check, "psychologe_check")
-       
+
        if len(psychologe_check[url]) > 0:
+          set_thera_data_value(url, "psychologe_check", True)
           istrans = is_trans(url)
           istranstype = type(istrans) == type(True)
+          set_thera_data_value(url, "trans", istranstype and istrans)
           if istranstype:
              return istrans          
           
     driver.get(url)
     time.sleep(2)
     try:
+        element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#generellinfos')))
+    except Exception as e:
+        pass
+    time.sleep(1)
+    try:
         element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#microsite .shadowbox.therapist-details')))
     except Exception as e:
         print(e)
         print("exception")
-        is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver)
+        is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver)
         is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
         is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
+        is_that_both = is_that_gruppe and is_that_psychologe
+        set_thera_data_value(url, "psychologe", is_that_psychologe)
+        set_thera_data_value(url, "sexualitaet", is_that_sexual)
+        set_thera_data_value(url, "gruppe", is_that_gruppe)
+        set_thera_data_value(url, "gruppe_and_psychologe", is_that_both)
+        set_thera_data_value(url, "psychologe_check", True)
+        set_thera_data_value(url, "trans", False)
+        set_thera_data_value(url, "queer_check", False)
+        set_thera_data_value(url, "email_check", False)
+        set_thera_data_value(url, "has_email", False)
         prefix = ""
         if is_that_gruppe:
            print("Gruppen Therapeut")
@@ -182,6 +221,8 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            print("Sex Therapeut")
         if is_that_psychologe:
            print("Psycho Therapeut >.< -> Der dein Verstand der Norm angleicht!!!!")
+        if is_that_both:
+           print("Beides!!!!")
         if is_that_sexual:
             no_trans_profil[url] = ""
             save_data(no_trans_profil, "no_trans_profil")
@@ -191,6 +232,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
             if is_that_gruppe:
                no_trans_profil_gruppe[url] = ""
                save_data(no_trans_profil_gruppe, "no_trans_profil_gruppe")
+            if is_that_both:
+               no_trans_profil_both[url] = ""
+               save_data(no_trans_profil_both, "no_trans_profil_both")
         else:
             no_trans_and_sexual_thera[url] = ""
             save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
@@ -200,24 +244,39 @@ def search_queer_words_on_thera_profil_ex(url, driver):
             if is_that_gruppe:
                no_trans_and_sexual_thera_gruppe[url] = ""
                save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
+            if is_that_both:
+               no_trans_and_sexual_thera_both[url] = ""
+               save_data(no_trans_and_sexual_thera_both, "no_trans_and_sexual_thera_both")
                
         psychologe_check[url] = ""
         save_data(psychologe_check, "psychologe_check")
         return False
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
-    has_trans_profil_email = url in psychologe_check and url in trans_profil
-    has_no_trans_profil_email = url in psychologe_check and url in no_trans_thera_email
-    is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver)
+    has_trans_profil_email = url in email_check and url in trans_profil
+    has_no_trans_profil_email = url in email_check and url in no_trans_thera_email
+    is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver)
     is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
     is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
+    is_that_both = is_that_gruppe and is_that_psychologe
+    set_thera_data_value(url, "psychologe", is_that_psychologe)
+    set_thera_data_value(url, "sexualitaet", is_that_sexual)
+    set_thera_data_value(url, "gruppe", is_that_gruppe)
+    set_thera_data_value(url, "gruppe_and_psychologe", is_that_both)
+    set_thera_data_value(url, "psychologe_check", True)
+    set_thera_data_value(url, "trans", is_founded_queer)
+    set_thera_data_value(url, "queer_check", True)
+    set_thera_data_value(url, "email_check", False)
+    set_thera_data_value(url, "has_email", False)
     if is_that_sexual:
        print("Sex Therapeut")
     if is_that_psychologe:
        print("Psycho Therapeut >.< -> Der dein Verstand der Norm angleicht!!!!")
     if is_that_gruppe:
        print("Gruppentherapie!!!!")
+    if is_that_both:
+       print("Beides!!!!")
     if is_founded_queer:
-       if not url in psychologe_check:
+       if not url in email_check:
           trans_profil[url] = ""
           save_data(trans_profil, "trans_profil")
           if is_that_psychologe:
@@ -226,7 +285,10 @@ def search_queer_words_on_thera_profil_ex(url, driver):
           if is_that_gruppe:
              trans_profil_gruppe[url] = ""
              save_data(trans_profil_gruppe, "trans_profil_gruppe")
-    elif not url in psychologe_check:
+          if is_that_both:
+             trans_profil_both[url] = ""
+             save_data(trans_profil_both, "trans_profil_both")
+    elif not url in email_check:
         if is_that_sexual:
            no_trans_profil[url] = ""
            save_data(no_trans_profil, "no_trans_profil")
@@ -236,6 +298,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_profil_gruppe[url] = ""
               save_data(no_trans_profil_gruppe, "no_trans_profil_gruppe")
+           if is_that_both:
+              no_trans_profil_both[url] = ""
+              save_data(no_trans_profil_both, "no_trans_profil_both")
         else:
            no_trans_and_sexual_thera[url] = ""
            save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
@@ -245,6 +310,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_and_sexual_thera_gruppe[url] = ""
               save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
+           if is_that_both:
+              no_trans_and_sexual_thera_both[url] = ""
+              save_data(no_trans_and_sexual_thera_both, "no_trans_and_sexual_thera_both")
     psychologe_check[url] = ""
     save_data(psychologe_check, "psychologe_check")
 
@@ -254,11 +322,21 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     if has_no_trans_profil_email:
        return no_trans_profil[url]
  
+    jobtitle_selector = "#microsite .therapist-details[itemtype='http://schema.org/Person'] .therapist-name h1 > span[itemprop='jobtitle']"
+    name_selector =  "#microsite .therapist-details[itemtype='http://schema.org/Person'] .therapist-name h1 > span[itemprop='name']"
+    jobtitle = driver.execute_script("return document.querySelector(arguments[0]).innerHTML;", jobtitle_selector)
+    name = driver.execute_script("return document.querySelector(arguments[0]).innerHTML;", name_selector)
+    set_thera_data_value(url, "jobtitle", jobtitle)
+    set_thera_data_value(url, "name", name)
+    print("jobtitle: " + jobtitle)
+    print("name: " + name)
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
         print(e)
         print("exception")
+        set_thera_data_value(url, "email_check", True)
+        set_thera_data_value(url, "has_email", False)
         return is_founded_queer
         
     with open('./jquery.js', 'r') as jquery_js: 
@@ -276,6 +354,12 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     email_address_value = driver.execute_script("return window.getDecryptedEmail();");
     len_email_address_value = len(email_address_value)
     time.sleep(1)
+    if len(email_address_value) > 0:
+       set_thera_data_value(url, "email", email_address_value)
+       set_thera_data_value(url, "email_check", True)
+       set_thera_data_value(url, "has_email", True)
+    else:
+       set_thera_data_value(url, "has_email", False)
     if is_founded_queer:
         trans_profil[url] = email_address_value
         save_data(trans_profil, "trans_profil")
@@ -285,6 +369,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
         if is_that_gruppe:
            trans_profil_gruppe[url] = ""
            save_data(trans_profil_gruppe, "trans_profil_gruppe")
+        if is_that_both:
+           trans_profil_both[url] = ""
+           save_data(trans_profil_both, "trans_profil_both")
     else:
         if is_that_sexual:
            no_trans_profil[url] = email_address_value
@@ -295,6 +382,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_profil_gruppe[url] = email_address_value
               save_data(no_trans_profil_gruppe, "no_trans_profil_gruppe")
+           if is_that_both:
+              no_trans_profil_both[url] = email_address_value
+              save_data(no_trans_profil_both, "no_trans_profil_both")
         else:
            no_trans_and_sexual_thera[url] = email_address_value
            save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
@@ -304,6 +394,9 @@ def search_queer_words_on_thera_profil_ex(url, driver):
            if is_that_gruppe:
               no_trans_and_sexual_thera_gruppe[url] = email_address_value
               save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
+           if is_that_both:
+              no_trans_and_sexual_thera_both[url] = email_address_value
+              save_data(no_trans_and_sexual_thera_both, "no_trans_and_sexual_thera_both")
     psychologe_check[url] = email_address_value
     save_data(psychologe_check, "psychologe_check")
 
@@ -333,6 +426,16 @@ def is_gruppe(url):
        return True
        
     if url in no_trans_and_sexual_thera_gruppe:
+       return True
+       
+def is_both(url):
+    if url in trans_profil_both:
+       return True
+       
+    if url in no_trans_profil_both:
+       return True
+       
+    if url in no_trans_and_sexual_thera_both:
        return True
 
 downloadDefaultDirectory = '.'
@@ -505,11 +608,14 @@ try:
     trans_thera_email_all = []
     trans_thera_email_all_psychologe = []
     trans_thera_email_all_gruppe = []
+    trans_thera_email_all_both = []
     no_trans_thera_email_all_psychologe = []
     no_trans_thera_email_all_gruppe = []
+    no_trans_thera_email_all_both = []
     no_trans_and_sexual_thera_email_all = []
     no_trans_and_sexual_thera_email_all_psychologe = []
     no_trans_and_sexual_thera_email_all_gruppe = []
+    no_trans_and_sexual_thera_email_all_both = []
     for i in range(0, len(thera_links_new)):
         thera_link_get = thera_links_new[i]
         thera_link_get_loc = thera_links_loc[i]
@@ -543,7 +649,11 @@ try:
         search_results = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".search-results ul.search-results-list")))
         search_results = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel a");')
         for x in range(0, len(search_results)):
-            sr = st + driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
+            ele_url = driver.execute_script('return arguments[0].getAttribute("href");', search_results[x])
+            if ele_url == None:
+               x = x - 1
+               continue
+            sr = st + str(ele_url)
             if sr in creamy_thera:
                continue
             thera_links_neww[thera_link_get]["search_results"].append(st)
@@ -571,10 +681,14 @@ try:
         for j in range(thera_link_next, thera_link_last + 1):
             next_page_link = thera_link_first_href + "&page=" + str(j)
             driver.execute_script('document.location.href=arguments[0]', next_page_link)
-            time.sleep(2)
+            time.sleep(3)
             new_search_results = driver.execute_script('return document.querySelectorAll(".search-results ul.search-results-list li.panel a");')
             for x in range(0, len(new_search_results)):
-                sr = st + driver.execute_script('return arguments[0].getAttribute("href");', new_search_results[x])
+                ele_url = driver.execute_script('return arguments[0].getAttribute("href");', new_search_results[x])
+                if ele_url == None:
+                   x = x - 1
+                   continue
+                sr = st + str(ele_url)
                 if sr in creamy_thera:
                    continue
                 thera_links_neww[thera_link_get]["search_results"].append(st)
@@ -594,11 +708,14 @@ try:
         no["no_trans_thera_email_all"] = []
         no["trans_thera_email_all_psychologe"] = []
         no["trans_thera_email_all_gruppe"] = []
+        no["trans_thera_email_all_both"] = [] 
         no["no_trans_thera_email_all_psychologe"] = []
         no["no_trans_thera_email_all_gruppe"] = []
+        no["no_trans_thera_email_all_both"] = []
         no["no_trans_and_sexual_thera_email_all"] = []
         no["no_trans_and_sexual_thera_email_all_psychologe"] = []
         no["no_trans_and_sexual_thera_email_all_gruppe"] = []
+        no["no_trans_and_sexual_thera_email_all_both"] = []
         for k in range(0, len(no_search_results)):
             url = no_search_results[k]
             if search_queer_words_on_thera_profil_ex(url, driver):
@@ -610,10 +727,13 @@ try:
                if is_gruppe(url):
                   trans_thera_email_all_gruppe.append(email_address_value)
                   no["trans_thera_email_all_gruppe"].append(email_address_value)
+               if is_both(url):
+                  trans_thera_email_all_both.append(email_address_value)
+                  no["trans_thera_email_all_both"].append(email_address_value)
                trans_thera_email_all.append(email_address_value)
                write_the_file(thera_link_get_loc + "_trans_thera_email", no["trans_thera_email_all"])
                write_the_file(thera_link_get_loc + "_trans_thera_email_psychologe", no["trans_thera_email_all_psychologe"])
-               write_the_file(thera_link_get_loc + "_trans_thera_email_gruppe", no["trans_thera_email_all_gruppe"])
+               write_the_file(thera_link_get_loc + "_trans_thera_email_both", no["trans_thera_email_all_both"])
             elif url in no_trans_and_sexual_thera:
                email_address_value = no_trans_and_sexual_thera[url] 
                no["no_trans_and_sexual_thera_email_all"].append(email_address_value)
@@ -624,9 +744,13 @@ try:
                if is_gruppe(url):
                   no_trans_and_sexual_thera_email_all_gruppe.append(email_address_value)
                   no["no_trans_and_sexual_thera_email_all_gruppe"].append(email_address_value)
+               if is_both(url):
+                  no_trans_and_sexual_thera_email_all_both.append(email_address_value)
+                  no["no_trans_and_sexual_thera_email_all_both"].append(email_address_value)
                write_the_file(thera_link_get_loc + "_no_trans_and_sexual_thera_email", no["no_trans_and_sexual_thera_email_all"])
                write_the_file(thera_link_get_loc + "_no_trans_and_sexual_thera_email_psychologe", no["no_trans_and_sexual_thera_email_all_psychologe"])
                write_the_file(thera_link_get_loc + "_no_trans_and_sexual_thera_email_gruppe", no["no_trans_and_sexual_thera_email_all_gruppe"])
+               write_the_file(thera_link_get_loc + "_no_trans_and_sexual_thera_email_both", no["no_trans_and_sexual_thera_email_all_both"])
             elif url in no_trans_profil:
                email_address_value = no_trans_profil[url] 
                no["no_trans_thera_email_all"].append(email_address_value)
@@ -637,20 +761,27 @@ try:
                if is_gruppe(url):
                   no_trans_thera_email_all_gruppe.append(email_address_value)
                   no["no_trans_thera_email_all_gruppe"].append(email_address_value)
+               if is_both(url):
+                  no_trans_thera_email_all_both.append(email_address_value)
+                  no["no_trans_thera_email_all_both"].append(email_address_value)
                write_the_file(thera_link_get_loc + "_no_trans_thera_email", no["no_trans_thera_email_all"])
                write_the_file(thera_link_get_loc + "_no_trans_thera_email_psychologe", no["no_trans_thera_email_all_psychologe"])
                write_the_file(thera_link_get_loc + "_no_trans_thera_email_gruppe", no["no_trans_thera_email_all_gruppe"])
+               write_the_file(thera_link_get_loc + "_no_trans_thera_email_both", no["no_trans_thera_email_all_both"])
             save_data(trans_profil, "trans_profil")
             save_data(no_trans_profil, "no_trans_profil")
             save_data(trans_thera_email_all_psychologe, "trans_thera_email_all_psychologe")
             save_data(no_trans_thera_email_all_psychologe, "no_trans_thera_email_all_psychologe")
             save_data(trans_thera_email_all_gruppe, "trans_thera_email_all_gruppe")
             save_data(no_trans_thera_email_all_gruppe, "no_trans_thera_email_all_gruppe")
+            save_data(trans_thera_email_all_both, "trans_thera_email_all_both")
+            save_data(no_trans_thera_email_all_both, "no_trans_thera_email_all_both")
             save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
             save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
             save_data(no_trans_and_sexual_thera_email_all, "no_trans_and_sexual_thera_email_all")
             save_data(no_trans_and_sexual_thera_email_all_psychologe, "no_trans_and_sexual_thera_email_all_psychologe")
             save_data(no_trans_and_sexual_thera_email_all_gruppe, "no_trans_and_sexual_thera_email_all_gruppe")
+            save_data(no_trans_and_sexual_thera_email_all_both, "no_trans_and_sexual_thera_email_all_both")
         save_data(trans_profil, "trans_profil")
         save_data(no_trans_profil, "no_trans_profil")
     
@@ -660,6 +791,7 @@ try:
     write_the_file("no_trans_thera_email_all", no_trans_thera_email_all)
     write_the_file("no_trans_thera_email_all_psychologe", no_trans_thera_email_all_psychologe)
     write_the_file("no_trans_thera_email_all_gruppe", no_trans_thera_email_all_gruppe)  
+    write_the_file("no_trans_thera_email_all_both", no_trans_thera_email_all_both)  
     write_the_file("all", hel_search_results)    
         #noooo_search_results = []
         #no_trans_thera_email = []

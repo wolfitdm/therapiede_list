@@ -57,6 +57,7 @@ https://www.therapie.de/profil/spikermannzander/
 https://www.therapie.de/profil/jonas.schmidt/
 https://www.therapie.de/profil/benner/
 https://www.therapie.de/profil/bersch/
+https://www.therapie.de/profil/lourdes.voss/
 https://www.therapie.de/profil/rachelsara.kopp/
 https://www.therapie.de/profil/motja.vonkrosigk/
 https://www.therapie.de/profil/dominice.stoeckel/
@@ -95,4 +96,3 @@ https://www.therapie.de/profil/philineworobiec/
 https://www.therapie.de/profil/kubentz/
 https://www.therapie.de/profil/troll/
 https://www.therapie.de/profil/kuchar/
-https://www.therapie.de/profil/max.fischer/
