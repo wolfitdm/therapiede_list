@@ -183,7 +183,7 @@ def get_thera_data_value(url, name, default_value=""):
        return default_value
     
 def init_thera(url):
-    create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "wartezeit"])
+    create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "wartezeit", "description"])
     create_thera_data_attrs(url, False, [
                                             "trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe", 
                                             "trans_and_psychologe", "trans_and_gruppe_and_psychologe", 
@@ -191,6 +191,31 @@ def init_thera(url):
                                             "has_email",
                                             "offline"
                                         ])
+    save_data(thera_data, "thera_data")
+
+def change_thera(url):
+    if True:
+        if url == "https://www.therapie.de/profil/blaszcyk/":
+           thera_data[url]["psychologe"] = True
+        
+        if url == "https://www.therapie.de/profil/brauer/":
+           thera_data[url]["gruppe"] = True
+        
+        jobtitle = thera_data[url]["jobtitle"].strip()
+        name = thera_data[url]["name"].strip()
+        desc = thera_data[url]["description"].strip()
+        is_psych_string = "Psych."
+        is_psych_string_2 = "Dipl.-Psycholog"
+        if is_psych_string in name or is_psych_string in jobtitle or desc in is_psych_string_2:
+           thera_data[url]["psychologe"] = True
+           #thera_data[url]["heilpraktiker"] = False
+        
+        if thera_data[url]["gruppe"] and thera_data[url]["psychologe"]:
+           thera_data[url]["gruppe_and_psychologe"] = True
+    
+        if thera_data[url]["trans"] and thera_data[url]["gruppe"] and thera_data[url]["psychologe"]:
+           thera_data[url]["trans_and_gruppe_and_psychologe"] = True
+           
     save_data(thera_data, "thera_data")
 
 def search_queer_words_on_thera_profil_ex(url, driver):
@@ -221,11 +246,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     except Exception as e:
         print(e)
         print("exception")
-        is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver)
+        is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver) or search_word_in_page("<li>Berufsverband Deutscher Psychologinnen und Psychologen</li>", driver)
         is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
         is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
+        is_that_hpg = search_word_in_page("<li>Erlaubnis zur Psychotherapie nach Heilpraktikergesetz</li>", driver)
         is_that_both = is_that_gruppe and is_that_psychologe
         set_thera_data_value(url, "psychologe", is_that_psychologe)
+        set_thera_data_value(url, "heilpraktiker", is_that_hpg)
         set_thera_data_value(url, "sexualitaet", is_that_sexual)
         set_thera_data_value(url, "gruppe", is_that_gruppe)
         set_thera_data_value(url, "gruppe_and_psychologe", is_that_both)
@@ -274,13 +301,15 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     is_founded_queer = search_array_in_page(search_words_queer, driver, search_words_queer_must_found)
     has_trans_profil_email = url in email_check and url in trans_profil
     has_no_trans_profil_email = url in email_check and url in no_trans_thera_email
-    is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver)
+    is_that_psychologe = search_word_in_page("Psychologische/r Psychotherapeut/in", driver) or search_word_in_page("Diplom-Psychologie", driver) or search_word_in_page("<li>Berufsverband Deutscher Psychologinnen und Psychologen</li>", driver)
     is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
     is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
+    is_that_hpg = search_word_in_page("<li>Erlaubnis zur Psychotherapie nach Heilpraktikergesetz</li>", driver)
     is_that_both = is_that_gruppe and is_that_psychologe
     trans_and_psychologe = is_founded_queer and is_that_psychologe
     trans_and_gruppe_and_psychologe = trans_and_psychologe and is_that_gruppe
     set_thera_data_value(url, "psychologe", is_that_psychologe)
+    set_thera_data_value(url, "heilpraktiker", is_that_hpg)
     set_thera_data_value(url, "sexualitaet", is_that_sexual)
     set_thera_data_value(url, "gruppe", is_that_gruppe)
     set_thera_data_value(url, "gruppe_and_psychologe", is_that_both)
@@ -363,10 +392,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
  
     jobtitle_selector = "#microsite .therapist-details[itemtype='http://schema.org/Person'] .therapist-name h1 > span[itemprop='jobtitle']"
     name_selector =  "#microsite .therapist-details[itemtype='http://schema.org/Person'] .therapist-name h1 > span[itemprop='name']"
+    desc_selector =  "#microsite .therapist-details .therapist-name h2[itemprop='description']"
     jobtitle = driver.execute_script("return document.querySelector(arguments[0]).innerHTML;", jobtitle_selector)
     name = driver.execute_script("return document.querySelector(arguments[0]).innerHTML;", name_selector)
+    description = driver.execute_script("return document.querySelector(arguments[0]).innerHTML;", desc_selector)
     set_thera_data_value(url, "jobtitle", jobtitle)
     set_thera_data_value(url, "name", name)
+    set_thera_data_value(url, "description", description)
     print("jobtitle: " + jobtitle)
     print("name: " + name)
     try:
@@ -801,6 +833,8 @@ try:
                write_the_file(thera_link_get_loc + "_no_trans_thera_email_psychologe", no["no_trans_thera_email_all_psychologe"])
                write_the_file(thera_link_get_loc + "_no_trans_thera_email_gruppe", no["no_trans_thera_email_all_gruppe"])
                write_the_file(thera_link_get_loc + "_no_trans_thera_email_both", no["no_trans_thera_email_all_both"])
+            
+            change_thera(url)
             save_data(trans_profil, "trans_profil")
             save_data(no_trans_profil, "no_trans_profil")
             save_data(trans_thera_email_all_psychologe, "trans_thera_email_all_psychologe")
