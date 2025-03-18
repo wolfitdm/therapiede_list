@@ -159,12 +159,15 @@ no_trans_and_sexual_thera_both = ret_write_trans_db_files["no_trans_and_sexual_t
 thera_data = {}
 if is_data("psychologe_check"):
    psychologe_check = load_data("psychologe_check")
+if is_data("thera_data")
+   thera_data = load_data("thera_data")
 def create_thera_data_attr(url, name, value):
     if not url in thera_data:
        thera_data[url] = {}
     if not name in thera_data[url]:
        thera_data[url][name] = value
     save_data(thera_data, "thera_data")
+
 def create_thera_data_attrs(url, value, names):
     for i in range(0, len(names)):
         create_thera_data_attr(url, names[i], value)
@@ -172,9 +175,17 @@ def set_thera_data_value(url, name, value):
     create_thera_data_attr(url, name, "")
     thera_data[url][name] = value
     save_data(thera_data, "thera_data")
+def init_thera(url):
+    create_thera_data_attrs(url, "", ["jobtitle", "name", "email"])
+    create_thera_data_attrs(url, False, [
+                                            "trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe", 
+                                            "psychologe_check", "queer_check", "email_check", 
+                                            "has_email"
+                                        ])
+    save_data(thera_data, "thera_data")
+
 def search_queer_words_on_thera_profil_ex(url, driver):
-    create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "psychologe_check", "queer_check", "email_check", "has_email"])
-    create_thera_data_attrs(url, False, ["trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe"])
+    init_thera(url)
     if url in psychologe_check:
        psycho_type = type(psychologe_check[url])
        if psycho_type == type(True):
