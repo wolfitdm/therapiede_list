@@ -183,11 +183,13 @@ def get_thera_data_value(url, name, default_value=""):
        return default_value
     
 def init_thera(url):
-    create_thera_data_attrs(url, "", ["jobtitle", "name", "email"])
+    create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "wartezeit"])
     create_thera_data_attrs(url, False, [
                                             "trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe", 
+                                            "trans_and_psychologe", "trans_and_gruppe_and_psychologe", 
                                             "psychologe_check", "queer_check", "email_check", 
-                                            "has_email"
+                                            "has_email",
+                                            "offline"
                                         ])
     save_data(thera_data, "thera_data")
 
@@ -276,6 +278,8 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     is_that_sexual = search_word_in_page("<li>Sexualität</li>", driver)
     is_that_gruppe = search_word_in_page("<li>Gruppentherapie</li>", driver)
     is_that_both = is_that_gruppe and is_that_psychologe
+    trans_and_psychologe = is_founded_queer and is_that_psychologe
+    trans_and_gruppe_and_psychologe = trans_and_psychologe and is_that_gruppe
     set_thera_data_value(url, "psychologe", is_that_psychologe)
     set_thera_data_value(url, "sexualitaet", is_that_sexual)
     set_thera_data_value(url, "gruppe", is_that_gruppe)
@@ -285,6 +289,8 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     set_thera_data_value(url, "queer_check", True)
     set_thera_data_value(url, "email_check", False)
     set_thera_data_value(url, "has_email", False)
+    set_thera_data_value(url, "trans_and_psychologe", trans_and_psychologe)
+    set_thera_data_value(url, "trans_and_gruppe_and_psychologe", trans_and_gruppe_and_psychologe)
     if is_that_sexual:
        print("Sex Therapeut")
     if is_that_psychologe:
@@ -333,6 +339,21 @@ def search_queer_words_on_thera_profil_ex(url, driver):
               save_data(no_trans_and_sexual_thera_both, "no_trans_and_sexual_thera_both")
     psychologe_check[url] = ""
     save_data(psychologe_check, "psychologe_check")
+    
+    with open('./jquery.js', 'r') as jquery_js: 
+        # 3) Read the jquery from a file
+        jquery = jquery_js.read() 
+        # 4) Load jquery lib
+        driver.execute_script(jquery)
+        
+    with open('./find_wait_time.js', 'r') as fwt_js: 
+        # 3) Read the jquery from a file
+        fwt = fwt_js.read() 
+        # 4) Load jquery lib
+        driver.execute_script(fwt)
+        
+    wait_time = driver.execute_script("return window.findWartezeit();")
+    set_thera_data_value(url, "wartezeit", wait_time)
 
     if has_trans_profil_email:
        return trans_profil[url]
@@ -356,13 +377,7 @@ def search_queer_words_on_thera_profil_ex(url, driver):
         set_thera_data_value(url, "email_check", True)
         set_thera_data_value(url, "has_email", False)
         return is_founded_queer
-        
-    with open('./jquery.js', 'r') as jquery_js: 
-        # 3) Read the jquery from a file
-        jquery = jquery_js.read() 
-        # 4) Load jquery lib
-        driver.execute_script(jquery)
-        
+
     with open('./contact_button.js', 'r') as cb_js: 
         # 3) Read the jquery from a file
         cb = cb_js.read() 

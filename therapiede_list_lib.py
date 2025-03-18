@@ -34943,8 +34943,26 @@ def write_all_trans_online_theras(send_emails=False):
               trans_quermed_all_online_emails.append(trans_profil_value)
        save_data(trans_quermed_all_online_emails, "all_online_theras_trans_first")
        smtpserver = smtp_server_complete()
-       send_emails_ex(smtpserver, trans_quermed_all_online_emails)          
+       send_emails_ex(smtpserver, trans_quermed_all_online_emails)
+
+def save_json_file(json_struct, filename, sort_keys_json = False):
+    with open(filename + ".json", 'w') as f:
+         json.dump(json_struct, f, sort_keys = save_json_file, indent = 4)
+         
+def load_json_file(filename):
+    json_struct = {}
+    if not os.path.isfile(filename + ".json"):
+       save_json_file(json_struct, filename)
+       return json_struct
+    else:
+       with open(filename + ".json") as f:
+            json_struct = json.load(f)
+    return json_struct
+       
 def write_trans_db_files(send_emails=False):
+    if is_data("thera_data"):
+       thera_data = load_data("thera_data")
+       save_json_file(thera_data, "therapie_de", True)
     send_emails = False
     ret = {}
     ret["trans_profil"] = {}
