@@ -4,10 +4,18 @@ import errno
 import os.path
 import smtplib
 import json
+import re
+import time
 
 from email.mime.text import MIMEText
 
+def get_valid_filename(name):
+    s = str(name).strip().replace(" ", "_")
+    s = re.sub(r"(?u)[^-\w.]", "_", s)
+    return s
+
 def get_target(file):
+    file = get_valid_filename(file)
     target_dir = "save"
     if not os.path.isdir(target_dir):
         try:
@@ -34771,7 +34779,9 @@ transmannev = [
 ]
 save_data(transmannev, "transmannev")
 def write_the_file(name="0", content=[]):
-    target = os.path.join("thera_lists", name+"_theras_online.txt")
+    filename = name+"_theras_online.txt"
+    filename = get_valid_filename(filename)
+    target = os.path.join("thera_lists", filename)
     with open(target, 'w') as f:
          for line in content:
              f.write(f"{line}\n")
@@ -34946,10 +34956,12 @@ def write_all_trans_online_theras(send_emails=False):
        send_emails_ex(smtpserver, trans_quermed_all_online_emails)
 
 def save_json_file(json_struct, filename, sort_keys_json = False):
+    filename = get_valid_filename(filename)
     with open(filename + ".json", 'w') as f:
          json.dump(json_struct, f, sort_keys = save_json_file, indent = 4)
          
 def load_json_file(filename):
+    filename = get_valid_filename(filename)
     json_struct = {}
     if not os.path.isfile(filename + ".json"):
        save_json_file(json_struct, filename)

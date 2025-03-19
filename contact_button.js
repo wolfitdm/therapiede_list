@@ -63,12 +63,5 @@ function send_UnCryptMailto_with_data(contactEmail, contactEmailSubject, body) {
 function getOpenerFunc(contactEmail, contactEmailSubject, contactEmailBodyPrefix, contactEmailBody) {
 
 }
-
-function findWartezeit() {
-	 $(function(){ $('h4 + ul > li:contains("Wartezeit")').addClass('wartezeit_select'); });
-	 return $("li.wartezeit_select").last().html();
-}
-
 window.getDecryptedEmail = getDecryptedEmail;
 window.send_UnCryptMailto_with_data = send_UnCryptMailto_with_data;
-window.findWartezeit = findWartezeit;

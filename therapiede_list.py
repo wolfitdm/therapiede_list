@@ -381,10 +381,10 @@ def search_queer_words_on_thera_profil_ex(url, driver):
         fwt = fwt_js.read() 
         # 4) Load jquery lib
         driver.execute_script(fwt)
-        
-    wait_time = driver.execute_script("return window.findWartezeit();")
+    wait_time = driver.execute_script("return document.querySelector('#generellinfos > .headline + .shadowbox-row + .shadowbox-row.row > div + div > ul:last-child > li:first-child').innerHTML;");
+    print("wait_time: " + str(wait_time))
     set_thera_data_value(url, "wartezeit", wait_time)
-
+    print("wait_time: " + wait_time)
     if has_trans_profil_email:
        return trans_profil[url]
  
