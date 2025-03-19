@@ -1,3 +1,4 @@
+service@individual-therapy.com
 info@praxis-kisakaya-kayikci.de
 psychotherapie.online.fz@gmail.com
 info@therapie-barth.de
@@ -5,3 +6,5 @@ info@vivendi-psychotherapie.de
 anfrage@yesiam.online
 kontakt@dr-jakubovski.de
 kontakt@lmk-psychotherapie.de
+mail@irelease.de
+t.kurzhals@zsl-straubing.de

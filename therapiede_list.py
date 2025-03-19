@@ -201,14 +201,15 @@ def change_thera(url):
         if url == "https://www.therapie.de/profil/brauer/":
            thera_data[url]["gruppe"] = True
         
-        jobtitle = thera_data[url]["jobtitle"].strip()
-        name = thera_data[url]["name"].strip()
-        desc = thera_data[url]["description"].strip()
-        is_psych_string = "Psych."
-        is_psych_string_2 = "Dipl.-Psycholog"
-        if is_psych_string in name or is_psych_string in jobtitle or desc in is_psych_string_2:
-           thera_data[url]["psychologe"] = True
-           #thera_data[url]["heilpraktiker"] = False
+        if not thera_data[url]["psychologe"]:
+           jobtitle = thera_data[url]["jobtitle"].strip()
+           name = thera_data[url]["name"].strip()
+           desc = thera_data[url]["description"].strip()
+           is_psych_string = "Psych."
+           is_psych_string_2 = "Dipl.-Psycholog"
+           if is_psych_string in name or is_psych_string in jobtitle or "Psycholog" in jobtitle or is_psych_string_2 in desc:
+              thera_data[url]["psychologe"] = True
+              #thera_data[url]["heilpraktiker"] = False
         
         if thera_data[url]["gruppe"] and thera_data[url]["psychologe"]:
            thera_data[url]["gruppe_and_psychologe"] = True
@@ -401,6 +402,7 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     set_thera_data_value(url, "description", description)
     print("jobtitle: " + jobtitle)
     print("name: " + name)
+    print("description: " + description)
     try:
         contact_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#contact-button')))
     except Exception as e: 
