@@ -2522,7 +2522,7 @@
     "https://www.therapie.de/profil/anna.luebberding/": {
         "description": "",
         "email": "",
-        "email_check": false,
+        "email_check": true,
         "gruppe": true,
         "gruppe_and_psychologe": true,
         "has_email": false,
@@ -12097,7 +12097,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/christine.willems/": {
         "description": "Praxis f\u00fcr Psychotherapie und Psychologische Gutachten",
@@ -21197,7 +21197,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/friederike.krusch/": {
         "description": "Psychologische Psychotherapeutin - Verhaltenstherapie",
@@ -23437,7 +23437,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/golly/": {
         "description": "Diplom-Psychologin &amp; Heilpraktikerin f\u00fcr Psychotherapie",
@@ -26957,7 +26957,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/heiner/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -29177,7 +29177,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/holztueschen/": {
         "description": "Psychotherapie n. d. Heilpraktikergesetz, Yogalehrerin",
@@ -31417,7 +31417,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/jarchow/": {
         "description": "Psychologische Psychotherapeutin",
@@ -33037,7 +33037,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/julia.weber/": {
         "description": "Psychologische Psychtherapeutin",
@@ -34737,7 +34737,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/katharina.els/": {
         "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) &amp; ADHS Diagnostik",
@@ -37677,7 +37677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/koentkerhilsmann/": {
         "description": "Kinder-und Jugendlichenpsychotherapeutin im Vertiefungsgebiet Systemische Therapie",
@@ -38457,7 +38457,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/kraft.florian/": {
         "description": "Coach Kraft. Raum f\u00fcr Entwicklung",
@@ -43677,7 +43677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/luedtke/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -47797,7 +47797,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/meska/": {
         "description": "Psychologische Psychotherapeutin",
@@ -48117,7 +48117,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/michael.hammer/": {
         "description": "Psychologischer Psychotherapeut",
@@ -49997,7 +49997,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/mudrich/": {
         "description": "Paar- und Musiktherapie",
@@ -51277,7 +51277,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/nau.anne/": {
         "description": "Psychologische Psychotherapeutin",
@@ -54057,7 +54057,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/osenberg/": {
         "description": "Psychologische Psychotherapeutin",
@@ -54937,7 +54937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Einzeltherapie"
     },
     "https://www.therapie.de/profil/perless/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -56837,7 +56837,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/post/": {
         "description": "Systemische Therapie , Beratung und Coaching sowie Heilpraktiker f\u00fcr Psychotherapie",
@@ -58137,7 +58137,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/rausch/": {
         "description": "Heilpraktiker (Psychotherapie)",
@@ -60437,7 +60437,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/rouillac.laetitia/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie in franz\u00f6sischer Sprache / Th\u00e9rapie en fran\u00e7ais unqiuement",
@@ -62937,7 +62937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/scheck/": {
         "description": "Dipl. P\u00e4d./ Heilpraktiker f\u00fcr Psychotherapie",
@@ -68037,7 +68037,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/sprick/": {
         "description": "Privatpraxis f\u00fcr Psychotherapie | Susanne Sprick Heilpraktikerin f\u00fcr Psychotherapie",
@@ -68137,7 +68137,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/staiger/": {
         "description": "Praxis f\u00fcr Beratung, Coaching und heilpraktische Psychotherapie",
@@ -69257,7 +69257,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/stocker/": {
         "description": "Therapeutin f\u00fcr Psychotherapie nach dem HeilPrG",
@@ -71557,7 +71557,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/tanja.janke/": {
         "description": "Heilpraktikerin (Psychotherapie), Coach, Reittherapeutin",
@@ -74517,7 +74517,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/ute.riedel/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie ITraumatherapie I Hypnose",
@@ -75177,7 +75177,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/verena.muellerwieprecht/": {
         "description": "Beratungspraxis Blickwinkel - Paare, Familien und Einzelne - Privat und Selbstzahler",
@@ -78537,7 +78537,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/windhoevel/": {
         "description": "Heilpraktikerin, Yogalehrerin, Physiotherapeutin",
