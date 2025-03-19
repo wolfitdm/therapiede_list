@@ -159,7 +159,7 @@ no_trans_and_sexual_thera_both = ret_write_trans_db_files["no_trans_and_sexual_t
 thera_data = {}
 if is_data("psychologe_check"):
    psychologe_check = load_data("psychologe_check")
-if is_data("thera_data")
+if is_data("thera_data"):
    thera_data = load_data("thera_data")
 def create_thera_data_attr(url, name, value):
     if not url in thera_data:
