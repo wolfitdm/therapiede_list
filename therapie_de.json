@@ -27,6 +27,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/aberle/": {
+        "email": "sil_aberle@yahoo.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psychologin ",
+        "name": "Silvia Aberle",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/abilgaard/": {
         "email": "post@doerteabilgaard.de",
         "email_check": true,
@@ -279,6 +293,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/alessandra.weber/": {
+        "email": "alessandraweber.eft@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Alessandra Weber",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/alexander.bruemmerhoff/": {
         "email": "bruemmerhoffa@web.de",
         "email_check": true,
@@ -349,6 +377,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/alexandra.haussmann/": {
+        "email": "info@lifecoaching-limburg.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom P\u00e4dagogin ",
+        "name": "Alexandra Hau\u00dfmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ali.schwartz/": {
         "email": "a.schwartz@system-koerper-raum.de",
         "email_check": true,
@@ -403,6 +445,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/alke.bruhn/": {
+        "email": "info@systemische-praxis-bruhn.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Alke Bruhn",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/alken/": {
@@ -722,6 +778,20 @@
         "jobtitle": " ",
         "name": "Andrea H\u00f6lter",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/andrea.hoffmann/": {
+        "email": "mail@andreahoffmann-berlin.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Andrea Hoffmann",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -1343,6 +1413,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/anna.bartels/": {
+        "email": "kontakt@bartels-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc.-Psych. ",
+        "name": "Anna Bartels",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/anna.brockhaus/": {
         "email": "anna.brockhaus@gmx.net",
         "email_check": true,
@@ -1665,6 +1749,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/anne.pfaff/": {
+        "email": "psychotherapie@apfaff.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.A. ",
+        "name": "Anne Pfaff",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/anne.schroeter/": {
         "email": "info@anne-schroeter.de",
         "email_check": true,
@@ -1702,6 +1800,20 @@
         "jobtitle": "Dipl.-Psych. ",
         "name": "Annegret Wirths",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/annemaribel.czempisz/": {
+        "email": "kontakt@praxis-bildstein.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Anne Maribel Bildstein",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -1889,6 +2001,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/annika.weber/": {
+        "email": "info@in-equilibrium.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Annika Weber",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/annkatrin.riederer/": {
         "email": "riederer@wertefit.de",
         "email_check": true,
@@ -2001,6 +2127,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/antje.pfeiffer/": {
+        "email": "pfeiffer-psychotherapie@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Antje Pfeiffer",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/antje.roth/": {
         "email": "antje.roth@praxislichtpunkt.de",
         "email_check": true,
@@ -2057,6 +2197,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/antoine/": {
+        "email": "kontakt@psychotherapie-antoine.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. ",
+        "name": "Silvia Antoine",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/antonia.eben/": {
         "email": "praxis@psychotherapie-dr-eben.de",
         "email_check": true,
@@ -2085,6 +2239,20 @@
         "sexualitaet": true,
         "trans": true
     },
+    "https://www.therapie.de/profil/antonie/": {
+        "email": "praxis.aantonie@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Alexandru Antonie",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
+    },
     "https://www.therapie.de/profil/apelt/": {
         "email": "Therapie@psychologische-privatpraxis.com",
         "email_check": true,
@@ -2093,6 +2261,20 @@
         "has_email": true,
         "jobtitle": "Dr. ",
         "name": "Sabine M. Apelt",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/ariane.schmidt/": {
+        "email": "info@arianeschmidt.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Ariane Schmidt",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -2121,6 +2303,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Charlott Arndt",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/arnold/": {
+        "email": "heikearnold@netcologne.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Heilpraktikerin ",
+        "name": "Heike Arnold",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -2239,6 +2435,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/astridmaria.offer/": {
+        "email": "kontakt@praxis-dr-offer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. med. ",
+        "name": "Astrid Offer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/athmann/": {
         "email": "susanne.athmann@web.de",
         "email_check": true,
@@ -2276,6 +2486,20 @@
         "jobtitle": " ",
         "name": "Doris Aubele",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/aufenberg/": {
+        "email": "therapie.ludowig@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Anne Ludowig",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -2407,6 +2631,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/baatz/": {
+        "email": "mail@heidibaatz.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Hp ",
+        "name": "Heidi Baatz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/bachert.moritz/": {
         "email": "info@hypnose-mit-moritz.de",
         "email_check": true,
@@ -2491,6 +2729,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/baerbel.buehler/": {
+        "email": "kontakt@bbuehler.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "B\u00e4rbel B\u00fchler",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/baerbel.rockstroh/": {
         "email": "br@vitarium-rockstroh.de",
         "email_check": true,
@@ -2559,6 +2811,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/bailey/": {
+        "email": "contact@individual-therapy-berlin.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. phil ",
+        "name": "Ghazaleh Bailey",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/baklayan/": {
@@ -2827,6 +3093,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/barnick/": {
+        "email": "email@doc-barnick.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Med. ",
+        "name": "Antje Barnick",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/baron/": {
         "email": "info@juttabaron.de",
         "email_check": true,
@@ -3009,6 +3289,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/beatriz.stahl/": {
+        "email": "info@beatriz-stahl-therapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Beatriz Stahl",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/becht/": {
         "email": "kontakt@psych-neuss.de",
         "email_check": true,
@@ -3036,6 +3330,20 @@
         "queer_check": true,
         "sexualitaet": false,
         "trans": false
+    },
+    "https://www.therapie.de/profil/beckert/": {
+        "email": "info@atelier-fuer-sexualitaet.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Juliane Beckert",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
     },
     "https://www.therapie.de/profil/beckhiestermann/": {
         "email": "post@psychotherapiehiestermann.de",
@@ -3245,6 +3553,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/bender/": {
+        "email": "praxis@psychotherapie-juliabender.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. rer. nat. ",
+        "name": "Julia Bender",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/benderoth/": {
@@ -4227,6 +4549,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/bleuel/": {
+        "email": "info@nataly-bleuel.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nataly Bleuel",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/bliklen/": {
         "email": "kontakt@maria-bliklen.de",
         "email_check": true,
@@ -4423,6 +4759,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/boehner/": {
+        "email": "info@psychotherapie-boehner.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Judith Boehner",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/boernicke/": {
         "email": "info@franziska-boernicke.de",
         "email_check": true,
@@ -4519,6 +4869,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/bohrn/": {
+        "email": "isabel.bohrn@pm.me",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. phil. ",
+        "name": "Isabel Bohrn",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/bolender/": {
@@ -4759,6 +5123,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/bous/": {
+        "email": "info@koerpertherapie-bous.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Birgit Bous",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/boyce/": {
         "email": "kontakt@emdr-potsdam.de",
         "email_check": true,
@@ -4841,6 +5219,34 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/brand/": {
+        "email": "info@praxisdrbrand.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Silke Brand",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/brandau/": {
+        "email": "mail@praxisbrandau.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Susanne Brandau",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/brandl/": {
@@ -4983,6 +5389,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/brennerpastoors/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dipl. Psychologe ",
+        "name": "J\u00f6rg Brenner-Pastoors",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/brennfleck/": {
         "email": "sabine.brennfleck@verhaltenstherapie-w\u00fcrzburg.de",
         "email_check": true,
@@ -5034,6 +5454,20 @@
         "jobtitle": " ",
         "name": "Brigitte G\u00f6bel",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/brigitte.langer/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Brigitte Langer",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -5093,6 +5527,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/brocher/": {
+        "email": "kontakt@hypnosetherapie-brocher.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Simon Brocher",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/brockhaus.anna/": {
@@ -5160,6 +5608,20 @@
         "jobtitle": " ",
         "name": "Anna Jurkea Br\u00f6rken",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/broicher.thomas/": {
+        "email": "psychologie.broicher@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr ",
+        "name": "Thomas Broicher",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -5369,6 +5831,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Anja Brunst",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/bruntontrueg/": {
+        "email": "post@angela-brunton-trueg.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Angela Brunton-Tr\u00fcg",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -5593,6 +6069,20 @@
         "has_email": true,
         "jobtitle": "M.A. ",
         "name": "Stefanie Buksmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/bulik/": {
+        "email": "juliabulik@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Julia Bulik",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -6313,6 +6803,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/christian.kohlross/": {
+        "email": "kohlrosschristian@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. habil. ",
+        "name": "Christian Kohlross",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/christian.thomas/": {
         "email": "kontakt@praxis-christianthomas.de",
         "email_check": true,
@@ -6551,6 +7055,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/christina.hillebrand/": {
+        "email": "info@psychotherapie-adhs.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Christina Hillebrand",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/christina.hoecker/": {
         "email": "praxis@psychotherapie-hoecker.de",
         "email_check": true,
@@ -6761,6 +7279,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/christine.winter/": {
+        "email": "kontakt@winter-praxis.berlin",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Prof. Dr. med. ",
+        "name": "Christine Winter",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/christine/": {
         "email": "praxis.kiourkenidis@gmail.com",
         "email_check": true,
@@ -6887,6 +7419,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/clara.schneider/": {
+        "email": "mail@claraschneider.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Clara Schneider",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/claudia.bach/": {
         "email": "info@praxis-rhein-neckar.de",
         "email_check": true,
@@ -6983,6 +7529,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/claudia.kadertjijenda/": {
+        "email": "info@paartherapie-sexualberatung.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom Psychologin ",
+        "name": "Claudia Kader-Tjijenda",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/claudia.koenig/": {
@@ -7475,6 +8035,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/cortezrobles/": {
+        "email": "anmeldung@praxiscortez.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Sergio Abel Cortez Robles",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/cosanne/": {
         "email": "kontakt@praxis-cosanne.de",
         "email_check": true,
@@ -7697,6 +8271,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/dag/": {
+        "email": "mail@praxis-erkan-dag.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Erkan Da\u011f",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/dagmar.arntz/": {
@@ -7965,6 +8553,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/daniela.konkol/": {
+        "email": "info@praxis-konkol.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Daniela Konkol",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/daniela.liebig/": {
         "email": "danielaliebig@posteo.de",
         "email_check": true,
@@ -7974,6 +8576,20 @@
         "jobtitle": "Psychologische Online-Therapie ",
         "name": "Daniela Liebig",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/daniela.roller/": {
+        "email": "praxis.roller@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom Psychologin ",
+        "name": "Daniela Roller",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -7993,6 +8609,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/daniela.stock/": {
+        "email": "info@neomentix.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Daniela Stock",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/daniela.weber/": {
         "email": "info@beziehungs-raum-traunstein.de",
         "email_check": true,
@@ -8005,6 +8635,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/daniele.holzmann/": {
+        "email": "daniele-holzmann@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Daniele Holzmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/danielleppich/": {
@@ -8119,6 +8763,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/davina.blank/": {
+        "email": "info@umgang-mit-selbstzweifeln.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Davina Blank",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/dax/": {
         "email": "info@janinadax.de",
         "email_check": true,
@@ -8145,6 +8803,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/dedden/": {
+        "email": "kontakt@claudia-dedden.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Claudia Dedden",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/degeest/": {
@@ -8467,6 +9139,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/diana.boettcher/": {
+        "email": "praxis@diana-boettcher.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Diana Boettcher",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/diana.broecker/": {
@@ -8847,6 +9533,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/dittmar/": {
+        "email": "dittmarwellenwege@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Kati Dittmar",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/dittmeier/": {
         "email": "contact@kaleidoscope-berlin.com",
         "email_check": true,
@@ -8873,6 +9573,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/dittrich.barbara/": {
+        "email": "psych.dittrich@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "MA. Psych. ",
+        "name": "Barbara Dittrich",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/diwisch/": {
@@ -8929,6 +9643,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/doemelanddunst/": {
+        "email": "praxis.dunst@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Anja D\u00f6meland-Dunst",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/doering/": {
@@ -9043,6 +9771,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/dommes/": {
+        "email": "Info@praxis-regina-dommes.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Regina Dommes",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/domnick/": {
         "email": "",
         "email_check": true,
@@ -9071,6 +9813,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/doppler/": {
+        "email": "mail@nicole-doppler.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nicole Doppler",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/dorfner/": {
         "email": "marion@dorfner-psychotherapie.de",
         "email_check": true,
@@ -9093,6 +9849,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Doris Bergmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/doris.mueller/": {
+        "email": "praxis.doris.mueller@t-online.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Doris Mueller",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -9135,6 +9905,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Iljana Dorn",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/dornhofer/": {
+        "email": "kontakt@mechtild-dornhofer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Mechtild Dornhofer",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -9365,6 +10149,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/duemler/": {
+        "email": "duemlera@gmail.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "HP Psych, Dipl.-Heilp\u00e4d. ",
+        "name": "Astrid D\u00fcmler",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/dugge/": {
         "email": "info@vitasymbio.de",
         "email_check": true,
@@ -9419,6 +10217,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/duygu.duran/": {
+        "email": "info@duyguduran.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Duygu Duran-Firat",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/dvoretska/": {
@@ -9631,6 +10443,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/ehrlich/": {
+        "email": "psychotherapie-ehrlich@t-online.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Anne Ehrlich",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/eibel/": {
         "email": "psychotherapie-eibel@web.de",
         "email_check": true,
@@ -9640,6 +10466,20 @@
         "jobtitle": "Dipl.-Psych. ",
         "name": "Anita Eibel",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/eichberg/": {
+        "email": "praxis.eichberg@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Jasmin Eichberg",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -9939,6 +10779,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/ellen.wolf/": {
+        "email": "ellen.wolf@mailbox.org",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Ellen Wolf",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ellerbrokkubach/": {
         "email": "helmut@h-ellerbrok.de",
         "email_check": true,
@@ -9948,6 +10802,20 @@
         "jobtitle": " ",
         "name": "Helmut Ellerbrok-Kubach",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/elling/": {
+        "email": "psychotherapie-elling@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Christina Elling-L\u00fcder",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -10008,6 +10876,20 @@
         "queer_check": true,
         "sexualitaet": false,
         "trans": true
+    },
+    "https://www.therapie.de/profil/emmerich/": {
+        "email": "emmerich@lebensbuehne.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Christine Emmerich",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
     },
     "https://www.therapie.de/profil/end/": {
         "email": "info@praxis-christopher-end.de",
@@ -10107,6 +10989,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/engst/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Alexandra Mahima Engst",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ens/": {
         "email": "post@ens-naturheilpraxis.de",
         "email_check": true,
@@ -10147,6 +11043,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/epping/": {
+        "email": "psy.epping@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Hanna Epping",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/erdweg/": {
@@ -10315,6 +11225,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/eschenbruch/": {
+        "email": "eve@verhandlung-mediation.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Eva Eschenbruch",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/ester.kuehn/": {
@@ -10639,6 +11563,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/fasselt/": {
+        "email": "kontakt@gestalttherapeut-fasselt.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Willem Fasselt",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/fassmann/": {
         "email": "wf@hp-wiesbaden.de",
         "email_check": true,
@@ -10905,6 +11843,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/fiand/": {
+        "email": "info@nicola-fiand.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nicola Fiand",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/fichtler/": {
         "email": "mail@angelikafichtler.de",
         "email_check": true,
@@ -11031,6 +11983,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/firat/": {
+        "email": "praxis@tekinfirat.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Tekin Firat",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/fischer/": {
         "email": "pgf.praxis@yahoo.de",
         "email_check": true,
@@ -11039,6 +12005,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Angelika Fischer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/fischeremmerich/": {
+        "email": "info@psychotherapie-k\u00f6ln.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Viktor Fischer-Emmerich",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -11071,6 +12051,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/flecken/": {
+        "email": "mail@flecken-therapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Tanja Flecken",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/fleckenstein/": {
@@ -11199,6 +12193,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/fochtmann/": {
+        "email": "willkommen@ganz-du.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Kathrin Esser-Fochtmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/foellmer/": {
         "email": "",
         "email_check": true,
@@ -11283,6 +12291,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/forlorou/": {
+        "email": "info@psychotherapie-forlorou.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. ",
+        "name": "Julie Forlorou",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
+    },
     "https://www.therapie.de/profil/fornaro/": {
         "email": "info@praxis-fornaro.de",
         "email_check": true,
@@ -11292,6 +12314,20 @@
         "jobtitle": "Dr. ",
         "name": "Patrick Fornaro",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/forster/": {
+        "email": "ulrikeforster@aol.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Ulrike Forster",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -11446,6 +12482,20 @@
         "jobtitle": " ",
         "name": "Daniel Frankenberger",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/frankensteinanft/": {
+        "email": "info@praxis-fa.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom-Psychologin ",
+        "name": "Annette Frankenstein-Anft",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -11617,6 +12667,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/frembgen/": {
+        "email": "simon.karim.frembgen@hotmail.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Simon Karim Frembgen",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/freter/": {
@@ -11829,6 +12893,34 @@
         "sexualitaet": true,
         "trans": true
     },
+    "https://www.therapie.de/profil/frowitter/": {
+        "email": "praxis@frowitter.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Timo Frowitter",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/frye/": {
+        "email": "therapie@stefaniefrye.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Stefanie Frye",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/fuchs.cornelia/": {
         "email": "info@cornelia-fuchs.de",
         "email_check": true,
@@ -11991,6 +13083,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Gabriele Ziegler",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/gabrielejohanna.mueller/": {
+        "email": "praxis-gabrielemueller@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Gabriele Johanna M\u00fcller",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -12529,6 +13635,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/gesing/": {
+        "email": "christina.gesing@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Christina Gesing",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/gessner/": {
         "email": "info@seminar-heilzentrum-aschau.de",
         "email_check": true,
@@ -12593,6 +13713,34 @@
         "has_email": true,
         "jobtitle": "Dipl.-Psych. ",
         "name": "Philippe Ginsbourger",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/giray/": {
+        "email": "h.giray@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Helena Giray",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/gjoni/": {
+        "email": "eva@senseven.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Senseven Health",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -12793,6 +13941,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/gnatzy/": {
+        "email": "info@praxis-gnatzy.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Stefan Gnatzy",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/godart/": {
@@ -13285,6 +14447,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/grolignase/": {
+        "email": "mail@therapie-grolig-nase.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Katrin Grolig-Nase",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/grommes/": {
+        "email": "kontakt@wachstumsreise.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Jennifer Grommes",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/gronki/": {
         "email": "contact@susannegronki.de",
         "email_check": true,
@@ -13425,6 +14615,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/gruentzig/": {
+        "email": "praxis@sonja-gruentzig.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Sonja Gr\u00fcntzig",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": true
+    },
     "https://www.therapie.de/profil/gruetzmacher/": {
         "email": "mail@praxis-gruetzmacher.de",
         "email_check": true,
@@ -13490,6 +14694,20 @@
         "jobtitle": " ",
         "name": "Birgit Gruner",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/grunow/": {
+        "email": "vt@praxis-grunow.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nele Grunow",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -13859,6 +15077,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/haemmerle/": {
+        "email": "info@psychotherapie-haemmerle.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Judith H\u00e4mmerle",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/haenel/": {
         "email": "info@estellehaenel.de",
         "email_check": true,
@@ -13985,6 +15217,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/halbach/": {
+        "email": "halbach@judithhalbach.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Judith Halbach",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/halim/": {
         "email": "kontakt@psychotherapie-vanessa-halim.de",
         "email_check": true,
@@ -14025,6 +15271,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/hallmann/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Diplom-Psychologin ",
+        "name": "Stefanie Hallmann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/halter/": {
@@ -14081,6 +15341,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/hanna.bekrek/": {
+        "email": "hanna.bekrek@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Hanna Bekrek",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/hanna.maier/": {
@@ -14287,6 +15561,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Gabriele Harder",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/harriet.biedermann/": {
+        "email": "hb@biedermann-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Harriet Biedermann",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -14503,6 +15791,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/hatzfeldt/": {
+        "email": "gabriele@hatzfeldt.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.A. ",
+        "name": "Gabriele Hatzfeldt",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/haugbodenmueller/": {
         "email": "beratung@haug-bodenmueller.de",
         "email_check": true,
@@ -14693,6 +15995,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Manfred Heiber",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/heider.lindner/": {
+        "email": "kontakt@canifyclinics.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Heider Lindner",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -14974,6 +16290,20 @@
         "jobtitle": " ",
         "name": "Katja Heldt",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/helen.fehse/": {
+        "email": "info@psychotherapie-fehse.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Helen Fehse",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -15273,6 +16603,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/herden/": {
+        "email": "info@manuelaherden.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Manuela Herden",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/hermann.schultevennbur/": {
         "email": "info@praxis-vennbur.de",
         "email_check": true,
@@ -15427,6 +16771,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/heupel/": {
+        "email": "psychotherapie-heupel@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Janis Heupel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/heuser/": {
         "email": "info@walk-foerderung.de",
         "email_check": true,
@@ -15495,6 +16853,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/heyne/": {
+        "email": "hp@maikheyne.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Maik Heyne",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/heyner/": {
@@ -15763,6 +17135,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/hoelzmann/": {
+        "email": "info@therapie-in-mitte.berlin",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Anne-Kathrin Hoelzmann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/hoenneknoevel/": {
         "email": "mamich62@web.de",
         "email_check": true,
@@ -15889,6 +17275,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/hofele/": {
+        "email": "info@stefan-hofele.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Stefan Hofele",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/hoffmann.marjorie/": {
         "email": "psychotherapie@marjoriehoffmann.de",
         "email_check": true,
@@ -15898,6 +17298,34 @@
         "jobtitle": " ",
         "name": "Marjorie Hoffmann",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/hoffmann.silvia/": {
+        "email": "zumglueckpraxis@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. ",
+        "name": "Silvia Hoffmann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/hoffmannschaefer/": {
+        "email": "hello@onlinepsychotherapeutin.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Psychologische Psychotherapeutin ",
+        "name": "Julia Hoffmann-Sch\u00e4fer",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -16071,6 +17499,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/holzappel/": {
+        "email": "praxis-holzappel@web.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Nadine Holzappel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/holzbauer/": {
         "email": "info@holzbauer-hypnose.de",
         "email_check": true,
@@ -16083,6 +17525,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/holzenhauer/": {
+        "email": "kontakt@laura-holzenhauer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Laura Holzenhauer",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/holzer.martin/": {
@@ -16275,6 +17731,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Praxis Petra Horstmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/hox/": {
+        "email": "info@oliverhox.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Heilpraktiker f\u00fcr Psychotherapie ",
+        "name": "Oliver Hox",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -16687,6 +18157,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/ines.walter/": {
+        "email": "kontakt@beziehungsweise-berlin.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Ines E. Walter",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/inga.kraus/": {
         "email": "hallo@ingakraus.de",
         "email_check": true,
@@ -16755,6 +18239,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/ingrid.lueke/": {
+        "email": "lueke-psychotherapie-deutz@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Ingrid L\u00fcke",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/inken.menzel/": {
@@ -17091,6 +18589,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/jaana.schnell/": {
+        "email": "kontakt@psychotherapie-praxis-schnell.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Jaana Schnell",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/jaeger/": {
@@ -17639,6 +19151,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/jenneszitzman/": {
+        "email": "info@praxis-jennes-zitzmann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc.Psych. ",
+        "name": "Janina Jennes-Zitzmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/jennifer.koelling/": {
         "email": "j.koelling@psychotherapie-volksdorf.net",
         "email_check": true,
@@ -17648,6 +19174,20 @@
         "jobtitle": "Lic. Psych. ",
         "name": "Jennifer K\u00f6lling",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/jenny.hauser/": {
+        "email": "KJP-Praxis.Hauser@web.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Soz.P\u00e4d. ",
+        "name": "Jenny Maria Hauser (geb. Druskat)",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -17732,6 +19272,20 @@
         "jobtitle": " ",
         "name": "Jessica Hofmann",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/jessica.kuhr/": {
+        "email": "jessicakuhr@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Jessica Kuhr",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -17891,6 +19445,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/johanna.erdmann/": {
+        "email": "info@psychotherapie-erdmann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Johanna Erdmann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/johanna.hahn/": {
         "email": "info@johanna-hahn.de",
         "email_check": true,
@@ -17973,6 +19541,34 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/jokinen/": {
+        "email": "kontakt@mari-jokinen.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Mari Jokinen",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/jonas.maus/": {
+        "email": "kontakt@maus-therapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Jonas Maus",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/jonas.schmidt/": {
@@ -18633,6 +20229,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/kabil/": {
+        "email": "s.kabil@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "S\u00fcheyla Kabil",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/kabsch/": {
         "email": "kontakt@christian-kabsch.de",
         "email_check": true,
@@ -18659,6 +20269,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kaczmareknitsch/": {
+        "email": "sophie.kaczmarek.berlin@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Sophie Kaczmarek-Nitsch",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/kaechele/": {
@@ -19109,6 +20733,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/karin.clemens/": {
+        "email": "kontakt@humanprotect.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Karin Clemens",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/karin.greiner/": {
         "email": "kontakt@praxis-greiner.de",
         "email_check": true,
@@ -19205,6 +20843,48 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/karpinski/": {
+        "email": "info@lebendig-leben.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Anke Karpinski",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/karst/": {
+        "email": "karst@neurospicy-koeln.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Esther Karst",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/karsten.keller/": {
+        "email": "karsten_keller@aol.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Karsten Keller",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/karwatzke/": {
@@ -19431,6 +21111,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/katharina.runge/": {
+        "email": "info@globuli.koeln",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Katharina Runge",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/katharina.scholz/": {
         "email": "praxis.kscholz@gmail.com",
         "email_check": true,
@@ -19569,6 +21263,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kathrin.kuehnel/": {
+        "email": "praxis@kathrinkuehnel.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Kathrin K\u00fchnel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/kathrin.kunze/": {
@@ -19835,6 +21543,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kazemian/": {
+        "email": "mskazemian@yahoo.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Mostafa Kazemian",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/kazmierczak/": {
@@ -20187,6 +21909,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/kilian/": {
+        "email": "info@inka-kilian.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.A. ",
+        "name": "Inka Kilian",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/kimelmann/": {
         "email": "kontakt@praxis-kimelmann.de",
         "email_check": true,
@@ -20200,6 +21936,20 @@
         "queer_check": true,
         "sexualitaet": false,
         "trans": false
+    },
+    "https://www.therapie.de/profil/kindel/": {
+        "email": "kontakt@psychotherapie-kindel.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Heike Kindel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
     },
     "https://www.therapie.de/profil/kinderwalenta/": {
         "email": "praxis@kinderwalenta.de",
@@ -20311,6 +22061,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kirsch/": {
+        "email": "coaching@hannakirsch.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Hanna Kirsch",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/kirschner/": {
@@ -20593,6 +22357,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/klemens/": {
+        "email": "psychotherapie-klemens@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Karoline Klemens",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/klene/": {
+        "email": "psychotherapie@taramariaklene.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Tara Maria Klene",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/klenkbickel/": {
         "email": "info@go-weiterbildung.de",
         "email_check": true,
@@ -20661,6 +22453,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/klostermann/": {
+        "email": "kontakt@psychotherapie-klostermann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Arne Klostermann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/klotz.barbara/": {
@@ -21125,6 +22931,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/kolos/": {
+        "email": "info@praxis-kolos.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dip.-Psych. ",
+        "name": "Aida Kolos",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/konheiser/": {
         "email": "kontakt@praxis-bonn.com",
         "email_check": true,
@@ -21181,6 +23001,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/konrads/": {
+        "email": "kontakt@psychologische-praxis-konrads.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Camilla Konrads, M. Sc. Psych.",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/konstantin.schroeder/": {
         "email": "k.schroeder@schroeder-beratung.de",
         "email_check": true,
@@ -21207,6 +23041,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kook/": {
+        "email": "info@stefanie-kook.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Stefanie Kook",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/koop/": {
@@ -21671,6 +23519,20 @@
         "sexualitaet": true,
         "trans": true
     },
+    "https://www.therapie.de/profil/kreutzer/": {
+        "email": "svenja.kreutzer@mailbox.org",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Svenja Kreutzer",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/krey/": {
         "email": "renatekrey@tutanota.com",
         "email_check": true,
@@ -21679,6 +23541,20 @@
         "has_email": true,
         "jobtitle": "Dipl.-Psych. ",
         "name": "Renate Krey",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/krichel/": {
+        "email": "praxis@signe-krichel.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Signe Krichel",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -21895,6 +23771,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/kristina.rauch/": {
+        "email": "therapie@kristinarauch.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Kristina Rauch",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/kristina.sander/": {
         "email": "kontakt@psychologin-sander.de",
         "email_check": true,
@@ -21963,6 +23853,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kroells/": {
+        "email": "info@heinz-kroells.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Heinz Kr\u00f6lls",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/kroll/": {
@@ -22075,6 +23979,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/krusche/": {
+        "email": "psychotherapie.krusche@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Maria Krusche",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/kruschel/": {
@@ -22203,6 +24121,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/kuehl/": {
+        "email": "info@neomentix.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Tom Michael K\u00fchl",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/kuehnle/": {
         "email": "kraft-des-kreises@posteo.de",
         "email_check": true,
@@ -22243,6 +24175,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kuenz/": {
+        "email": "kontakt@therapie-kuenz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Annette K\u00fcnz",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/kuespert/": {
@@ -22337,6 +24283,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Kati Kumschlies",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/kunckel/": {
+        "email": "klunkerklaus@gmx.net",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Klaus Kunckel",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -22581,6 +24541,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/laaser/": {
+        "email": "kontakt@systemische-therapie-berlin.info",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Boris Laaser",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/lafrenz/": {
         "email": "syla@kreativraum-fr.de",
         "email_check": true,
@@ -22621,6 +24595,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/lamberth/": {
+        "email": "monika.lamberth@praxis-lamberth.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Monika Lamberth",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/lammers/": {
@@ -22777,6 +24765,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/langkau/": {
+        "email": "psychotherapie.langkau@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Thomas Langkau",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/lanzerathma/": {
         "email": "info@psychotherapie-lanzerath.de",
         "email_check": true,
@@ -22827,6 +24829,20 @@
         "has_email": true,
         "jobtitle": "Psychologin (Diplomstudium) ",
         "name": "Lara Ribouet",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/lars.guenther/": {
+        "email": "guenther@neurospicy-koeln.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Lars G\u00fcnther",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -22903,6 +24919,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/laura.goetz/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dr. ",
+        "name": "Laura G\u00f6tz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/laura.huber/": {
+        "email": "Psychotherapie@huber-coaching-therapie.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. ",
+        "name": "Laura Huber",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/laura.huebner/": {
         "email": "huebner_l@gmx.de",
         "email_check": true,
@@ -22940,6 +24984,20 @@
         "jobtitle": " ",
         "name": "Laura Lezzi",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/laurence.reuter/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dr. ",
+        "name": "Laurence Reuter",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -23057,6 +25115,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/legg/": {
+        "email": "s.legg@web.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. phil. ",
+        "name": "Suzanne Legg",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/lehker/": {
         "email": "binnenalster@hanse-psychotherpie.de",
         "email_check": true,
@@ -23125,6 +25197,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/leite/": {
+        "email": "psychotherapie-leite@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Jessica Leite",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/leiterholtdeboer/": {
@@ -23351,6 +25437,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/leonie.eininger/": {
+        "email": "leonie@therapie-beratung-eininger.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Leonie Eininger",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": true
+    },
+    "https://www.therapie.de/profil/leonie.smolny/": {
+        "email": "psychotherapie-smolny@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Leonie Smolny",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/leopoldschluetter/": {
         "email": "grit_leopold@web.de",
         "email_check": true,
@@ -23561,6 +25675,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/liewald/": {
+        "email": "Psychotherapie.Liewald@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Maren Liewald",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ligenza/": {
         "email": "kontakt@annaligenza.de",
         "email_check": true,
@@ -23671,6 +25799,34 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/lina.scheuermann/": {
+        "email": "praxis.scheuermann@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psychologin ",
+        "name": "Lina Scheuermann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/lina.welk/": {
+        "email": "psychotherapie.welk@gmail.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Lina Welk",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/linder/": {
@@ -23962,6 +26118,34 @@
         "jobtitle": " ",
         "name": "Herbert Lock",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/loechel/": {
+        "email": "beratung-therapie@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom Psychologin ",
+        "name": "Renate L\u00f6chel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/loecke.stephan/": {
+        "email": "pt.loecke@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. ",
+        "name": "Stephan L\u00f6cke",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -24527,6 +26711,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/lutz.ulbrich/": {
+        "email": "beratung@ulbrich-berlin.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Lutz Ulbrich",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/lutztittel/": {
         "email": "info@praxis-lutz-tittel.de",
         "email_check": true,
@@ -24609,6 +26807,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/maarit.kumpf/": {
+        "email": "mail@psy-kumpf.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. -Psych. ",
+        "name": "Maarit Kumpf",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/macharzina/": {
@@ -24947,6 +27159,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/mand/": {
+        "email": "praxis@charlotte-mand.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Ed. ",
+        "name": "Charlotte Mand",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/mandaus/": {
         "email": "praxis@mandaus.de",
         "email_check": true,
@@ -24988,6 +27214,34 @@
         "queer_check": true,
         "sexualitaet": true,
         "trans": false
+    },
+    "https://www.therapie.de/profil/mankel/": {
+        "email": "kontakt@nicolemankel.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nicole Mankel",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/mann/": {
+        "email": "praxis@christoph-mann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Christoph Mann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
     },
     "https://www.therapie.de/profil/mannherz/": {
         "email": "kontakt@manon-mannherz.de",
@@ -25096,6 +27350,20 @@
         "jobtitle": "M.Sc. ",
         "name": "Marc Adam",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/marc.matthies/": {
+        "email": "psychotherapiematthies@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. med. ",
+        "name": "Marc Matthies",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -25605,6 +27873,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/marmulla/": {
+        "email": "kontakt@conny-marmulla.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Conny Marmulla",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/marnold/": {
         "email": "kontakt@praxis-marnold.de",
         "email_check": true,
@@ -25661,6 +27943,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/martaller/": {
+        "email": "praxis.martaller@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Michael Martaller",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/martin.eschbach/": {
         "email": "beratung-eschbach@posteo.de",
         "email_check": true,
@@ -25703,6 +27999,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/martin.schmid/": {
+        "email": "post@praxis-martin-schmid.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psychologe ",
+        "name": "Martin Schmid",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/martin.vogelsang/": {
         "email": "info@psychologische-beratung-vogelsang.de",
         "email_check": true,
@@ -25715,6 +28025,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/martin.voss/": {
+        "email": "martvoss@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. med. ",
+        "name": "Martin Voss",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/martina.burkert/": {
@@ -25941,6 +28265,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/mathew/": {
+        "email": "info@psychotherapie-mathew.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Binsy Mathew",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/matiasovski/": {
         "email": "email@psychologe-fm.de",
         "email_check": true,
@@ -26075,6 +28413,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "B\u00e4rbel Matz-Walter",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/matz/": {
+        "email": "dr.med.matz@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. med. ",
+        "name": "Judith Matz",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -26333,6 +28685,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/meindorf/": {
+        "email": "mail@meindorf-beratung.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Henrietta Meindorf",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": true
+    },
     "https://www.therapie.de/profil/meinke/": {
         "email": "kt@britta-meinke.de",
         "email_check": true,
@@ -26411,6 +28777,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Melanie Wilde",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/meleghy/": {
+        "email": "freya@meleghy.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Freya Meleghy",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -26678,6 +29058,20 @@
         "jobtitle": " ",
         "name": "GEORG METZ",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/metzler/": {
+        "email": "kontakt@psychotherapie-metzler.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Anna Metzler",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -27327,6 +29721,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/mirjam.warmuth/": {
+        "email": "mail@mirjamwarmuth.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Mirjam Warmuth",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/mirko.dietz/": {
         "email": "mail@mirkodietz.de",
         "email_check": true,
@@ -27439,6 +29847,34 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/modin/": {
+        "email": "johanna.modin@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Johanna Modin",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/modjtahedi/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": " ",
+        "name": "Banafsche Modjtahedi",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/moeller.martina/": {
         "email": "info@mit-absicht-gluecklich.de",
         "email_check": true,
@@ -27465,6 +29901,34 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/mohammed/": {
+        "email": "lenssa.mo@gmail.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "MSc. ",
+        "name": "Lenssa Mohammed",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/mohiyeddini/": {
+        "email": "info@praxis-psychotherapie.center",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Fariba Mohiyeddini",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/mokros/": {
@@ -27504,6 +29968,20 @@
         "jobtitle": " ",
         "name": "Caroline Molitoris",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/moll/": {
+        "email": "alice.moll@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Alice Moll",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -27602,6 +30080,20 @@
         "jobtitle": " ",
         "name": "Monika Riese",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/monika.wolff/": {
+        "email": "monika.wolff@arcor.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. Diplom-Psychologin ",
+        "name": "Monika Wolff",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -27717,6 +30209,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/morres/": {
+        "email": "mail@psychotherapie-morres.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Marion Morres",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/motja.vonkrosigk/": {
@@ -28041,6 +30547,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/mumm/": {
+        "email": "kontakt@psychotherapie-mumm.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Jennifer Mumm",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/munke/": {
         "email": "therapie.munke@gmail.com",
         "email_check": true,
@@ -28078,6 +30598,20 @@
         "jobtitle": "Dipl.-Psych. ",
         "name": "Anke Murphy",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/murray/": {
+        "email": "info@elenamurray.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Elena Murray",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -28265,6 +30799,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/nadja.evertz/": {
+        "email": "evertz@kindertherapiekoeln.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Nadja Evertz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/nadja.hirsch/": {
         "email": "office@coachoo.eu",
         "email_check": true,
@@ -28349,6 +30897,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/nani/": {
+        "email": "kontakt@universally-speaking.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Lidia Nani",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/napp/": {
         "email": "barbara-napp@gmx.de",
         "email_check": true,
@@ -28375,6 +30937,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/natalie.hess/": {
+        "email": "praxis@nataliehess.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Natalie Hess",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/natalie.maiwald/": {
@@ -29147,6 +31723,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/niegisch/": {
+        "email": "info@hypnose-gl.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Thomas Niegisch",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/niegot/": {
         "email": "info@praxis-altwied.de",
         "email_check": true,
@@ -29399,6 +31989,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/noltemichel/": {
+        "email": "nolte-michel@psychotherapie-deutz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Helen Nolte-Michel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/noppel/": {
+        "email": "mail@nadinenoppel.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Nadine Noppel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
+    },
     "https://www.therapie.de/profil/nora.berg/": {
         "email": "info@hypnose-berg.de",
         "email_check": true,
@@ -29467,6 +32085,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/nunheim/": {
+        "email": "kontakt@praxisnunheim.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Anke Nunheim",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/oberbacher/": {
@@ -29551,6 +32183,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/oberseider/": {
+        "email": "nerven-praxis@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. med. ",
+        "name": "Joachim Oberseider",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/objartel/": {
@@ -29772,6 +32418,20 @@
         "jobtitle": "Dr. ",
         "name": "Franziska Offermann",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/ogan/": {
+        "email": "info@psychotherapie-ogan.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Ahmet Ogan",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -30211,6 +32871,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/paniotova/": {
+        "email": "viktoriia.paniotova@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Viktoriia Paniotova",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/pankonin/": {
         "email": "gp@trauma-praxis-leipzig.de",
         "email_check": true,
@@ -30265,6 +32939,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/paruch/": {
+        "email": "kontakt@psyberlin.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Julia Arnhold (geb. Paruch)",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/parwisi/": {
@@ -30645,6 +33333,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/petakovic/": {
+        "email": "info@beratung-mediation-petakovic.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Marion Petakovic",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/peter.ackermann/": {
         "email": "info@focusing-psychotherapie.de",
         "email_check": true,
@@ -31009,6 +33711,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/pfeiffenberger/": {
+        "email": "mail@praxis-pfeiffenberger.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. M.A. ",
+        "name": "Enno Pfeiffenberger",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/pfeil/": {
         "email": "",
         "email_check": true,
@@ -31205,6 +33921,48 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/pillen/": {
+        "email": "ppp@pro-psychologie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Sandra Pillen-Dietzel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/pilotschaefer/": {
+        "email": "praxis-pilot-schaefer@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Anna Pilot-Sch\u00e4fer",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/pilzpereboom/": {
+        "email": "therapie.pilz@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Regina Pilz-Pereboom",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/pinnow/": {
         "email": "kai-pinnow@t-online.de",
         "email_check": true,
@@ -31261,6 +34019,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/pitten/": {
+        "email": "pitten.psychotherapie@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Stephan Pitten",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/pitzfeuring/": {
         "email": "praxis@alexapitzfeuring.de",
         "email_check": true,
@@ -31297,6 +34069,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Jutta Plajer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/plate/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": " ",
+        "name": "Anja Plate",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -31779,6 +34565,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/prokisch/": {
+        "email": "prokisch-praxis@gmx.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Diplom-Psychologin ",
+        "name": "Katja Prokisch",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/promies/": {
         "email": "up@innerewege.de",
         "email_check": true,
@@ -31891,6 +34691,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/pustar/": {
+        "email": "psychotherapie@pustar.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Pauline Pustar",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/putzka/": {
         "email": "praxis@psychotherapie-putzka.de",
         "email_check": true,
@@ -31945,6 +34759,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/quist/": {
+        "email": "info@praxis-quist.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom-Psychologin ",
+        "name": "Tanja Quist",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/quoos/": {
@@ -32185,6 +35013,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/ralf.tuerksch/": {
+        "email": "psychotherapie@tuerksch.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc.-Psych. ",
+        "name": "Ralf T\u00fcrksch",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ramirez/": {
         "email": "beratung@systemische-psychotherapie-ramirez.de",
         "email_check": true,
@@ -32269,6 +35111,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/raschke/": {
+        "email": "michael@psychologie-raschke.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Michael Raschke",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/rattay/": {
         "email": "mail@rattay-beratung.de",
         "email_check": true,
@@ -32292,6 +35148,20 @@
         "jobtitle": " ",
         "name": "Susann Ratzer",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/rau/": {
+        "email": "psychotherapie-rau@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. ",
+        "name": "Friederike Eisele-Rau",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -32337,6 +35207,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/rauter/": {
+        "email": "gina.rauter@empathic-healing.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Gina Rauter",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/rautner/": {
@@ -32435,6 +35319,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/reddemann/": {
+        "email": "reddemann-psychotherapie@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Lena Reddemann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/redder/": {
@@ -32703,6 +35601,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/reiter/": {
+        "email": "kontakt@psychotherapiepraxis-reiter.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Miriam Reiter",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/reitertorwesten/": {
         "email": "kontakt@praxis-chiemgau.de",
         "email_check": true,
@@ -32744,6 +35656,20 @@
         "queer_check": true,
         "sexualitaet": false,
         "trans": false
+    },
+    "https://www.therapie.de/profil/remer/": {
+        "email": "mail@psychotherapie-remer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Danijela Remer",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
     },
     "https://www.therapie.de/profil/renam.reiner/": {
         "email": "info@emotionscoachingonline.de",
@@ -33249,6 +36175,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/rodriguez/": {
+        "email": "denocheluces@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Gast\u00f3n Rodr\u00edguez",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/roeckelein/": {
         "email": "info@praxis-roeckelein.de",
         "email_check": true,
@@ -33286,6 +36226,20 @@
         "jobtitle": " ",
         "name": "Anne Julia R\u00f6hl",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/roehle/": {
+        "email": "info@praxis-kerstin-roehle.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Kerstin R\u00f6hle",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -33445,6 +36399,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/rolandam.michna/": {
+        "email": "ram.michna@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Mikael R.A. Michna",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true
+    },
     "https://www.therapie.de/profil/rolf.birgit/": {
         "email": "kontakt@paatherapie-badnauheim.de",
         "email_check": true,
@@ -33593,6 +36561,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Rosina Friedrichs",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/roszewski/": {
+        "email": "info@naturheilpraxis-sr.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "B.Sc. Psychologie ",
+        "name": "Sandra Roszewski",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -33949,6 +36931,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/sabine.hamm/": {
+        "email": "kontakt@sabine-hamm.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Sabine Hamm",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/sabine.herrmannikram/": {
         "email": "info@hypnose-re.de",
         "email_check": true,
@@ -34073,6 +37069,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/sabinehanna.witte/": {
+        "email": "mail@mindful.berlin",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.Psych. ",
+        "name": "Sabine Hanna Witte",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/sabljic/": {
@@ -34425,6 +37435,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/sandra.brendel/": {
+        "email": "mail@brendel-praxis.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Sandra Brendel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/sandra.guip/": {
         "email": "S.guip@web.de",
         "email_check": true,
@@ -34635,6 +37659,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/sarah.willems/": {
+        "email": "sarah.willems@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Sarah Willems",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/sarahacier.dealwisfranke/": {
         "email": "anfrage@sarah-de-alwis-franke.de",
         "email_check": true,
@@ -34657,6 +37695,20 @@
         "has_email": true,
         "jobtitle": "M.Sc.Psych. ",
         "name": "Sarah Christina Enke",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/sari/": {
+        "email": "kontakt@praxis-sari.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "M.Sc. Psych. Sema Sari-Schlage",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -34789,6 +37841,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/sattler/": {
+        "email": "therapie.toelke@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psychol. Psych. ",
+        "name": "Sophia Toelke",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/sauerwein/": {
         "email": "chrsauerwein@googlemail.com",
         "email_check": true,
@@ -34840,6 +37906,20 @@
         "jobtitle": " ",
         "name": "Anna Leonie Sawall",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/sawatzki/": {
+        "email": "sawatzki@praxis-fuer-systemisches.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Birgit Sawatzki",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -35111,6 +38191,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/schefter/": {
+        "email": "empfang@praxis-schefter.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Maria Schefter",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schehl/": {
         "email": "kontakt@psychotherapie-schehl.de",
         "email_check": true,
@@ -35165,6 +38259,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/scherbaum/": {
+        "email": "kontakt@psychotherapie-scherbaum.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. ",
+        "name": "Celia Scherbaum",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/scherer/": {
@@ -35391,6 +38499,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/schiwietz/": {
+        "email": "c.schiwietz@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Colette Schiwietz",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schladt/": {
         "email": "mail@lidia-schladt.de",
         "email_check": true,
@@ -35461,6 +38583,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/schleupner/": {
+        "email": "info@niyamayoga.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Silvia Schleupner",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schlicht/": {
+        "email": "irinaschlicht@hypnoseundtherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Irina Schlicht - Praxis f\u00fcr Hypnose und Hypnotherapie",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schlick/": {
         "email": "Praxis@anuve.de",
         "email_check": true,
@@ -35487,6 +38637,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schlitter/": {
+        "email": "vivien@heilpraxis-schlitter.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Vivien Adam (geb. Schlitter)",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/schlump/": {
@@ -35573,6 +38737,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/schmidt.christinejohanna/": {
+        "email": "mail@gestalttherapie-yoga.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Christine Johanna Schmidt",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schmidt.sarah/": {
         "email": "binnenhafen@hanse-psychotherapie.de",
         "email_check": true,
@@ -35610,6 +38788,20 @@
         "jobtitle": "Dipl.-Psych. ",
         "name": "Stefanie Schmidt",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schmidt4/": {
+        "email": "psychologischepraxis22@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Psychologin (M.Sc.), ",
+        "name": "Kathrin Schmidt",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -35797,6 +38989,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/schneegans/": {
+        "email": "info@psychotherapie-schneegans.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Marie Schneegans",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schnibbe/": {
         "email": "kontakt@psychotherapieschnibbe.com",
         "email_check": true,
@@ -35810,6 +39016,34 @@
         "queer_check": true,
         "sexualitaet": true,
         "trans": true
+    },
+    "https://www.therapie.de/profil/schnier/": {
+        "email": "loslassen@stefanieschnier.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Stefanie Schnier",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schnitt/": {
+        "email": "andrea.schnitt@t-online.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Andrea Schnitt",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
     },
     "https://www.therapie.de/profil/schnock/": {
         "email": "praxis@oliver-schnock.de",
@@ -35851,6 +39085,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schnurrer/": {
+        "email": "beratung@kathrin-schnurrer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Kathrin Schnurrer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/schobersafian/": {
@@ -35904,6 +39152,20 @@
         "jobtitle": " ",
         "name": "Monika Sch\u00f6bel",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schoeler/": {
+        "email": "kontakt@psytherapie.online",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psych. PP VT ",
+        "name": "Lukas Sch\u00f6ler",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -36049,6 +39311,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/schorn/": {
+        "email": "post@sandra-schorn.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Sandra Schorn",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/schowalter/": {
         "email": "michalik@drschowalter.de",
         "email_check": true,
@@ -36127,6 +39403,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Julia Schr\u00f6der-G\u00f6ritz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/schruff/": {
+        "email": "kontakt@andrea-schruff.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Andrea Schruff",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -36679,6 +39969,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/senarclensdegrancy/": {
+        "email": "kontakt@psychoanalytische-praxis-berlin.eu",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. phil. ",
+        "name": "Moritz Senarclens de Grancy",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/senger/": {
         "email": "info@psychotherapie-idstein.de",
         "email_check": true,
@@ -36762,6 +40066,20 @@
         "queer_check": true,
         "sexualitaet": true,
         "trans": true
+    },
+    "https://www.therapie.de/profil/shahaf.thaler/": {
+        "email": "info@thaler-praxis.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Shahaf Thaler",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
     },
     "https://www.therapie.de/profil/shaw1/": {
         "email": "empfang@praxis-dr-shaw.de",
@@ -36861,6 +40179,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/siegmann/": {
+        "email": "mail@annesiegmann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Psychologin (M.Sc.) ",
+        "name": "Anne Siegmann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/sieradzki/": {
         "email": "info@ams-kurztherapie.de",
         "email_check": true,
@@ -36883,6 +40215,34 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Sigrid Barthelmes",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/sikora/": {
+        "email": "catsujinken@gmx.net",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.A.Psych. ",
+        "name": "David Sikora",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/silan.derin/": {
+        "email": "con.silanderin@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Silan Derin",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -36959,6 +40319,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/silke.schneider/": {
+        "email": "info@fokus-therapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplom Psychologin ",
+        "name": "Silke Schneider",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/silke.steinke/": {
         "email": "silke.steinke@mail-sh.de",
         "email_check": true,
@@ -36985,6 +40359,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/silva.schroeder/": {
+        "email": "info@medicnovum.berlin",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Silva Schr\u00f6der",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/silvia.hahn/": {
@@ -37953,6 +41341,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/stautenberg/": {
+        "email": "info@somatic-experiencing-koeln.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Heilpraktikerin f\u00fcr Psychotherapie u.Supervisorin ",
+        "name": "Ellen Stautenberg",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/stawicki/": {
         "email": "info@praxis-stawicki.de",
         "email_check": true,
@@ -37981,6 +41383,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/stefan.reinhart/": {
+        "email": "post@praxis-reinhart.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Stefan Reinhart",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/stefan.thiel/": {
         "email": "kontakt@thiel-coaching.de",
         "email_check": true,
@@ -38003,6 +41419,20 @@
         "has_email": true,
         "jobtitle": " ",
         "name": "Stefani Stock",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/stefanie.behrendt/": {
+        "email": "stefanie.behrendt@outlook.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Stefanie Behrendt",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -38077,6 +41507,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/stefanie.schmidt/": {
+        "email": "schmidt-therapie@gmx.net",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Stefanie Schmidt",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/stefanie.simon/": {
@@ -38273,6 +41717,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/steinmetz/": {
+        "email": "Praxis-Steinmetz@gmx.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.A.-Psych. ",
+        "name": "Anja Steinmetz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/steinschmid/": {
@@ -38723,6 +42181,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/stopinski/": {
+        "email": "psychotherapie-wilsberg@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Psychologin M.Sc. ",
+        "name": "Alexandra Wilsberg (geb. Stopinski)",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/stortzegglseder/": {
         "email": "info@heilpraxis-trudering.de",
         "email_check": true,
@@ -38835,6 +42307,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/streck/": {
+        "email": "info@diplpsych-streck.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Laura Johanna Streck",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/streckervonkannen/": {
         "email": "info@psychotherapie-strecker.de",
         "email_check": true,
@@ -38903,6 +42389,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/strieder/": {
+        "email": "Info@praxis-dorotheestrieder.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Dorothee Strieder",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/strippgen/": {
@@ -39015,6 +42515,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/stuermer/": {
+        "email": "Termin@thomas-stuermer.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Thomas St\u00fcrmer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/stuhlsatz/": {
@@ -39365,6 +42879,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/susanne.maass/": {
+        "email": "buntes.leben@hof-maass.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Susanne Maa\u00df",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/susanne.marquardt/": {
@@ -39759,6 +43287,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/tambogaundkolleginnen/": {
+        "email": "praxis@tamboga.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dr. Dipl.-Psych. ",
+        "name": "Cemile Tamboga &amp; Kollegen",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/tamkus/": {
         "email": "info@regina-tamkus.de",
         "email_check": true,
@@ -39782,6 +43324,20 @@
         "jobtitle": "Dipl.-Psych. ",
         "name": "Verena Tanck",
         "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/tanja.bussmann/": {
+        "email": "info@help-your-soul.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Tanja Bu\u00dfmann",
+        "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -39899,6 +43455,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/tanja.wolf/": {
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Tanja Wolf",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/tannetje.koenig/": {
         "email": "tannetje@web.de",
         "email_check": true,
@@ -39955,6 +43525,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/tasche/": {
+        "email": "psychotherapie-tasche@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Neeltje Tasche",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/tatiana.fischer/": {
         "email": "info@praxis-tatiana-fischer.de",
         "email_check": true,
@@ -39978,6 +43562,20 @@
         "jobtitle": " ",
         "name": "Maria Tatianina",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/taube/": {
+        "email": "kontakt@susanne-taube.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Susanne Taube",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -40025,6 +43623,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/teubner/": {
+        "email": "post@praxis-bettina-teubner.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Bettina Teubner",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/thaler/": {
         "email": "praxis@psychotherapie-thaler.de",
         "email_check": true,
@@ -40065,6 +43677,34 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/thedinga/": {
+        "email": "praxis.thedinga@gmail.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Jens Thedinga",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/theelen/": {
+        "email": "theelen-psychotherapie@web.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Master of Science ",
+        "name": "Julia Theelen",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/theimer/": {
@@ -40235,6 +43875,34 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/thielert/": {
+        "email": "psychotherapie.thielert@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psychologin ",
+        "name": "Christa Thielert",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/thiemann/": {
+        "email": "mail@annamariathiemann.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Anna-Maria Thiemann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/thienel/": {
         "email": "kontakt@gestalttherapeutin.de",
         "email_check": true,
@@ -40261,6 +43929,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/thomas.grischko/": {
+        "email": "thomas@grischko.berlin",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Dipl. Psych. Thomas Grischko",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/thomas.hammer/": {
@@ -40332,6 +44014,20 @@
         "queer_check": true,
         "sexualitaet": true,
         "trans": true
+    },
+    "https://www.therapie.de/profil/thomas.stuermer/": {
+        "email": "Termin@thomas-stuermer.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Thomas St\u00fcrmer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
     },
     "https://www.therapie.de/profil/thomasroper/": {
         "email": "thomas@a-thomas.eu",
@@ -40537,6 +44233,20 @@
         "has_email": true,
         "jobtitle": "Dr.med. ",
         "name": "Tina Kellermann",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/tina.weiss/": {
+        "email": "tina@ries-on-events.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Tina Wei\u00df",
         "psychologe": false,
         "psychologe_check": true,
         "queer_check": true,
@@ -40933,6 +44643,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/ubedacruz/": {
+        "email": "kontakt@praxis-ubedacruz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Isabelle Ubeda Cruz",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/uden/": {
@@ -41341,6 +45065,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/ute.ferber/": {
+        "email": "uteferber@gmx.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Ute Ferber",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/ute.gieseking/": {
         "email": "mail@heilpraxis-korper-und-seele.de",
         "email_check": true,
@@ -41537,6 +45275,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/vaitkus/": {
+        "email": "dr.alfons@vaitkus.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dr. ",
+        "name": "Alfons Vaitkus",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/valentina.runge/": {
         "email": "",
         "email_check": true,
@@ -41563,6 +45315,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/valeria.dileo/": {
+        "email": "hallo@praxis-dileo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Valeria Di Leo",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/vandenboom/": {
@@ -41691,6 +45457,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/veerasingam/": {
+        "email": "mv_psychotherapie@posteo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Malinie Veerasingam",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/vera.butollo/": {
         "email": "anmeldung@fachpraxis-fuer-psychotherapie.de",
         "email_check": true,
@@ -41703,6 +45483,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/vera.fleischer/": {
+        "email": "info@verafleischer.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Psych. M.A. ",
+        "name": "Vera Fleischer",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/vera.mader/": {
@@ -41839,6 +45633,20 @@
         "has_email": true,
         "jobtitle": "Dipl. -Psychologin ",
         "name": "Eriketi Verra-Nossek",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/victoria.urban/": {
+        "email": "vurban@urban.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Victoria Urban",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
@@ -42055,6 +45863,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/voeller/": {
+        "email": "psychotherapievoeller@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Frederike V\u00f6ller",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/vogel.claudia/": {
         "email": "info@ruhevogel.de",
         "email_check": true,
@@ -42078,6 +45900,20 @@
         "jobtitle": " ",
         "name": "Yessika Vogeler",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/vogelweissinger/": {
+        "email": "vogelweissinger@googlemail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Judith Vogel-Weissinger",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -42125,6 +45961,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/voigts/": {
+        "email": "therapievoigts@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc.-Psych. ",
+        "name": "Till Voigts",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": true
+    },
     "https://www.therapie.de/profil/volker.eisele/": {
         "email": "info@volker-eisele.de",
         "email_check": true,
@@ -42137,6 +45987,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/von.wissel/": {
+        "email": "moritz@thegreenroom.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Moritz v. Wissel",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/vondetten/": {
@@ -42251,6 +46115,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/vonlenthe/": {
+        "email": "info@psychotherapie-lenthe.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Teresa von Lenthe",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/vonlueder/": {
         "email": "u-v-l@web.de",
         "email_check": true,
@@ -42321,6 +46199,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/vonschwarzkopf/": {
+        "email": "coraly.vonschwarzkopf@outlook.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Coraly von Schwarzkopf",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/vonspreckelsen/": {
         "email": "info@psychotherapie-von-spreckelsen.de",
         "email_check": true,
@@ -42347,6 +46239,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/vonwirth/": {
+        "email": "vonWirth@psychotherapie-am-arkonaplatz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Marleen von Wirth",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/voos/": {
@@ -42615,6 +46521,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/walther/": {
+        "email": "jwalther.counseling@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psychologin ",
+        "name": "Judith Walther",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/walz.annick/": {
         "email": "info@psychotherapie-walz.de",
         "email_check": true,
@@ -42792,6 +46712,20 @@
         "jobtitle": " ",
         "name": "Luise Weber",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/weber/": {
+        "email": "mail@christiane-weber.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Christiane Weber",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -43343,6 +47277,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/wiebke.wolf/": {
+        "email": "info@kuehling-coaching.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Wiebke K\u00fchling",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/wiedeler/": {
         "email": "psychotherapie.wiedeler@web.de",
         "email_check": true,
@@ -43441,6 +47389,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/wijnand/": {
+        "email": "info@praxis-wandelatelier.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Marjolein Wijnand",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
     "https://www.therapie.de/profil/wilczynski/": {
         "email": "info@balancereich.com",
         "email_check": true,
@@ -43495,6 +47457,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/willand/": {
+        "email": "willand@burnout-profi.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Diplompsychologe ",
+        "name": "Oliver Willand",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/wille/": {
@@ -43604,6 +47580,20 @@
         "jobtitle": "Dr. med. ",
         "name": "Regina Winkel",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/winnebeck/": {
+        "email": "psychotherapie@winnebeck.net",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Emilia Winnebeck",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
@@ -43889,6 +47879,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/wolfgang.schmitz/": {
+        "email": "schmitz_wolf@web.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Wolfgang Schmitz",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/wolfrum1/": {
         "email": "gerhard.wolfrum@gmx.net",
         "email_check": true,
@@ -44066,6 +48070,20 @@
         "jobtitle": " ",
         "name": "Sabine Wustinger",
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/wysocki/": {
+        "email": "therapie.wysocki@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Chantal Wysocki",
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -44337,6 +48355,20 @@
         "sexualitaet": false,
         "trans": false
     },
+    "https://www.therapie.de/profil/zaehr/": {
+        "email": "info@psychotherapie-zaehr.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": " ",
+        "name": "Matthias Z\u00e4hr",
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/zagoricnik/": {
         "email": "info@bergreiz.de",
         "email_check": true,
@@ -44391,6 +48423,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/zecharia/": {
+        "email": "daniel.ze.87@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Daniel Zecharia",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false
     },
     "https://www.therapie.de/profil/zegelman/": {
@@ -44477,6 +48523,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/zemke/": {
+        "email": "soultermin@gmx.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Berit Zemke-Masondo",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/zettler/": {
         "email": "therapie@psychotherapie-leipzig.eu",
         "email_check": true,
@@ -44517,6 +48577,20 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/zgoda/": {
+        "email": "psychotherapieimhof@mail.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "M.Sc. Psychologin ",
+        "name": "Urszula Zgoda",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false
     },
     "https://www.therapie.de/profil/zheldak/": {
@@ -44617,6 +48691,20 @@
         "sexualitaet": true,
         "trans": false
     },
+    "https://www.therapie.de/profil/zillmann/": {
+        "email": "praxis.zillmann@gmx.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "jobtitle": "Diplom-Psychologin ",
+        "name": "Pamela Zillmann",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false
+    },
     "https://www.therapie.de/profil/zimber/": {
         "email": "andreas-zimber@t-online.de",
         "email_check": true,
@@ -44653,6 +48741,20 @@
         "has_email": true,
         "jobtitle": "Dipl.-Psych. ",
         "name": "Eleonore Zobel",
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false
+    },
+    "https://www.therapie.de/profil/zorlu/": {
+        "email": "kontakt@zorlu-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Silan Zorlu",
         "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
