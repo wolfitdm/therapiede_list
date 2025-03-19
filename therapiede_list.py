@@ -185,7 +185,7 @@ def get_thera_data_value(url, name, default_value=""):
 def init_thera(url):
     create_thera_data_attrs(url, "", ["jobtitle", "name", "email", "wartezeit", "description"])
     create_thera_data_attrs(url, False, [
-                                            "trans", "psychologe", "sexualitaet", "gruppe", "gruppe_and_psychologe", 
+                                            "trans", "psychologe", "heilpraktiker", "sexualitaet", "gruppe", "gruppe_and_psychologe", 
                                             "trans_and_psychologe", "trans_and_gruppe_and_psychologe", 
                                             "psychologe_check", "queer_check", "email_check", 
                                             "has_email",
@@ -200,6 +200,10 @@ def change_thera(url):
         
         if url == "https://www.therapie.de/profil/brauer/":
            thera_data[url]["gruppe"] = True
+        
+        if url == "https://www.therapie.de/profil/wierichs/":
+           thera_data[url]["email"] = "mvzpr20@khmol.de"
+           thera_data[url]["has_email"] = True
         
         if not thera_data[url]["psychologe"]:
            jobtitle = thera_data[url]["jobtitle"].strip()
@@ -221,6 +225,66 @@ def change_thera(url):
 
 def search_queer_words_on_thera_profil_ex(url, driver):
     init_thera(url)
+    
+    wartezeit_v = get_thera_data_value(url, "wartezeit", default_value="")
+    email_check_v = get_thera_data_value(url, "email_check", default_value=False)
+    
+    if type(wartezeit_v) == type("") and len(wartezeit_v) > 0 and type(email_check_v) == type(True) and email_check_v:
+       is_that_psychologe = get_thera_data_value(url, "psychologe", False)
+       is_that_sexual = get_thera_data_value(url, "sexualitaet", False)
+       is_that_gruppe = get_thera_data_value(url, "gruppe", False)
+       is_that_hpg = get_thera_data_value(url, "heilpraktiker", False)
+       is_founded_queer = get_thera_data_value(url, "trans", False)
+       is_that_both = get_thera_data_value(url, "gruppe_and_psychologe", False)
+       is_that_email = get_thera_data_value(url, "has_email", False)
+       my_email_address_value = ""
+       if is_that_email:
+          my_email_address_value = get_thera_data_value(url, "email", "")
+       else:
+          my_email_address_value = ""
+       
+       if is_founded_queer:
+          trans_profil[url] = ""
+          save_data(trans_profil, "trans_profil")
+          if is_that_psychologe:
+             trans_profil_psychologe[url] = my_email_address_value
+             save_data(trans_profil_psychologe, "trans_profil_psychologe")
+          if is_that_gruppe:
+             trans_profil_gruppe[url] = my_email_address_value
+             save_data(trans_profil_gruppe, "trans_profil_gruppe")
+          if is_that_both:
+             trans_profil_both[url] = my_email_address_value
+             save_data(trans_profil_both, "trans_profil_both")
+       elif is_that_sexual and not is_founded_queer:
+          no_trans_profil[url] = my_email_address_value
+          save_data(no_trans_profil, "no_trans_profil")
+          if is_that_psychologe:
+             no_trans_profil_psychologe[url] = my_email_address_value
+             save_data(no_trans_profil_psychologe, "no_trans_profil_psychologe")
+          if is_that_gruppe:
+             no_trans_profil_gruppe[url] = my_email_address_value
+             save_data(no_trans_profil_gruppe, "no_trans_profil_gruppe")
+          if is_that_both:
+             no_trans_profil_both[url] = my_email_address_value
+             save_data(no_trans_profil_both, "no_trans_profil_both")
+       elif not is_that_sexual:
+          no_trans_and_sexual_thera[url] = my_email_address_value
+          save_data(no_trans_and_sexual_thera, "no_trans_and_sexual_thera")
+          if is_that_psychologe:
+             no_trans_and_sexual_thera_psychologe[url] = my_email_address_value
+             save_data(no_trans_and_sexual_thera_psychologe, "no_trans_and_sexual_thera_psychologe")
+          if is_that_gruppe:
+             no_trans_and_sexual_thera_gruppe[url] = my_email_address_value
+             save_data(no_trans_and_sexual_thera_gruppe, "no_trans_and_sexual_thera_gruppe")
+          if is_that_both:
+             no_trans_and_sexual_thera_both[url] = my_email_address_value
+             save_data(no_trans_and_sexual_thera_both, "no_trans_and_sexual_thera_both")
+               
+       psychologe_check[url] = ""
+       save_data(psychologe_check, "psychologe_check")
+        
+       return is_founded_queer
+    
     if url in psychologe_check:
        psycho_type = type(psychologe_check[url])
        if psycho_type == type(True):
@@ -370,21 +434,11 @@ def search_queer_words_on_thera_profil_ex(url, driver):
     psychologe_check[url] = ""
     save_data(psychologe_check, "psychologe_check")
     
-    with open('./jquery.js', 'r') as jquery_js: 
-        # 3) Read the jquery from a file
-        jquery = jquery_js.read() 
-        # 4) Load jquery lib
-        driver.execute_script(jquery)
-        
-    with open('./find_wait_time.js', 'r') as fwt_js: 
-        # 3) Read the jquery from a file
-        fwt = fwt_js.read() 
-        # 4) Load jquery lib
-        driver.execute_script(fwt)
     wait_time = driver.execute_script("return document.querySelector('#generellinfos > .headline + .shadowbox-row + .shadowbox-row.row > div + div > ul:last-child > li:first-child').innerHTML;");
     print("wait_time: " + str(wait_time))
     set_thera_data_value(url, "wartezeit", wait_time)
     print("wait_time: " + wait_time)
+    
     if has_trans_profil_email:
        return trans_profil[url]
  
@@ -411,7 +465,13 @@ def search_queer_words_on_thera_profil_ex(url, driver):
         set_thera_data_value(url, "email_check", True)
         set_thera_data_value(url, "has_email", False)
         return is_founded_queer
-
+        
+    with open('./jquery.js', 'r') as jquery_js: 
+        # 3) Read the jquery from a file
+        jquery = jquery_js.read() 
+        # 4) Load jquery lib
+        driver.execute_script(jquery)
+        
     with open('./contact_button.js', 'r') as cb_js: 
         # 3) Read the jquery from a file
         cb = cb_js.read() 
