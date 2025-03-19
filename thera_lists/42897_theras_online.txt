@@ -9,6 +9,7 @@ https://www.therapie.de/profil/brennerpastoors/
 https://www.therapie.de/profil/schoeler/
 https://www.therapie.de/profil/helen.fehse/
 https://www.therapie.de/profil/kristina.rauch/
+https://www.therapie.de/profil/pusch.justynaanna/
 https://www.therapie.de/profil/fischeremmerich/
 https://www.therapie.de/profil/petakovic/
 https://www.therapie.de/profil/daniela.roller/
@@ -20,4 +21,3 @@ https://www.therapie.de/profil/tanja.neumann/
 https://www.therapie.de/profil/fasselt/
 https://www.therapie.de/profil/bohrn/
 https://www.therapie.de/profil/schorn/
-https://www.therapie.de/profil/theelen/

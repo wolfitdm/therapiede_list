@@ -1,48 +1,22 @@
 import pickle
 import os
+import sys
 import errno
 import os.path
-import smtplib
 import json
 import re
 import time
 
-from email.mime.text import MIMEText
+currentScriptDirectoryPath = os.path.dirname(os.path.abspath(__file__))
+currentScriptDirectoryPathFiles = os.listdir(currentScriptDirectoryPath)
 
-def get_valid_filename(name):
-    s = str(name).strip().replace(" ", "_")
-    s = re.sub(r"(?u)[^-\w.]", "_", s)
-    return s
+sys.path.append(currentScriptDirectoryPath)
 
-def get_target(file):
-    file = get_valid_filename(file)
-    target_dir = "save"
-    if not os.path.isdir(target_dir):
-        try:
-            os.makedirs(target_dir)
-        except OSError as e:
-            if e.errno != errno.EEXIST:
-               pass
-    filename = file + ".pickle"
-    target = os.path.join(target_dir, filename)
-    return target
-    
-def save_data(a, file):
-    target = get_target(file)
-    with open(target, 'wb') as handle:
-         pickle.dump(a, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-def is_data(file):
-    return os.path.isfile(get_target(file))
-
-def load_data(file):
-    target = get_target(file)
-    if not os.path.isfile(target):
-       return None
-
-    with open(target, 'rb') as handle:
-         b = pickle.load(handle)
-         return b
+from therapiede_smtp import save_data
+from therapiede_smtp import is_data
+from therapiede_smtp import load_data
+from therapiede_smtp import smtp_server_complete
+from therapiede_smtp import send_email
 
 all_lat_lon = {
   "10115": {
@@ -34786,7 +34760,6 @@ def write_the_file(name="0", content=[]):
          for line in content:
              f.write(f"{line}\n")
 
-
 def write_quermed_online_email_files():
     write_the_file("quermed_gesetzlich_webcam", quermed_gesetzlich_webcam)
     write_the_file("quermed_gesetzlich_maybe_webcam", quermed_gesetzlich_maybe_webcam)
@@ -34806,80 +34779,6 @@ def write_quermed_online_email_files():
     save_data(trans_quermed_all_online_emails, "trans_quermed_all_online_emails")
     write_the_file("trans_db_online_emails", trans_db_remote_both)
     save_data(trans_db_remote_both, "trans_db_remote_both")
-
-def smtp_login(login, password):
-    #smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
-    #smtpserver = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-    smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
-    smtpserver.ehlo()
-    smtpserver.starttls()
-    smtpserver.ehlo()
-    smtpserver.login(login, password)
-    return smtpserver
- 
-def smtp_server_get():
-    smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
-    smtpserver.connect("smtp.gmail.com", 587)
-    return smtpserver
-   
-def smtp_server_tls(smtpserver):
-    smtpserver.ehlo()
-    smtpserver.starttls()
-    smtpserver.ehlo()
-
-def email_daten_json():
-    email_daten = {}
-    if not os.path.isfile("email_daten.json"):
-       email_daten = {
-           "email": "example@gmail.com",
-           "password": "app_password_created_with_2_factor_step_verification",
-           "subject":  "Einzeltherapie / Gruppentherapie Transitionsbegleitung",
-           "body": "Sehr geehrter Psychotherapeut/in, ich suche vorzugsweise einen Gruppentherapie Platz fuer die Transitionsbegleitung. Viele Liebe Gruesse Luna",
-       }
-       with open('email_daten.json', 'w') as f:
-            json.dump(email_daten, f, sort_keys = False, indent = 4)
-    else:
-       with open("email_daten.json") as f:
-            email_daten = json.load(f)
-    return email_daten
-
-email_data = email_daten_json()
-login_smtp = email_data["email"]
-password_smtp = email_data["password"]
-email_subject = email_data["subject"]
-email_body = email_data["body"]
-
-def smtp_server_login(smtpserver):
-    smtpserver.login(login_smtp, password_smtp)
-
-def smtp_server_complete():
-    smtpserver = smtp_server_get()
-    smtp_server_tls(smtpserver)
-    smtp_server_login(smtpserver)
-    return smtpserver
-
-receiver_email_cache = {}
-if is_data("receiver_email_cache"):
-   receiver_email_cache = load_data("receiver_email_cache")
-def send_email(smtpserver, recipients):
-    subject = email_subject
-    body = email_body
-    msg = MIMEText(body)
-    msg['Subject'] = subject
-    msg['From'] = login_smtp
-    msg['To'] = ', '.join(recipients)
-    cache_key = login_smtp + msg['To'] + subject + body
-    if cache_key in receiver_email_cache:
-       return 
-    message_sent = True
-    try:
-        smtpserver.sendmail(login_smtp, recipients, msg.as_string())
-    except:
-        message_sent = False
-    if message_sent:
-       receiver_email_cache[cache_key] = True
-       save_data(receiver_email_cache, "receiver_email_cache")
-    print("Message sent!")
 
 def send_emails_ex(smtpserver, trans_quermed_all_online_emails):
     len_trans_quermed_all_online_emails = len(trans_quermed_all_online_emails)
