@@ -12,11 +12,7 @@ currentScriptDirectoryPathFiles = os.listdir(currentScriptDirectoryPath)
 
 sys.path.append(currentScriptDirectoryPath)
 
-from therapiede_smtp import save_data
-from therapiede_smtp import is_data
-from therapiede_smtp import load_data
-from therapiede_smtp import smtp_server_complete
-from therapiede_smtp import send_email
+from therapiede_smtp import *
 
 all_lat_lon = {
   "10115": {
