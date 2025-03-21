@@ -1,9 +1,4 @@
-https://www.therapie.de/profil/taube/
-https://www.therapie.de/profil/schlicht/
-https://www.therapie.de/profil/andrea.hoffmann/
-https://www.therapie.de/profil/dabringhaus/
 https://www.therapie.de/profil/katharina.lenz/
-https://www.therapie.de/profil/steinmetz/
 https://www.therapie.de/profil/grigorovademoracolon/
 https://www.therapie.de/profil/twickel/
 https://www.therapie.de/profil/tobias.roggeband/
@@ -12,17 +7,12 @@ https://www.therapie.de/profil/ingaelisabeth.ohlsen/
 https://www.therapie.de/profil/felix.reichert/
 https://www.therapie.de/profil/koehne/
 https://www.therapie.de/profil/nathalie.arndtdlouhy/
-https://www.therapie.de/profil/roehle/
 https://www.therapie.de/profil/sabine.thomas/
 https://www.therapie.de/profil/dippel/
 https://www.therapie.de/profil/melzer1/
 https://www.therapie.de/profil/lucia.meissner/
 https://www.therapie.de/profil/hochmueller/
 https://www.therapie.de/profil/haupt/
-https://www.therapie.de/profil/denise.schmidt/
-https://www.therapie.de/profil/barbara.schulz/
 https://www.therapie.de/profil/petras/
-https://www.therapie.de/profil/dag/
 https://www.therapie.de/profil/sigrun.schoen/
-https://www.therapie.de/profil/beckert/
 https://www.therapie.de/profil/siebers/
