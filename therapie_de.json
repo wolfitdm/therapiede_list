@@ -217,7 +217,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/agroskin/": {
         "description": "Psychologischer Psychotherapeut",
@@ -619,6 +619,26 @@
         "trans_and_psychologe": false,
         "wartezeit": null
     },
+    "https://www.therapie.de/profil/alex.ward/": {
+        "description": "Psychologischer Psychotherapeut (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "diagnostikzentrum@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Alex ",
+        "name": "Ward (M.Sc.)",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/alexander.bruemmerhoff/": {
         "description": "\u00c4rztlicher Psychotherapeut, Facharzt , Coach und Supervisor",
         "email": "bruemmerhoffa@web.de",
@@ -739,6 +759,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/alexandrahoelscher/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Alexandra ",
+        "name": "H\u00f6lscher (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/alexandrov/": {
         "description": "Psychologe",
         "email": "alexandrov@posteo.de",
@@ -757,7 +797,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/alhumsi/": {
         "description": "Psychologischer Psychotherapeut",
@@ -777,7 +817,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/ali.schwartz/": {
         "description": "Systemische Therapeutin/ Paartherapeutin",
@@ -1837,7 +1877,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/angelika.kurth/": {
         "description": "Diplom-Psychologin/ Systemische Therapeutin",
@@ -3699,6 +3739,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/antonia.drews/": {
+        "description": "Psychologin | Systemische Einzel- und Paartherapie | Supervision",
+        "email": "kontakt@antoniadrews.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Dr. ",
+        "name": "Antonia Drews",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/antonia.eben/": {
         "description": "Privatpraxis f\u00fcr Psychotherapie",
         "email": "praxis@psychotherapie-dr-eben.de",
@@ -4697,7 +4757,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/bagirsakci/": {
         "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
@@ -4797,7 +4857,7 @@
         "trans": true,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/baiko/": {
         "description": "Psychologische Psychotherapeutin i.A.",
@@ -5039,6 +5099,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit bis drei Monate."
     },
+    "https://www.therapie.de/profil/balser.shital/": {
+        "description": "Psychotherapeutin",
+        "email": "balser.pt@gmail.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Shital Lena Balser",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/balter.silke/": {
         "description": "Praxis f\u00fcr Psychotherapie, Coaching und Paartherapie Werder Havel",
         "email": "",
@@ -5134,6 +5214,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/baran/": {
+        "description": "Psychologische Psychotherapeutin (VT)",
+        "email": "psychotherapie@janinabaran.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "M.Sc. ",
+        "name": "Janina Baran",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -5579,6 +5679,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/bassy/": {
+        "description": "Psychologische Psychotherapeutin - Raum f\u00fcr Rebellion",
+        "email": "ariana@raumfuerrebellion.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Ariana Bassy (sie/ihr)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true,
+        "trans_and_gruppe_and_psychologe": true,
+        "trans_and_psychologe": true,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/batisweiler/": {
         "description": "Psychologische Psychotherapeutin",
         "email": "gbatisweiler@aol.com",
@@ -5677,7 +5797,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/baumgardt/": {
         "description": "Psychotherapie/ Traumatherapie / Personal Coaching",
@@ -5938,6 +6058,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
+    "https://www.therapie.de/profil/begerow/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Mona ",
+        "name": "Begerow (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/behlke/": {
         "description": "Paar-Therapeut/ Hypnose-Therapeut/ Praktiker der angewandten Positiven Psychologie (Zertifiziert)/ Heilpraktiker (Psychotherapie)/ Online-Therapeut",
@@ -6537,7 +6677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/bergamotto/": {
         "description": "Systemische Beratung &amp; Coaching",
@@ -7418,6 +7558,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/bihari/": {
+        "description": "Praxis f\u00fcr Sexualtherapie, Paar- und Beziehungstherapie und Psychotherapie (nach Heilpraktikergesetz); Queerfreundlich",
+        "email": "kontakt@virginie-bihari.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Praxis ",
+        "name": "Virginie Bihari",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/bijok/": {
         "description": "Psychotherapie / Hypnosetherapie / Coaching / Mediation",
@@ -8617,7 +8777,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/boomhuis/": {
         "description": "Praxis f\u00fcr Psychotherapie",
@@ -9219,6 +9379,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/brast/": {
+        "description": "Psychologische Psychotherapie (ST)",
+        "email": "hannah.brast@outlook.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Hannah Brast",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
+    },
     "https://www.therapie.de/profil/brauer/": {
         "description": "Psychologischer Psychotherapeut",
         "email": "mail@psychotherapie-brauer.de",
@@ -9317,7 +9497,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/bredenkamp/": {
         "description": "Praxis f\u00fcr Traumatherapie &amp; Posttraumatisches Wachstum",
@@ -9357,7 +9537,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/breitenberger/": {
         "description": "Heilpraktiker",
@@ -11537,7 +11717,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/charlotte.haber/": {
         "description": "Psychologische Psychotherapeutin",
@@ -12757,7 +12937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/cibis/": {
         "description": "Psychotherapeutin",
@@ -12778,6 +12958,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit bis drei Monate."
+    },
+    "https://www.therapie.de/profil/cimen/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Idil ",
+        "name": "Cimen (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/cindy.wendt/": {
         "description": "Praxis f\u00fcr Psychotherapie (HPG), Pers\u00f6nlichkeitsentwicklung &amp; Coaching",
@@ -14537,7 +14737,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/dallwitz/": {
         "description": "Heilpraktiker f\u00fcr Psychotherapie",
@@ -14551,6 +14751,26 @@
         "name": "Dieter Dallwitz",
         "offline": false,
         "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/dambrowsky/": {
+        "description": "Dipl.-Psych. Ria Dambrowsky - Praxis f\u00fcr Psychotherapie und Systemische Therapie",
+        "email": "mail@ria-dambrowsky.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Ria Dambrowsky",
+        "offline": false,
+        "psychologe": true,
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
@@ -14937,7 +15157,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/darija.schiele/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -14958,6 +15178,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/darja.simon/": {
+        "description": "Psychologische Psychotherapeutin",
+        "email": "therapie@darja-simon.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "M. Sc. Psych. ",
+        "name": "Darja Simon",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/darrissi/": {
         "description": "Praxis f\u00fcr psychologische Beratung und Chinesische Medizin",
@@ -15237,7 +15477,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/deckers/": {
         "description": "Praxis f\u00fcr Psychotherapie nach Heilpraktikergesetz, Coaching und Beratung",
@@ -15677,7 +15917,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/detlefsen/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie, Coach; auch Online- und telefonische Beratung",
@@ -16437,7 +16677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Englisch"
     },
     "https://www.therapie.de/profil/disca/": {
         "description": "Heilpraktiker f\u00fcr Psychotherapie",
@@ -16478,6 +16718,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/disselhoff/": {
+        "description": "Paartherapie in Berlin-Wilmersdorf",
+        "email": "contact@veradisselhoff.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dr. ",
+        "name": "Vera Disselhoff",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/dittbernerglatz/": {
         "description": "Praxis f\u00fcr Paar- und Lebensberatung",
@@ -16677,7 +16937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/dockendorf/": {
         "description": "Heilpraktikerin",
@@ -18599,6 +18859,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/elke.hess/": {
+        "description": "Heilpraktikerin f\u00fcr Psychotherapie",
+        "email": "mail@fachpraxis-stressmanagement.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Elke He\u00df",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/elke.jaeger/": {
         "description": "Systemische Beratung, Therapie und Coaching",
         "email": "gestalte@umbruchphasen.de",
@@ -19719,6 +19999,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/eva.wilkes/": {
+        "description": "Einzel- und Paarberatung, Sexualberatung",
+        "email": "kontakt@vivaelamor.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Mag. ",
+        "name": "Eva Wilkes",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/eva.woelling/": {
         "description": "Kinder- und Jugendlichenpsychotherapeutin",
         "email": "eva.woelling1@googlemail.com",
@@ -19754,6 +20054,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/evaemily.eder/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Eva-Emily ",
+        "name": "Eder (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -20959,6 +21279,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/finken/": {
+        "description": "HP f\u00fcr Psychotherapie",
+        "email": "g_weinand@hotmail.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "G\u00f6n\u00fcl Finken",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
+    },
     "https://www.therapie.de/profil/fiona.radtke/": {
         "description": "Privatpraxis f\u00fcr Psychotherapie",
         "email": "psychotherapieradtke@gmail.com",
@@ -21097,7 +21437,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/flecken/": {
         "description": "Tanja Flecken Paar- und Sexualtherapie",
@@ -21737,7 +22077,7 @@
         "trans": true,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/frank.haber/": {
         "description": "Praxis f\u00fcr Psychotherapie, Coaching und Pr\u00e4vention",
@@ -22119,6 +22459,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit \u00fcber zw\u00f6lf Monate."
     },
+    "https://www.therapie.de/profil/freiraum.psychotherapie/": {
+        "description": "Psychologischer Psychotherapeut | Freiraum Psychotherapie",
+        "email": "kontakt@freiraum-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Nicolas Sander",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/frembgen/": {
         "description": "Heilpraktiker f\u00fcr Psychotherapie / Coach",
         "email": "simon.karim.frembgen@hotmail.de",
@@ -22259,6 +22619,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/friederike.reuter/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Friederike ",
+        "name": "Reuter (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/friederike.schroeder/": {
         "description": "Systemische Therapeutin (HPPsych)",
         "email": "systemisch.ent.wickelt@gmail.com",
@@ -22277,7 +22657,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/friederike.thiel/": {
         "description": "Psychologische Psychotherapeutin (VT), Klinische Neuropsychologin",
@@ -22737,7 +23117,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/gabriel.kreuzer/": {
         "description": "Klinischer Psychologe, Tiefenpsychologisch fundierter Psychotherapeut (i.A.)",
@@ -23098,6 +23478,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/garic/": {
+        "description": "Psychologische Psychotherapeutin",
+        "email": "sugari@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Suzana Garic",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Serbokroatisch"
     },
     "https://www.therapie.de/profil/garnich/": {
         "description": "Garnich Traumatherapie Systemische Therapie Coaching",
@@ -24017,7 +24417,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/gjoni/": {
         "description": "Psychologische Psychotherapeut:innen",
@@ -25097,7 +25497,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/grewel/": {
         "description": "Psychologischer Psychotherapeut, Heilpraktiker",
@@ -25257,7 +25657,27 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/groening/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Vanessa ",
+        "name": "Gr\u00f6ning (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/grolignase/": {
         "description": "Psychologische Psychotherapeutin (VT)",
@@ -25378,6 +25798,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/grossniklaus/": {
+        "description": "\u00e4rztliche Psychotherapeutin, Verhaltenstherapie",
+        "email": "",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": false,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Magdalena Grossniklaus",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Einzeltherapie"
     },
     "https://www.therapie.de/profil/grote/": {
         "description": "Kunst- und Gespr\u00e4chstherapie",
@@ -26277,7 +26717,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/hadlich/": {
         "description": "Heilpraktikerin (Psychotherapie) - Malraum und Praxis",
@@ -26337,7 +26777,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/haehne/": {
         "description": "Psychologische Psychotherapeutin",
@@ -26477,6 +26917,26 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/hagemeier/": {
+        "description": "Psychologische Psychotherapie, ADHS Diagnostik, Paar- und Sexualtherapie, Psychiatrische/Psychosomatische Ergotherapie, HP Psychotherapie, LGBTQIA+",
+        "email": "therapie.coaching.berlin@gmail.com",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Helen Hagemeier",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true,
+        "trans_and_gruppe_and_psychologe": true,
+        "trans_and_psychologe": true,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/hagenhoff/": {
@@ -27757,7 +28217,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/heesch/": {
         "description": "Psychologische Psychotherapeutin online Praxis",
@@ -28497,7 +28957,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/hellen/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie Kurzzeitcoaching, Trauma-/Systemische Therapie, Aufstellungen, Hausbesuche",
@@ -28837,7 +29297,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/hentschel/": {
         "description": "Privatpraxis f\u00fcr Paartherapie und -beratung",
@@ -29038,6 +29498,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/herz/": {
+        "description": "Facharztpraxis Psychsomatik mit Herz",
+        "email": "praxis@psychosomatikmitherz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dr. med. ",
+        "name": "Eva Nicole Herz",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/herzog.ursula/": {
         "description": "\u00c4rztliche Psychotherapie",
@@ -29499,6 +29979,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/hillerich/": {
+        "description": "Heilpraktikerin| SE\u00ae Traumatherapeutin |Traumasensible Trauerbegleitung",
+        "email": "kontakt@juliahillerich.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Julia Hillerich",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/hilse/": {
         "description": "Heilpraktikerin (Psychotherapie), Privatpraxis",
         "email": "info@katrin-hilse.de",
@@ -29537,7 +30037,7 @@
         "trans": true,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/himpel/": {
         "description": "Heilpraktiker f\u00fcr Psychotherapie, Systemischer Coach, Mediator, Mentaltrainer",
@@ -29857,7 +30357,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/hoelzmann/": {
         "description": "Dipl.-Psychologin",
@@ -29957,7 +30457,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/hoermann/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie/Paartherapie/Hypnose/MPU-Beratung/Business-Coaching",
@@ -30897,7 +31397,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/hox/": {
         "description": "Oliver Hox \u2013 Heilpraktiker f\u00fcr Psychotherapie in K\u00f6ln \u2013 \u00c4ngste und Panikattacken \u00fcberwinden",
@@ -30997,7 +31497,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber zw\u00f6lf Monate."
     },
     "https://www.therapie.de/profil/hueffel/": {
         "description": "Gestalttherapeutin, Heilpraktikerin f\u00fcr Psychotherapie",
@@ -31157,7 +31657,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/hundshammer/": {
         "description": "Praxis f\u00fcr heilkundliche K\u00f6rperpsychotherapie",
@@ -31437,7 +31937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/ilse.schmidt/": {
         "description": "Psychologische Psychotherapeutin",
@@ -32678,6 +33178,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit bis drei Monate."
+    },
+    "https://www.therapie.de/profil/janhendrik.wirtz/": {
+        "description": "Psychologischer Psychotherapeut",
+        "email": "mail@psychotherapie-wirtz.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Jan Hendrik Wirtz",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/janin.tesmer/": {
         "description": "Diplom Psychologin / Hypnotherapeutin / Mentalcoach / Telefon-/Video-Beratung - niedergelassen in eigener Praxis seit 1998",
@@ -34419,6 +34939,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/judithbach/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Sabine ",
+        "name": "Wiem (Dipl.-Psych)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/judy.doll/": {
         "description": "Privatpraxis f\u00fcr Hypnose und integrative Psychotherapie",
         "email": "willkommen@praxis-doll.de",
@@ -34897,7 +35437,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/juliane.weber/": {
         "description": "Psychologische Psychotherapeutin",
@@ -34957,7 +35497,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/jungfricke/": {
         "description": "Praxis f\u00fcr k\u00f6rperorientierte Traumatherapie, Achtsamkeit und Coaching - den Kontakt zu sich selbst wieder herstellen",
@@ -36137,7 +36677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/karolin.jahnke/": {
         "description": "Psychologische Psychotherapeutin",
@@ -36597,7 +37137,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/katharina.lenz/": {
         "description": "Sozialp\u00e4dagogin, Heilpraktikerin, K\u00f6rperpsychotherapie nach HeilprG",
@@ -36839,6 +37379,46 @@
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
+    "https://www.therapie.de/profil/katharinajenner/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Katharina ",
+        "name": "Jenner (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/katharinakoehne/": {
+        "description": "Psychologische Psychotherapeutin (Tiefenpsychologisch fundierte Psychotherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Katharina ",
+        "name": "K\u00f6hne (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/katharinanicola.schmidt/": {
         "description": "Klinische Psychologin &amp; Heilpraktikerin f\u00fcr Psychotherapie",
         "email": "info@katharina-nicola-schmidt.com",
@@ -36877,7 +37457,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/kathrin.hartwich/": {
         "description": "Diplom-Sozialp\u00e4dagogin, Heilpraktikerin f\u00fcr Psychotherapie, Integrative Bindungsorientierte Traumatherapeutin",
@@ -37477,7 +38057,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/keil/": {
         "description": "Psychologischer Psychotherapeut",
@@ -37637,7 +38217,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/kernbach/": {
         "description": "Psychologe &amp; Coach / freie Privatpraxis",
@@ -37879,6 +38459,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/kevin.abt/": {
+        "description": "Praxis f\u00fcr Integrative Medizin",
+        "email": "info@therapie.top",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Kevin Abt",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/kiechle/": {
         "description": "Praxis f. Psychotherapie, Coaching &amp; Supervision",
         "email": "info@praxis-institut-dr-kiechle.de",
@@ -37934,6 +38534,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/kielmann/": {
+        "description": "Praxis f\u00fcr psychologische Psychotherapie &amp; Coaching",
+        "email": "info@praxis-kielmann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Bernd Kielmann",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -38557,7 +39177,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/klar/": {
         "description": "Somatic Experiencing, Heilpraktikerin f\u00fcr Psychotherapie",
@@ -38598,6 +39218,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit bis drei Monate."
+    },
+    "https://www.therapie.de/profil/klask/": {
+        "description": "Praxis f\u00fcr Coaching und Energetische Psychologie",
+        "email": "info@gudrunklask.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Gudrun Klask",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/klaudialuise.weber/": {
         "description": "Coach &amp; Heilpraktikerin f\u00fcr Psychotherapie",
@@ -38737,7 +39377,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/kleinegraeber/": {
         "description": "Heilpraktikerin (Psychotherapie)",
@@ -38777,7 +39417,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/kleinhans/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -39299,6 +39939,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/knoernschild/": {
+        "description": "Heilpraktikerin Psychotherapie",
+        "email": "therapie.knoernschild@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Eike Kn\u00f6rnschild",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/knoop/": {
         "description": "Hypnosetherapie, Trennungsbegleitung, EMDR",
         "email": "info@gescheknoop.de",
@@ -39397,7 +40057,7 @@
         "trans": true,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": true,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/koc/": {
         "description": "Praxis f\u00fcr Psychotherapie und Coaching",
@@ -39817,7 +40477,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/kolb/": {
         "description": "Gestalttherapeutin und Supervisorin",
@@ -43417,7 +44077,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/leeb/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie, Neurofeedback-, Hypnose-, EMDR-Therapeutin",
@@ -43518,6 +44178,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
+    "https://www.therapie.de/profil/lehmphul/": {
+        "description": "Praxis f\u00fcr Kurzzeittherapie",
+        "email": "ina.lehmphul@web.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Dr.rer.nat. ",
+        "name": "Ina Lehmphul",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/lehner/": {
         "description": "Psychologische Psychotherapeutin",
@@ -44329,6 +45009,26 @@
         "heilpraktiker": true,
         "jobtitle": " ",
         "name": "Daniela Liebl",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/liebnau/": {
+        "description": "Approbierter Psychotherapeut",
+        "email": "info@hellolumo.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": " ",
+        "name": "Joshua Liebnau",
         "offline": false,
         "psychologe": false,
         "psychologe_check": true,
@@ -45318,6 +46018,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
+    "https://www.therapie.de/profil/loeser/": {
+        "description": "Diplom-P\u00e4dagogin, Heilpraktiker/in beschr\u00e4nkt auf Psychotherapie, Introvisionsberaterin nach Angelika C. Wagner",
+        "email": "post@sonja-loeser.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Sonja L\u00f6ser",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/loewe/": {
         "description": "Heilpraktikerin mit Schwerpunkt: Psychologische Beratung, Hypnose und EMDR",
@@ -46937,7 +47657,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/malhotra/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie / Ammerland Hypnose",
@@ -47917,7 +48637,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/marieluise.hermanns/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie und zertifizierte Psychologische Beraterin (VFP)",
@@ -47958,6 +48678,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/marien/": {
+        "description": "Arzt f\u00fcr Neurologie und Psychiatrie, Psychotherapie, Rehabilitationswesen",
+        "email": "praxis.marien@posteo.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dr. med. ",
+        "name": "Rainer Marien",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/mariepascale.huber/": {
         "description": "Diplom-Psychologin",
@@ -53377,7 +54117,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber zw\u00f6lf Monate."
     },
     "https://www.therapie.de/profil/myrna.ritter/": {
         "description": "Systemische Therapeutin, Traumazentrierte Fachberaterin",
@@ -53737,7 +54477,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/natalie.hess/": {
         "description": "Psychologin (M.Sc.), Systemische Paar- &amp; Sexualtherapeutin",
@@ -54017,7 +54757,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/nazari/": {
         "description": "Psychologische Psychotherapeutin",
@@ -54357,7 +55097,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/ness/": {
         "description": "Systemische Therapie, Supervision &amp; Coaching",
@@ -54637,7 +55377,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/nickerl/": {
         "description": "Psychologische Psychotherapeutin",
@@ -54757,7 +55497,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/nicole.assmann/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -55137,7 +55877,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/niegisch/": {
         "description": "Heilpraktiker Psychotherapie / Hypnosepraxis, Gestalttherapie, Yagertherapie, Hypnotherapie",
@@ -55309,6 +56049,26 @@
         "heilpraktiker": true,
         "jobtitle": "Diplom Psychologe ",
         "name": "Andreas Niklas",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/nikoleta.gehrmann/": {
+        "description": "Psychologin, Heilpraktikerin (Psychotherapie)",
+        "email": "info@psychotherapie-gehrmann.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Nikoleta Gehrmann",
         "offline": false,
         "psychologe": true,
         "psychologe_check": true,
@@ -55878,6 +56638,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/nuyken/": {
+        "description": "Psychologische Praxis",
+        "email": "praxis@knuyken.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Klaus Nuyken",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "In dringenden F\u00e4llen auch kurzfristig Termine m\u00f6glich."
     },
     "https://www.therapie.de/profil/oberbacher/": {
         "description": "Privatpraxis f\u00fcr hypnosystemische Therapie, Beratung, Coaching, Heilpraktikerin f\u00fcr Psychotherapie",
@@ -58797,7 +59577,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/philipp/": {
         "description": "Psychologische Psychotherapeutin /Verhaltenstherapie /Kurzzeittherapie",
@@ -58958,6 +59738,26 @@
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
         "wartezeit": "Wartezeit bis drei Monate."
+    },
+    "https://www.therapie.de/profil/pietrus/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherpie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Lea ",
+        "name": "Savelsberg (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/pietschmann/": {
         "description": "Psychologische Psychotherapeutin",
@@ -59437,7 +60237,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Spanisch"
     },
     "https://www.therapie.de/profil/poehler/": {
         "description": "Privatpraxis f\u00fcr Psychotherapie - Coaching - Entspannungstraining",
@@ -60897,7 +61697,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/ramirez/": {
         "description": "Systemische Psychologische Psychotherapeutin",
@@ -61629,6 +62429,26 @@
         "heilpraktiker": false,
         "jobtitle": "Dipl. Psychologin ",
         "name": "Nina Rehse",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
+    "https://www.therapie.de/profil/reich/": {
+        "description": "Diplom Psychologe &amp; Heilpraktiker",
+        "email": "kontakt@heilweise.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Dipl. Psych. ",
+        "name": "Alexander Reich",
         "offline": false,
         "psychologe": true,
         "psychologe_check": true,
@@ -62537,7 +63357,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/ringbeckfischer/": {
         "description": "Praxis Ulrike Ringbeck-Fischer Heilpraktikerin f\u00fcr Psychotherapie Hamm",
@@ -62777,7 +63597,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/robert.diehl/": {
         "description": "Praxis f\u00fcr Psychotherapie und Pers\u00f6nlichkeitsentwicklung",
@@ -63757,7 +64577,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Einzeltherapie"
     },
     "https://www.therapie.de/profil/ruemenapp/": {
         "description": "Prisma Praxis",
@@ -65039,6 +65859,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/samira.gebhardt/": {
+        "description": "Praxis f\u00fcr Systemische Therapie, Paartherapie, Psychotherapie (HPG), Coaching",
+        "email": "kontakt@samiragebhardt.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Praxis ",
+        "name": "Samira Gebhardt",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/sandler/": {
         "description": "Psychologischer Psychotherapeut",
         "email": "kontakt@psychotherapie-sandler.de",
@@ -66177,7 +67017,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/scharlach/": {
         "description": "Psychotherapie im Westend",
@@ -66797,7 +67637,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Italienisch"
     },
     "https://www.therapie.de/profil/schiller.anita/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -67097,7 +67937,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/schleupner/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -67294,6 +68134,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/schmid/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Janina ",
+        "name": "Schmid (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -68359,6 +69219,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/schrezenmeir/": {
+        "description": "Psychologische Psychotherapeutin",
+        "email": "praxis@psychotherapie-schrezenmeir.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "M.Sc. ",
+        "name": "Christina Schrezenmeir",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
     "https://www.therapie.de/profil/schricker/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie / Gestalttherapie",
         "email": "info@anne-schricker.de",
@@ -68979,6 +69859,46 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/schwake/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Christina ",
+        "name": "Schwake (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/schwan/": {
+        "description": "Diplom-Psychologin",
+        "email": "kontakt@laura-schwan-therapie.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Laura Schwan",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
+    },
     "https://www.therapie.de/profil/schwarzenberg/": {
         "description": "Praxis EinfachIch",
         "email": "kontakt@praxiseinfachich.de",
@@ -69134,6 +70054,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/schwick/": {
+        "description": "Psychologische Psychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": true,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Jana ",
+        "name": "Schwick (M.Sc.)",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -69699,6 +70639,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/sibylle.hunger/": {
+        "description": "ADHS-Praxis f\u00fcr Erwachsene / Heilpraktikerin f\u00fcr Psychotherapie",
+        "email": "info@adhs-erwachsene-rosenheim.de",
+        "email_check": true,
+        "gruppe": true,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Sibylle Hunger",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/sibylle.schuetz/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
         "email": "info@sibylle-schuetz.de",
@@ -69817,7 +70777,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/siefert/": {
         "description": "Psychologische Praxis Sabrina Moll / Psychotherapie nach dem Heilpraktikergesetz",
@@ -70279,6 +71239,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/silvia.rolf/": {
+        "description": "Raum f\u00fcr Achtsamkeit - Praxis f\u00fcr Systemische Einzel- und Paartherapie, Supervision und Coaching",
+        "email": "Silvia.Rolf@gmx.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": "Dipl.P\u00e4d. ",
+        "name": "Silvia Rolf",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit bis drei Monate."
+    },
     "https://www.therapie.de/profil/silvia.straub/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
         "email": "silvia.straub@gmx.de",
@@ -70349,6 +71329,26 @@
         "heilpraktiker": true,
         "jobtitle": " ",
         "name": "Elke Simmel",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/simoes/": {
+        "description": "Praxis f\u00fcr integrative Psychotherapie - Heilpraktikerin",
+        "email": "mail@praxis-janinesimoes.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Janine Simoes",
         "offline": false,
         "psychologe": false,
         "psychologe_check": true,
@@ -70619,6 +71619,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/sina.wiebe/": {
+        "description": "Psychologische Psychotherapeutin f\u00fcr Erwachsene mit zus\u00e4tzlicher Fachkunde f\u00fcr Psychotherapie mit Kindern und Jugendlichen (Verhaltenstherapie)",
+        "email": "info@psychotherapiepraxis-hamburg-mitte.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Dipl.-Psych. ",
+        "name": "Sina Wiebe",
+        "offline": false,
+        "psychologe": true,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
+    },
     "https://www.therapie.de/profil/sindy.schwarz/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
         "email": "info@loewenstark-hannover.de",
@@ -70737,7 +71757,7 @@
         "trans": true,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": true,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/sliwka/": {
         "description": "Arzt und Psychotherapeut",
@@ -73617,7 +74637,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/strenge/": {
         "description": "Psychologisch-therapeutische Praxis \"Lebensbuch\"",
@@ -74177,7 +75197,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/surpanu/": {
         "description": "Psychologische Psychotherapeutin",
@@ -74357,7 +75377,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/susanne.budde/": {
         "description": "Heilpraktikerin (Psychotherapie) und Coach EASC",
@@ -75669,6 +76689,26 @@
         "heilpraktiker": true,
         "jobtitle": " ",
         "name": "Maria Tatianina",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/tatjana.ott/": {
+        "description": "Privatpraxis f\u00fcr zukunftsorientierte Psychotherapie",
+        "email": "info@tatjanaott.com",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Tatjana Ott",
         "offline": false,
         "psychologe": false,
         "psychologe_check": true,
@@ -77417,7 +78457,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber zw\u00f6lf Monate."
     },
     "https://www.therapie.de/profil/trobisch/": {
         "description": "Heilpraktikerpraxis Psychotherapie",
@@ -79497,7 +80537,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/vimalanandan/": {
         "description": "Psychologische Psychotherapeutin",
@@ -79597,7 +80637,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/viola.ott/": {
         "description": "Heilpraktikerin f\u00fcr Psychotherapie",
@@ -79677,7 +80717,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/vivien.soppa/": {
         "description": "Psychologische Psychotherapeutin",
@@ -80637,7 +81677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit \u00fcber drei Monate."
     },
     "https://www.therapie.de/profil/wahle/": {
         "description": "Schwerpunkt Kinder und Jugendliche - Heilpraktikerin f\u00fcr Psychotherapie",
@@ -82339,6 +83379,26 @@
         "trans_and_psychologe": false,
         "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
+    "https://www.therapie.de/profil/widener1/": {
+        "description": "Heilpraktiker f\u00fcr Psychotherapie",
+        "email": "gwidener@proton.me",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": true,
+        "jobtitle": " ",
+        "name": "Garrett Widener",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
+        "trans": true,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
     "https://www.therapie.de/profil/wiebe/": {
         "description": "Dipl. Psychologin, Psychologische Psychotherapeutin",
         "email": "wiebe@verhaltenstherapie-bitburg.de",
@@ -83037,7 +84097,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/wittner/": {
         "description": "Psychologische Psychotherapeutin",
@@ -83154,6 +84214,26 @@
         "psychologe_check": true,
         "queer_check": true,
         "sexualitaet": false,
+        "trans": false,
+        "trans_and_gruppe_and_psychologe": false,
+        "trans_and_psychologe": false,
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
+    },
+    "https://www.therapie.de/profil/woermann/": {
+        "description": "Kinder- und Jugendlichenpsychotherapeutin (Verhaltenstherapie) bei der Hanse Psychotherapie",
+        "email": "binnenalster@hanse-psychotherapie.de",
+        "email_check": true,
+        "gruppe": false,
+        "gruppe_and_psychologe": false,
+        "has_email": true,
+        "heilpraktiker": false,
+        "jobtitle": "Lisa ",
+        "name": "Sonnenschmidt (M.A.)",
+        "offline": false,
+        "psychologe": false,
+        "psychologe_check": true,
+        "queer_check": true,
+        "sexualitaet": true,
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
@@ -83497,7 +84577,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/woweruhn/": {
         "description": "Psychologische Psychotherapie tiefenpsychologisch fundiert",
@@ -84597,7 +85677,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Wartezeit bis drei Monate."
     },
     "https://www.therapie.de/profil/ziebarth/": {
         "description": "Psychologische Psychotherapeutin",
@@ -84777,7 +85857,7 @@
         "trans": false,
         "trans_and_gruppe_and_psychologe": false,
         "trans_and_psychologe": false,
-        "wartezeit": null
+        "wartezeit": "Freie Pl\u00e4tze vorhanden."
     },
     "https://www.therapie.de/profil/zobel/": {
         "description": "Psychologische Psychotherapeutin",

@@ -37,7 +37,7 @@ def calcDistanceBetweenPoints(driver, lat1, lon1, lat2, lon2):
     return round(distance, 3)
 
 def write_the_file(name="0", content=[]):
-    target = os.path.join("thera_lists", name+"_theras_online.txt")
+    target = os.path.join("thera_lists", get_valid_filename(name+"_theras_online.txt"))
     with open(target, 'w') as f:
          for line in content:
              f.write(f"{line}\n")
